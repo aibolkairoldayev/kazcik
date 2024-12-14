@@ -1,0 +1,78 @@
+.header {
+    background: rgba(255, 255, 255, 0.80);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    .container {
+        padding: 16px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 230px);
+    }
+    &__logo {
+        width: 166px;
+        img {
+            width: 100%;
+        }
+    }
+    &__menu {
+        a {
+            margin: 0 12px;
+            color: rgba(36, 38, 36, 0.72);
+            font-variant-numeric: lining-nums tabular-nums;
+            font-family: "Source Sans Pro";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%; /* 19.2px */
+        }
+    }
+    &__mid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__search {
+        margin-right: 24px;
+        cursor: pointer;
+    }
+    &__lang {
+        position: relative;
+        &--current {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+                margin: 0 3px 0 8px;
+                color: var(--light-grey, #B1B1B1);
+                font-variant-numeric: lining-nums tabular-nums;
+                font-family: "Source Sans Pro";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 120%; /* 19.2px */
+            }
+        }
+    }
+    &__phone {
+        display: flex;
+        b {
+            margin-left: 8px;
+            color: var(--black, #242624);
+            font-variant-numeric: lining-nums tabular-nums;
+            font-family: "Source Sans Pro";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%; /* 21.6px */
+        }
+    }
+}

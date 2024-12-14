@@ -1,0 +1,108 @@
+@import 'footer';
+@import 'editors';
+
+.docs {
+    &__tabs {
+        margin: 45px 0;
+        display: flex;
+        align-items: center;
+        &--title {
+            border-radius: 16px;
+            background: var(--white, #FFF);
+            margin-right: 12px;
+            padding: 12px 24px;
+            color: var(--black, #242624);
+            font-variant-numeric: lining-nums tabular-nums;
+            font-family: "Source Sans Pro";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%; /* 19.2px */
+            cursor: pointer;
+            &.active {
+                background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 151.86%));
+                color: #fff;
+                cursor: default;
+            }
+        }
+    }
+    &__content {
+        display: none;
+        &.active {
+            display: flex;
+        }
+    }
+    &__item {
+        flex-direction: column;
+        border-radius: 24px;
+        background: var(--white, #FFF);
+        padding: 24px;
+        width: 24%;
+        margin-right: 16px;
+        max-width: 330px;
+        &:hover {
+            background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 151.86%));
+            p {
+                color: var(--white, #FFF);
+            }
+            .docs__img {
+                .doc1 {
+                    display: none;
+                }
+                .doc2 {
+                    display: block;
+                }
+            }
+        }
+        p {
+            color: var(--black, #242624);
+            font-variant-numeric: lining-nums tabular-nums;
+            font-family: "Museo Sans Cyrl";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%; /* 25.2px */
+        }
+    }
+    &__img {
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: space-between;
+        .doc2 {
+            display: none;
+        }
+    }
+}
+
+.services2 {
+    position: relative;
+    margin-bottom: 200px;
+    &__bg1 {
+        position: absolute;
+        top: 5%;
+        left: 0;
+        z-index: -1;
+        img {
+            max-width: 500px;
+        }
+    }
+    &__bg2 {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        z-index: -1;
+        img {
+            max-width: 350px;
+        }
+    }
+    &__items {
+        margin-top: 45px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 290px;
+        margin-right: 16px;
+        margin-bottom: 16px;
+    }
+}
