@@ -108,6 +108,7 @@ body {
   max-width: 1360px;
   margin: 0 auto;
   --bs-gutter-x: 0rem;
+  width: 100%;
 }
 
 .header {
@@ -505,6 +506,38 @@ body {
   font-weight: 600;
   line-height: 120%;
   /* 21.6px */
+}
+
+.main-tabs {
+  margin: 45px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-tabs__title {
+  border-radius: 16px;
+  background: var(--white, #FFF);
+  margin-right: 12px;
+  padding: 12px 24px;
+  color: var(--black, #242624);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  /* 19.2px */
+  cursor: pointer;
+}
+
+.main-tabs__title.active {
+  background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 151.86%));
+  color: #fff;
+  cursor: default;
 }
 
 @media (max-width: 1400px) {

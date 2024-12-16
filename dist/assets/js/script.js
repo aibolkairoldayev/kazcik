@@ -19,6 +19,7 @@ var smallMargin =  containerMargin + 70;
 $('.services__items').css('margin-left', smallMargin + 'px');
 $('.events__bot').css('margin-left', smallMargin + 'px');
 $('.partners').css('margin-left', smallMargin + 'px');
+$('.block2__bot').css('margin-left', smallMargin + 'px');
 
 //main page tabs
 const titles = document.querySelectorAll('.events__group--title');
@@ -33,16 +34,19 @@ titles.forEach((title, index) => {
     });
 });
 
-//docs page tabs
-const titles2 = document.querySelectorAll('.docs__tabs--title');
-const items2 = document.querySelectorAll('.docs__content');
+//about page tabs
+const titles2 = document.querySelectorAll('.about__tabs--title');
+const items2 = document.querySelectorAll('.about__content');
+const heads = document.querySelectorAll('.about__title');
 
 titles2.forEach((title, index) => {
     title.addEventListener('click', () => {
         titles2.forEach(t => t.classList.remove('active'));
         items2.forEach(item => item.classList.remove('active'));
+        heads.forEach(item => item.classList.remove('active'));
         title.classList.add('active');
         items2[index].classList.add('active');
+        heads[index].classList.add('active');
     });
 });
 
