@@ -50,6 +50,25 @@ titles2.forEach((title, index) => {
     });
 });
 
+//about page show more
+$('.about__block1--more').click(()=> {
+    $('.about__block1--more').toggleClass('active');
+    $('.about__block1--hidden').toggleClass('active');
+})
+
+//about page vertical tabs
+const titles3 = document.querySelectorAll('.organ__tabs--item');
+const items3 = document.querySelectorAll('.organ__content');
+
+titles3.forEach((title, index) => {
+    title.addEventListener('click', () => {
+        console.log('ssa')
+        titles3.forEach(t => t.classList.remove('active'));
+        items3.forEach(item => item.classList.remove('active'));
+        title.classList.add('active');
+        items3[index].classList.add('active');
+    });
+});
 
 // open and close callback modal
 if ($('.modal').length) {
