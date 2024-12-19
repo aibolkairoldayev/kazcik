@@ -76,8 +76,8 @@
             font-weight: 600;
             line-height: 120%; /* 21.6px */
             background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 151.86%));
-            -webkit-background-clip: text; /* Применение фона к тексту */
-            -webkit-text-fill-color: transparent; /* Прозрачный цвет текста */
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
         }
     }
 }

@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 .bg__circle1 {
   position: absolute;
   max-width: 500px;
@@ -109,9 +107,7 @@
   /* 21.6px */
   background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 151.86%));
   -webkit-background-clip: text;
-  /* Применение фона к тексту */
   -webkit-text-fill-color: transparent;
-  /* Прозрачный цвет текста */
 }
 
 .banner {

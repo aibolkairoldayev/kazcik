@@ -380,6 +380,26 @@ body {
           align-items: center;
 }
 
+.breads__prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.breads__prev a {
+  color: var(--grey, #666) !important;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Museo Sans Cyrl";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 14px */
+}
+
 .breads a {
   color: var(--light-grey, #B1B1B1);
   font-variant-numeric: lining-nums tabular-nums;

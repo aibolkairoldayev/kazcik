@@ -4,24 +4,15 @@
       font-weight: 600;
       font-size: 20px;
       font-style: normal;
-      font-weight: 400;
       line-height: normal;
       font-feature-settings: 'tnum' on, 'lnum' on;
-      color: #fff;
-      @media(max-width: 576px) {
-        font-size: 15px;
-      }
       p, span {
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         font-feature-settings: 'tnum' on, 'lnum' on;
-        color: #fff;
-        margin-bottom: 10px;
-        @media(max-width: 576px) {
-          font-size: 15px;
-        }
+        margin-bottom: 24px;
       }
     }
     p, span {
@@ -31,11 +22,7 @@
       font-weight: 400;
       line-height: normal;
       font-feature-settings: 'tnum' on, 'lnum' on;
-      color: #fff;
-      margin-bottom: 10px;
-      @media(max-width: 576px) {
-        font-size: 15px;
-      }
+      margin-bottom: 24px;
       b, strong {
         font-weight: 600;
       }
@@ -48,12 +35,8 @@
         font-weight: 400;
         line-height: 190%;
         font-feature-settings: 'tnum' on, 'lnum' on;
-        color: #fff;
         list-style: decimal;
         list-style-position: inside;
-        @media(max-width: 576px) {
-          font-size: 15px;
-        }
       }
     }
     ul {
@@ -64,38 +47,8 @@
         font-weight: 400;
         line-height: 190%;
         font-feature-settings: 'tnum' on, 'lnum' on;
-        color: #fff;
         list-style: disc;
         list-style-position: inside;
-        @media(max-width: 576px) {
-          font-size: 15px;
-        }
-      }
-    }
-  }
-  &.white {
-    .editors {
-      b, strong {
-        color: #0D0D0D;
-        p, span {
-          color: #0D0D0D;
-        }
-      }
-      p, span {
-        color: #0D0D0D;
-        b, strong {
-          color: #0D0D0D;
-        }
-      }
-      ol {
-        li {
-          color: #0D0D0D;
-        }
-      }
-      ul {
-        li {
-          color: #0D0D0D;
-        }
       }
     }
   }

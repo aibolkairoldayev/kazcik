@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .footer {
   background: #1E1E1E;
 }
@@ -253,11 +255,9 @@
   font-weight: 600;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
   -webkit-font-feature-settings: "tnum" on, "lnum" on;
           font-feature-settings: "tnum" on, "lnum" on;
-  color: #fff;
 }
 
 .body .editors b p,
@@ -270,8 +270,7 @@
   line-height: normal;
   -webkit-font-feature-settings: "tnum" on, "lnum" on;
           font-feature-settings: "tnum" on, "lnum" on;
-  color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
 }
 
 .body .editors p,
@@ -283,8 +282,7 @@
   line-height: normal;
   -webkit-font-feature-settings: "tnum" on, "lnum" on;
           font-feature-settings: "tnum" on, "lnum" on;
-  color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
 }
 
 .body .editors p b,
@@ -302,7 +300,6 @@
   line-height: 190%;
   -webkit-font-feature-settings: "tnum" on, "lnum" on;
           font-feature-settings: "tnum" on, "lnum" on;
-  color: #fff;
   list-style: decimal;
   list-style-position: inside;
 }
@@ -315,41 +312,8 @@
   line-height: 190%;
   -webkit-font-feature-settings: "tnum" on, "lnum" on;
           font-feature-settings: "tnum" on, "lnum" on;
-  color: #fff;
   list-style: disc;
   list-style-position: inside;
-}
-
-.body.white .editors b,
-.body.white .editors strong {
-  color: #0D0D0D;
-}
-
-.body.white .editors b p,
-.body.white .editors b span,
-.body.white .editors strong p,
-.body.white .editors strong span {
-  color: #0D0D0D;
-}
-
-.body.white .editors p,
-.body.white .editors span {
-  color: #0D0D0D;
-}
-
-.body.white .editors p b,
-.body.white .editors p strong,
-.body.white .editors span b,
-.body.white .editors span strong {
-  color: #0D0D0D;
-}
-
-.body.white .editors ol li {
-  color: #0D0D0D;
-}
-
-.body.white .editors ul li {
-  color: #0D0D0D;
 }
 
 .about-width {
@@ -1419,29 +1383,338 @@
   margin-bottom: 120px;
 }
 
-@media (max-width: 576px) {
-  .body .editors b,
-  .body .editors strong {
-    font-size: 15px;
-  }
+.new {
+  position: relative;
+}
 
-  .body .editors b p,
-  .body .editors b span,
-  .body .editors strong p,
-  .body .editors strong span {
-    font-size: 15px;
-  }
+.new__bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
 
-  .body .editors p,
-  .body .editors span {
-    font-size: 15px;
-  }
+.new__bg img {
+  max-width: 500px;
+}
 
-  .body .editors ol li {
-    font-size: 15px;
-  }
+.new__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 64px;
+}
 
-  .body .editors ul li {
-    font-size: 15px;
-  }
+.new__right {
+  width: 320px;
+  position: sticky;
+  top: 100px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.new__left {
+  width: calc(100% - 355px);
+}
+
+.new__left h1 {
+  margin-bottom: 32px;
+  color: #000;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Museo Sans Cyrl";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  /* 56px */
+}
+
+.new__img {
+  width: 100%;
+}
+
+.new__img img {
+  border-radius: 32px;
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.new__content {
+  margin: 45px 0 32px;
+}
+
+.new__content b {
+  color: var(--black, #242624);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Museo Sans Cyrl";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  /* 25.2px */
+  display: block;
+  margin-bottom: 24px;
+}
+
+.new__content p {
+  color: var(--black, #242624);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 21.6px */
+  margin-bottom: 24px;
+}
+
+.new__content img {
+  width: 100%;
+  border-radius: 32px;
+  margin-bottom: 32px;
+}
+
+.new__green {
+  position: relative;
+  padding-left: 20px;
+  color: var(--grey2, #484848);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 130%;
+  /* 23.4px */
+}
+
+.new__green::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  /* Ширина границы */
+  background: -o-linear-gradient(209deg, #29817A 32.64%, #0D1457 151.86%);
+  background: linear-gradient(241deg, #29817A 32.64%, #0D1457 151.86%);
+}
+
+.new__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.new__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 32px;
+}
+
+.new__btn img {
+  margin-right: 8px;
+}
+
+.new__btn span {
+  color: var(--grey, #7A7A7A);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 21.6px */
+}
+
+.new__elem {
+  margin-bottom: 16px;
+}
+
+.new__elem b {
+  display: block;
+  color: var(--black, #242624);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Museo Sans Cyrl";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  /* 25.2px */
+  margin-bottom: 8px;
+}
+
+.new__elem span {
+  color: var(--grey, #666);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  /* 19.2px */
+}
+
+.new__share {
+  margin-bottom: 32px;
+}
+
+.new__share b {
+  display: block;
+  color: var(--black, #242624);
+  font-variant-numeric: lining-nums tabular-nums;
+  margin-bottom: 8px;
+  font-family: "Museo Sans Cyrl";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  /* 25.2px */
+}
+
+.new__share--items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.new__share--item {
+  margin-right: 16px;
+}
+
+.new__share--item img {
+  width: 24px;
+  height: 24px;
+}
+
+.new__also b {
+  color: #000;
+  font-variant-numeric: lining-nums tabular-nums;
+  display: block;
+  margin-bottom: 12px;
+  font-family: "Museo Sans Cyrl";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  /* 28px */
+}
+
+.new__also--item {
+  display: block;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #B1B1B1;
+}
+
+.new__also--item:last-child {
+  border-bottom: none;
+}
+
+.new__also--item span {
+  color: var(--grey, #7A7A7A);
+  font-variant-numeric: lining-nums tabular-nums;
+  display: block;
+  margin-bottom: 12px;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  /* 19.2px */
+}
+
+.new__also--item b {
+  color: #000;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Museo Sans Cyrl";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  /* 25.2px */
+}
+
+.new__others {
+  margin-bottom: 140px;
+}
+
+.new__others--title {
+  color: var(--black, #242624);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Museo Sans Cyrl";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  /* 44.8px */
+  margin-bottom: 32px;
+}
+
+.new__others--items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.new__others--item {
+  display: block;
+  width: calc(25% - 12px);
+  border-radius: 24px;
+  background-color: #fff;
+}
+
+.new__others--item img {
+  width: 100%;
+  height: 230px;
+  border-radius: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.new__others--info {
+  padding: 24px;
+  border-radius: 0 0 24px 24px;
+}
+
+.new__others--info span {
+  display: block;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  /* 19.2px */
+  margin-bottom: 8px;
+}
+
+.new__others--info b {
+  color: var(--black, #242624);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Museo Sans Cyrl";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  /* 25.2px */
 }
