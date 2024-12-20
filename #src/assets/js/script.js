@@ -34,22 +34,6 @@ titles.forEach((title, index) => {
     });
 });
 
-//about page tabs
-const titles2 = document.querySelectorAll('.about__tabs--title');
-const items2 = document.querySelectorAll('.about__content');
-const heads = document.querySelectorAll('.about__title');
-
-titles2.forEach((title, index) => {
-    title.addEventListener('click', () => {
-        titles2.forEach(t => t.classList.remove('active'));
-        items2.forEach(item => item.classList.remove('active'));
-        heads.forEach(item => item.classList.remove('active'));
-        title.classList.add('active');
-        items2[index].classList.add('active');
-        heads[index].classList.add('active');
-    });
-});
-
 //about page show more
 $('.about__block1--more').click(()=> {
     $('.about__block1--more').toggleClass('active');
@@ -129,11 +113,69 @@ if($('.burger').length) {
 }
 
 //fixed header func
-$(window).scroll(function(){
-    if ($(window).scrollTop() >= 150) {
-      $('.header').addClass('sticky');
+let lastScrollTop = 0; // Переменная для хранения последнего значения скролла
+
+$(window).scroll(function () {
+    let currentScrollTop = $(window).scrollTop();
+
+    // Обработка класса sticky
+    if (currentScrollTop >= 150) {
+        $('.header').addClass('sticky');
+    } else {
+        $('.header').removeClass('sticky');
     }
-    else {
-      $('.header').removeClass('sticky');
+
+    // Обработка класса hidden
+    if (currentScrollTop > lastScrollTop) {
+        // Скролл вниз
+        $('.header').addClass('hidden');
+    } else {
+        // Скролл вверх
+        $('.header').removeClass('hidden');
     }
+
+    lastScrollTop = currentScrollTop; 
 });
+
+//calendar
+$(document).ready(function() {
+    const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+    let currentDate = new Date();
+
+    function renderCalendar(date) {
+      const year = date.getFullYear();
+      const month = date.getMonth();
+
+      $(".calendar__month").text(months[month]);
+      $(".calendar__year").text(year);
+
+      const firstDay = new Date(year, month, 1).getDay();
+      const lastDate = new Date(year, month + 1, 0).getDate();
+
+      const daysContainer = $(".calendar__days");
+      daysContainer.empty();
+
+      // Пустые ячейки до первого дня
+      for (let i = 0; i < (firstDay === 0 ? 6 : firstDay - 1); i++) {
+        daysContainer.append('<div class="calendar__day calendar__day--empty"></div>');
+      }
+
+      // Дни месяца
+      for (let day = 1; day <= lastDate; day++) {
+        const dateString = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        daysContainer.append(`<div class="calendar__day" data-date="${dateString}">${day}</div>`);
+      }
+    }
+
+    $(".calendar__nav--prev").click(function() {
+      currentDate.setMonth(currentDate.getMonth() - 1);
+      renderCalendar(currentDate);
+    });
+
+    $(".calendar__nav--next").click(function() {
+      currentDate.setMonth(currentDate.getMonth() + 1);
+      renderCalendar(currentDate);
+    });
+
+    renderCalendar(currentDate);
+  });
