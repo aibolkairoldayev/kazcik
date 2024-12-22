@@ -1162,14 +1162,15 @@
         }
     }
     &__top {
-        margin: 32px 0;
+        display: flex;
+        justify-content: space-between;
     }
     &__tabs {
         display: flex;
         align-items: center;
         border-bottom: 1px solid #AAAAAA;
         padding-bottom: 12px;
-        margin-bottom: 30px;
+        margin: 30px 0;
     }
     &__tab {
         color: var(--grey, #7A7A7A);
@@ -1180,9 +1181,11 @@
         font-weight: 600;
         line-height: 140%; /* 25.2px */
         margin-right: 30px;
+        cursor: pointer;
         &.active {
             color: var(--black, #242624);
             position: relative;
+            cursor: default;
             &::after {
                 content: "";
                 width: 100%;
@@ -1196,8 +1199,10 @@
         }
     }
     &__content {
-        display: flex;
-        justify-content: space-between;
+        display: none;
+        &.active {
+            display: block;
+        }
         &--bg {
             position: absolute;
             top: 0;
@@ -1276,58 +1281,6 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    &__item {
-        display: flex;
-        justify-content: space-between;
-        border-radius: 32px;
-        background: #FFF;
-        width: calc(50% - 12px);
-        height: 290px;
-        margin-bottom: 32px;
-        &--info {
-            width: 50%;
-            padding: 24px;
-            display: flex;
-            flex-direction: column;
-            span {
-                font-variant-numeric: lining-nums tabular-nums;
-                font-family: "Source Sans Pro";
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 120%; /* 19.2px */
-            }
-            b {
-                display: block;
-                color: var(--black, #242624);
-                font-variant-numeric: lining-nums tabular-nums;
-                font-family: "Museo Sans Cyrl";
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 140%; /* 28px */
-                margin: 12px 0;
-            }
-            p {
-                color: var(--black, #242624);
-                font-variant-numeric: lining-nums tabular-nums;
-                font-family: "Source Sans Pro";
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 120%; /* 21.6px */
-            }
-        }
-    }
-    &__img {
-        width: 50%;
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            border-radius: 32px;
-        }
-    }
     &__more {
         border-radius: 16px;
         background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 151.86%));
@@ -1342,6 +1295,340 @@
         line-height: 120%; /* 19.2px */
     }
     &__bot {
-        margin-bottom: 120px;
+        margin: 64px 0 120px;
+    }
+}
+
+.future {
+    &__bg1 {
+        right: 0;
+        top: 200px;
+        img {
+            max-width: 400px;
+        }
+    }
+
+    &__bg3 {
+        left: 0;
+        top: 30%;
+        img {
+            max-width: 300px;
+        }
+    }
+
+    &__bg2 {
+        right: 0;
+        bottom: 0;
+        img {
+            max-width: 500px;
+        }
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        width: calc(100% - 355px);
+        h1 {
+            margin-bottom: 30px;
+        }
+    }
+    &__right {
+        width: 320px;
+    }
+    &__img {
+        height: 500px;
+        width: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 32px;
+        }
+    }
+    &__date {
+        margin-bottom: 16px;
+        b {
+            color: var(--black, #242624);
+            font-variant-numeric: lining-nums tabular-nums;
+            font-family: "Museo Sans Cyrl";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%; /* 25.2px */
+            display: block;
+            margin-bottom: 8px;
+        }
+        span {
+            color: var(--grey, #666);
+            font-variant-numeric: lining-nums tabular-nums;
+            font-family: "Source Sans Pro";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%; /* 19.2px */
+        }
+    }
+    &__btn {
+        border-radius: 16px;
+        background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 151.86%));
+        margin-bottom: 30px;
+        color: var(--white, #FFF);
+        font-variant-numeric: lining-nums tabular-nums;
+        font-family: "Source Sans Pro";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 19.2px */
+        padding: 16px 24px;
+        text-align: center;
+    }
+    &__bot {
+        margin: 64px 0;
+    }
+    &__down {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 16px;
+        margin-bottom: 50px;
+        padding-top: 50px;
+        b {
+            color: var(--black, #242624);
+            font-variant-numeric: lining-nums tabular-nums;
+            font-family: "Museo Sans Cyrl";
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%; /* 44.8px */
+        }
+        &--btn {
+            display: flex;
+            align-items: center;
+            border: 1px solid var(--light-grey, #B1B1B1);
+            padding: 16px 40px;
+            border-radius: 16px;
+            cursor: pointer;
+            p {
+                font-variant-numeric: lining-nums tabular-nums;
+                font-family: "Source Sans Pro";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 120%; /* 19.2px */
+                margin-right: 8px;
+            }
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    &__time {
+        width: 270px;
+        font-variant-numeric: lining-nums tabular-nums;
+        font-family: "Museo Sans Cyrl";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 33.6px */
+    }
+    &__content {
+        width: calc(100% - 300px);
+        b {
+            display: block;
+            margin-bottom: 12px;
+            color: var(--black, #242624);
+            font-variant-numeric: lining-nums tabular-nums;
+            font-family: "Museo Sans Cyrl";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%; /* 28px */
+        }
+        p {
+            color: var(--black, #242624);
+            font-variant-numeric: lining-nums tabular-nums;
+            font-family: "Source Sans Pro";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%; /* 21.6px */
+            margin-bottom: 24px;
+        }
+    }
+    &__video {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        b {
+            font-variant-numeric: lining-nums tabular-nums;
+            font-family: "Museo Sans Cyrl";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%; /* 28px */
+            display: block;
+            margin-right: 12px;
+        }
+        img {
+            cursor: pointer;
+        }
+    }
+    &__speakers {
+        b {
+            display: block;
+            color: var(--black, #242624);
+            font-variant-numeric: lining-nums tabular-nums;
+            font-family: "Museo Sans Cyrl";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%; /* 25.2px */
+            margin-bottom: 24px;
+        }
+    }
+    &__others {
+        margin: 64px 0 128px;
+        &--title {
+            color: var(--black, #242624);
+            font-variant-numeric: lining-nums tabular-nums;
+            font-family: "Museo Sans Cyrl";
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%; /* 44.8px */
+            margin-bottom: 30px;
+        }
+        &--items {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+    &__hidden {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+    &__text {
+        margin-bottom: 64px;
+    }
+    &__more {
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+        b {
+            font-variant-numeric: lining-nums tabular-nums;
+            font-family: "Source Sans Pro";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%; /* 21.6px */
+            margin-right: 5px;
+        }
+        .future__more2 {
+            display: none;
+        }
+        &.active {
+            .future__more1 {
+                display: none;
+            }
+            .future__more2 {
+                display: flex;
+            }
+            img {
+                transform: rotate(180deg);
+                transition: .2s linear;
+            }
+        }
+    }
+}
+
+.speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.speaker {
+    border-radius: 24px;
+    background: var(--white, #FFF);
+    padding: 16px;
+    display: flex;
+    img {
+        width: 110px;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+        margin-right: 16px;
+    }
+    &__info {
+        b {
+            color: #000;
+            font-variant-numeric: lining-nums tabular-nums;
+            font-family: "Museo Sans Cyrl";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%; /* 28px */
+            display: block;
+            margin-bottom: 10px;    
+        }
+        p {
+            color: var(--grey, #7A7A7A);
+            font-variant-numeric: lining-nums tabular-nums;
+            font-family: "Source Sans Pro";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%; /* 21.6px */
+        }
+    }
+}
+
+.gallery {
+    margin: 64px 0;
+    &__title {
+        color: var(--black, #242624);
+        font-variant-numeric: lining-nums tabular-nums;
+        font-family: "Museo Sans Cyrl";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        margin-bottom: 30px;
+    }
+    &__slider {
+        .slick-arrow {
+            position: absolute;
+            top: -50px;
+            cursor: pointer;
+            &.slick-disabled {
+                cursor: default;
+                svg {
+                    path {
+                        stroke: #B1B1B1;
+                    }
+                } 
+            }
+            svg {
+                path {
+                    stroke: url(#paint0_linear_3095_62510);
+                }
+            }
+        }
+        .arrowLeft {
+            transform: rotate(180deg);
+            margin-top: -3px;
+        }
+        img {
+            height: 300px;
+            border-radius: 32px;
+            object-fit: cover;
+            margin-right: 24px;
+        }
     }
 }

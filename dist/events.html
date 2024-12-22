@@ -95,13 +95,13 @@
                 <span>Мероприятия</span>
             </div>
             <h1 class="events2__title big-title">Мероприятия</h1>
-            <div class="events2__top">
-                <div class="events2__tabs">
-                    <div class="events2__tab">Предстоящие</div>
-                    <div class="events2__tab active">Прошедшие</div>
-                </div>
+            <div class="events2__tabs">
+                <div class="events2__tab active">Предстоящие</div>
+                <div class="events2__tab">Прошедшие</div>
+            </div>
 
-                <div class="events2__content">
+            <div class="events2__content active">
+                <div class="events2__top">
                     <div class="events2__left">
                         <div class="events2__content--bg">
                             <picture>
@@ -149,7 +149,7 @@
                             <!-- Сетка дней месяца -->
                             <div class="calendar__days"></div>
                         </div>
-
+    
                         <div class="events2__filter">
                             <div class="events2__btn">За неделю</div>
                             <div class="events2__btn">За месяц</div>
@@ -157,71 +157,191 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="events2__bot">
-                <div class="small-width">
-                    <div class="events2__items">
-                        <a class="events2__item">
-                            <div class="events2__img">
-                                <picture>
-                                    <img src="assets/img/event1.png" alt="event">
-                                </picture>
-                            </div>
-
-                            <div class="events2__item--info">
-                                <span class="gradient-text">3 сентября</span>
-                                <b>
-                                    Первый транспортный торгово-экспортный форум «Север-Юг»
-                                </b>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
-                                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-                                </p>
-                            </div>
-                        </a>
-
-                        <a class="events2__item">
-                            <div class="events2__img">
-                                <picture>
-                                    <img src="assets/img/event2.png" alt="event">
-                                </picture>
-                            </div>
-
-                            <div class="events2__item--info">
-                                <span class="gradient-text">3 сентября</span>
-                                <b>
-                                    Казахстанско-Иорданский круглый стол по торгово...
-                                </b>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
-                                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-                                </p>
-                            </div>
-                        </a>
-
-                        <a class="events2__item">
-                            <div class="events2__img">
-                                <picture>
-                                    <img src="assets/img/event3.png" alt="event">
-                                </picture>
-                            </div>
-
-                            <div class="events2__item--info">
-                                <span class="gradient-text">3 сентября</span>
-                                <b>
-                                    Встреча казахстанских и китайских представителей
-                                </b>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
-                                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-                                </p>
-                            </div>
-                        </a>
+                <div class="events2__bot">
+                    <div class="small-width">
+                        <div class="events2__items">
+                            <a class="events2__item event-type">
+                                <div class="events2__img event-type__img">
+                                    <picture>
+                                        <img src="assets/img/event1.png" alt="event">
+                                    </picture>
+                                </div>
+    
+                                <div class="events2__item--info event-type__info">
+                                    <span class="gradient-text">3 сентября 2024</span>
+                                    <b>
+                                        Первый транспортный торгово-экспортный форум «Север-Юг»
+                                    </b>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                                    </p>
+                                </div>
+                            </a>
+    
+                            <a class="events2__item event-type">
+                                <div class="events2__img event-type__img">
+                                    <picture>
+                                        <img src="assets/img/event2.png" alt="event">
+                                    </picture>
+                                </div>
+    
+                                <div class="events2__item--info event-type__info">
+                                    <span class="gradient-text">3 сентября 2024</span>
+                                    <b>
+                                        Казахстанско-Иорданский круглый стол по торгово...
+                                    </b>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                                    </p>
+                                </div>
+                            </a>
+    
+                            <a class="events2__item event-type">
+                                <div class="events2__img event-type__img">
+                                    <picture>
+                                        <img src="assets/img/event3.png" alt="event">
+                                    </picture>
+                                </div>
+    
+                                <div class="events2__item--info event-type__info">
+                                    <span class="gradient-text">3 сентября 2024</span>
+                                    <b>
+                                        Встреча казахстанских и китайских представителей
+                                    </b>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="events2__more">Загрузить еще</div>
                     </div>
-                    <div class="events2__more">Загрузить еще</div>
                 </div>
-            </div>
+            </div>     
+            <div class="events2__content">
+                <div class="events2__top">
+                    <div class="events2__left">
+                        <div class="events2__content--bg">
+                            <picture>
+                                <!-- <source srcset="asset/img/bg-circle.webp" type="image/webp">
+                                <source srcset="asset/img/bg-circle.webp" type="image/pjp2"> -->
+                                <img src="assets/img/event1.png" alt="event">
+                            </picture>
+                        </div>
+                        <div class="events2__info">
+                            <span>25 марта</span>
+                            <b>Визит Министра Министерства иностранных дел РК К.Комбоса в РК</b>
+                        </div>
+                    </div>
+                    <div class="events2__right">
+                        <div class="calendar">
+                            <!-- Header с навигацией -->
+                            <div class="calendar__header">
+                              <button class="calendar__nav calendar__nav--prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M7.08203 10.6665L11.832 15.3332C12.1654 15.6665 12.6654 15.6665 12.9987 15.3332C13.332 14.9998 13.332 14.4998 12.9987 14.1665L8.91536 9.99984L12.9987 5.83317C13.332 5.49984 13.332 4.99984 12.9987 4.6665C12.832 4.49984 12.6654 4.4165 12.4154 4.4165C12.1654 4.4165 11.9987 4.49984 11.832 4.6665L7.08203 9.33317C6.7487 9.74984 6.7487 10.2498 7.08203 10.6665C7.08203 10.5832 7.08203 10.5832 7.08203 10.6665Z" fill="#7A7A7A"/>
+                                </svg>
+                              </button>
+                              <div class="calendar__current">
+                                <span class="calendar__month">Декабрь</span>
+                                <span class="calendar__year">2024</span>
+                              </div>
+                              <button class="calendar__nav calendar__nav--next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M12.9509 9.40845L8.23425 4.70011C8.15679 4.622 8.06462 4.56001 7.96307 4.5177C7.86152 4.4754 7.7526 4.45361 7.64259 4.45361C7.53258 4.45361 7.42366 4.4754 7.32211 4.5177C7.22056 4.56001 7.12839 4.622 7.05092 4.70011C6.89571 4.85625 6.80859 5.06746 6.80859 5.28761C6.80859 5.50777 6.89571 5.71898 7.05092 5.87511L11.1759 10.0418L7.05092 14.1668C6.89571 14.3229 6.80859 14.5341 6.80859 14.7543C6.80859 14.9744 6.89571 15.1856 7.05092 15.3418C7.1281 15.4205 7.22014 15.4832 7.3217 15.5261C7.42326 15.569 7.53233 15.5913 7.64259 15.5918C7.75284 15.5913 7.86191 15.569 7.96347 15.5261C8.06504 15.4832 8.15708 15.4205 8.23425 15.3418L12.9509 10.6334C13.0355 10.5554 13.103 10.4607 13.1492 10.3553C13.1954 10.2499 13.2192 10.136 13.2192 10.0209C13.2192 9.90586 13.1954 9.79202 13.1492 9.68661C13.103 9.58119 13.0355 9.48648 12.9509 9.40845Z" fill="#7A7A7A"/>
+                                </svg>
+                              </button>
+                            </div>
+                          
+                            <!-- Сетка дней недели -->
+                            <div class="calendar__weekdays">
+                              <div class="calendar__weekday">Пн</div>
+                              <div class="calendar__weekday">Вт</div>
+                              <div class="calendar__weekday">Ср</div>
+                              <div class="calendar__weekday">Чт</div>
+                              <div class="calendar__weekday">Пт</div>
+                              <div class="calendar__weekday">Сб</div>
+                              <div class="calendar__weekday">Вс</div>
+                            </div>
+                          
+                            <!-- Сетка дней месяца -->
+                            <div class="calendar__days"></div>
+                        </div>
+    
+                        <!-- <div class="events2__filter">
+                            <div class="events2__btn">За неделю</div>
+                            <div class="events2__btn">За месяц</div>
+                            <div class="events2__btn">Все</div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="events2__bot">
+                    <div class="small-width">
+                        <div class="events2__items">
+                            <a class="events2__item event-type">
+                                <div class="events2__img event-type__img">
+                                    <picture>
+                                        <img src="assets/img/event1.png" alt="event">
+                                    </picture>
+                                </div>
+    
+                                <div class="events2__item--info event-type__info">
+                                    <span class="gradient-text">3 сентября 2024</span>
+                                    <b>
+                                        Первый транспортный торгово-экспортный форум «Север-Юг»
+                                    </b>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                                    </p>
+                                </div>
+                            </a>
+    
+                            <a class="events2__item event-type">
+                                <div class="events2__img event-type__img">
+                                    <picture>
+                                        <img src="assets/img/event2.png" alt="event">
+                                    </picture>
+                                </div>
+    
+                                <div class="events2__item--info event-type__info">
+                                    <span class="gradient-text">3 сентября 2024</span>
+                                    <b>
+                                        Казахстанско-Иорданский круглый стол по торгово...
+                                    </b>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                                    </p>
+                                </div>
+                            </a>
+    
+                            <a class="events2__item event-type">
+                                <div class="events2__img event-type__img">
+                                    <picture>
+                                        <img src="assets/img/event3.png" alt="event">
+                                    </picture>
+                                </div>
+    
+                                <div class="events2__item--info event-type__info">
+                                    <span class="gradient-text">3 сентября 2024</span>
+                                    <b>
+                                        Встреча казахстанских и китайских представителей
+                                    </b>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- <div class="events2__more">Загрузить еще</div> -->
+                    </div>
+                </div>
+            </div>          
         </div>
     </div>
 </main>

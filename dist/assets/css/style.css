@@ -574,6 +574,87 @@ body {
   cursor: default;
 }
 
+.event-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 32px;
+  background: #FFF;
+  width: calc(50% - 12px);
+  height: 290px;
+  margin-bottom: 32px;
+}
+
+.event-type__info {
+  width: 50%;
+  padding: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.event-type__info span {
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  /* 19.2px */
+}
+
+.event-type__info b {
+  display: block;
+  color: var(--black, #242624);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Museo Sans Cyrl";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  /* 28px */
+  margin: 12px 0;
+}
+
+.event-type__info p {
+  color: var(--black, #242624);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 21.6px */
+}
+
+.event-type__img {
+  width: 50%;
+}
+
+.event-type__img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 32px;
+}
+
+.forbg {
+  position: relative;
+}
+
+.bgtype {
+  position: absolute;
+  z-index: -1;
+}
+
 @media (max-width: 1400px) {
   .container {
     max-width: 1180px;

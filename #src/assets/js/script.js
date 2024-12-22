@@ -20,6 +20,9 @@ $('.services__items').css('margin-left', smallMargin + 'px');
 $('.events__bot').css('margin-left', smallMargin + 'px');
 $('.partners').css('margin-left', smallMargin + 'px');
 $('.block2__bot').css('margin-left', smallMargin + 'px');
+$('.gallery').css('margin-left', smallMargin + 'px');
+$('.gallery__slider .arrowRight').css('right', smallMargin + 'px');
+$('.gallery__slider .arrowLeft').css('right', smallMargin + 50 + 'px');
 
 //main page tabs
 const titles = document.querySelectorAll('.events__group--title');
@@ -38,6 +41,12 @@ titles.forEach((title, index) => {
 $('.about__block1--more').click(()=> {
     $('.about__block1--more').toggleClass('active');
     $('.about__block1--hidden').toggleClass('active');
+})
+
+//future page show more
+$('.future__more').click(()=> {
+    $('.future__more').toggleClass('active');
+    $('.future__hidden').toggleClass('active');
 })
 
 //about page vertical tabs
@@ -68,38 +77,6 @@ if ($('.modal').length) {
         closeModal()
     })
 }
-
-
-// custom select function in forms
-$(document).ready(function() {
-    $('.main-select').each(function() {
-        var $select = $(this);
-        var $current = $select.find('.main-current');
-        var $others = $select.find('.main-others');
-        var $hiddenInput = $select.find('.main-hidden');
-        var $bTag = $current.find('b');
-
-        // Переключение класса "show" при клике на main-current
-        $current.click(function() {
-            $select.toggleClass('show');
-        });
-
-        // Обработка выбора элемента в main-others
-        $others.find('p').click(function() {
-            var selectedText = $(this).text();
-            $bTag.text(selectedText); // Обновляем текст внутри тега <b>
-            $hiddenInput.val(selectedText); // Устанавливаем значение hidden input
-            $select.removeClass('show'); // Убираем класс "show" после выбора
-        });
-
-        // Закрытие выпадающего списка при клике вне его
-        $(document).click(function(e) {
-            if (!$select.is(e.target) && $select.has(e.target).length === 0) {
-                $select.removeClass('show');
-            }
-        });
-    });
-});
 
 //burger open/closes
 if($('.burger').length) {
@@ -179,3 +156,19 @@ $(document).ready(function() {
 
     renderCalendar(currentDate);
   });
+
+  //events page tab
+  //main page tabs
+const titles2 = document.querySelectorAll('.events2__tab');
+const items2 = document.querySelectorAll('.events2__content');
+
+titles2.forEach((title, index) => {
+    title.addEventListener('click', () => {
+        titles2.forEach(t => t.classList.remove('active'));
+        items2.forEach(item => item.classList.remove('active'));
+        title.classList.add('active');
+        items2[index].classList.add('active');
+    });
+});
+
+  
