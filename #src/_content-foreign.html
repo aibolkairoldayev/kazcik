@@ -1,0 +1,420 @@
+<main class="main foreignPage">
+    <div class="sovet forbg">
+        <div class="sovet__bg1 bgtype">
+            <picture>
+                <img src="assets/img/bg-circle3.png" alt="bg">
+            </picture>
+        </div>
+        <div class="sovet__bg2 bgtype">
+            <picture>
+                <img src="assets/img/bg-left.png" alt="bg">
+            </picture>
+        </div>
+
+        <div class="sovet__search">
+            <div class="sovet__search--top">
+                <svg onClick="searchClose()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M10.334 12.6668L5.66732 8.00016L10.334 3.3335" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <label for="search" class="sovet__search--input">
+                    <img src="assets/img/icons/search.svg" alt="search">
+                    <input type="text" name="search" placeholder="Поиск страны">
+                </label>
+                
+            </div>
+
+            <div class="sovet__search--items">
+                <label for="search__country--1" class="sovet__search--item">
+                    <b>Германия</b>
+                    <img src="assets/img/icons/check.svg" alt="check">
+                    <input type="checkbox" id="search__country--1">
+                </label>
+                <label class="sovet__search--item" for="search__country--2">
+                    <b>Австрия</b>
+                    <img src="assets/img/icons/check.svg" alt="check">
+                    <input type="checkbox" id="search__country--2">
+                </label>
+                <label class="sovet__search--item" for="search__country--3">
+                    <b>Венгрия</b>
+                    <img src="assets/img/icons/check.svg" alt="check">
+                    <input type="checkbox" id="search__country--3">
+                </label>
+                <label class="sovet__search--item" for="search__country--4">
+                    <b>Испания</b>
+                    <img src="assets/img/icons/check.svg" alt="check">
+                    <input type="checkbox" id="search__country--4">
+                </label>
+                <label class="sovet__search--item" for="search__country--5">
+                    <b>Франция</b>
+                    <img src="assets/img/icons/check.svg" alt="check">
+                    <input type="checkbox" id="search__country--5">
+                </label>
+                <label class="sovet__search--item" for="search__country--6">
+                    <b>Швейцария</b>
+                    <img src="assets/img/icons/check.svg" alt="check">
+                    <input type="checkbox" id="search__country--6">
+                </label>
+                <label class="sovet__search--item" for="search__country--7">
+                    <b>Канада</b>
+                    <img src="assets/img/icons/check.svg" alt="check">
+                    <input type="checkbox" id="search__country--7">
+                </label>
+                <label class="sovet__search--item" for="search__country--8">
+                    <b>Кыргызтан</b>
+                    <img src="assets/img/icons/check.svg" alt="check">
+                    <input type="checkbox" id="search__country--8">
+                </label>
+            </div>
+
+            <div class="sovet__search--btns">
+                <div class="sovet__accept">Применить</div>
+                <div class="sovet__reset">Сбросить</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="breads">
+                <a href="/">Главная</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M7 4.53075L10.2346 7.76537L7 11" stroke="#B1B1B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                
+                <span>Зарубежные представители</span>
+            </div>
+            <h1 class="sovet__title big-title">Зарубежные представители</h1>
+            <div class="sovet__content">
+                <div class="sovet__left">
+                    <b>Страны</b>
+                    <div class="sovet__counts">
+                        <div class="sovet__count active">
+                            <span>Германия</span>
+                            <img src="assets/img/icons/check.svg" alt="icon">
+                        </div>
+                        <div class="sovet__count">
+                            <span>Австрия</span>
+                            <img src="assets/img/icons/check.svg" alt="icon">
+                        </div>
+                        <div class="sovet__count">
+                            <span>Нидерланды</span>
+                            <img src="assets/img/icons/check.svg" alt="icon">
+                        </div>
+                        <div class="sovet__count">
+                            <span>Венгрия</span>
+                            <img src="assets/img/icons/check.svg" alt="icon">
+                        </div>
+                        <div class="sovet__count">
+                            <span>Испания</span>
+                            <img src="assets/img/icons/check.svg" alt="icon">
+                        </div>
+                    </div>
+
+                    <div class="sovet__all" onClick="searchOpen()">
+                        <span class="gradient-text">Все страны</span>
+                        <img src="assets/img/icons/right.svg" alt="arrow">
+                    </div>
+                </div>
+                <div class="sovet__right">
+                    <div class="sovet__item foreign__item active">
+                        <div class="foreign__img">
+                            <picture>
+                                <img src="assets/img/foreign.png" alt="person">
+                            </picture>
+                        </div>
+
+                        <div class="foreign__text">
+                            <div class="foreign__text--top">
+                                <b>Михаэль Хармс</b>
+                                <p>Директор Восточного комитета германской экономики</p>
+                            </div>
+                            
+                            <ul>
+                                <li>Руководит стратегическими инициативами, направленными на развитие торговых 
+                                    отношений, инвестиционных проектов и устойчивого бизнеса.
+                                </li>
+                                <li>
+                                    Активно участвует в международных форумах и встречах на высшем уровне, 
+                                    включая Казахстанско-Германский деловой совет, где представляет немецкую 
+                                    сторону.
+                                
+                                </li>
+                                <li>
+                                    Основной акцент делает на укреплении связей в таких секторах, как 
+                                    энергетика, цифровизация, экология и транспорт.
+                                </li>   
+                            </ul>
+
+                            <div class="foreign__contacts">
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/call.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">+49 (0)30 206167-119</a>
+                                        <a href="">+49 (0)30 204457-876</a>
+                                    </div>
+                                </div>
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/whtsp.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">+49 (0)30 256477-120</a>
+                                    </div>
+                                </div>
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/mail2.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">info@oa-ev.de</a>
+                                    </div>
+                                </div>
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/www.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">www.ost-ausschuss.de</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img src="assets/img/icons/german.svg" alt="flag" class="foreign__flag">
+                    </div>
+                    <div class="sovet__item foreign__item">
+                        <div class="foreign__img">
+                            <picture>
+                                <img src="assets/img/speaker4.png" alt="person">
+                            </picture>
+                        </div>
+
+                        <div class="foreign__text">
+                            <div class="foreign__text--top">
+                                <b>Михаэль Хармс</b>
+                                <p>Директор Восточного комитета германской экономики</p>
+                            </div>
+                            
+                            <ul>
+                                <li>Руководит стратегическими инициативами, направленными на развитие торговых 
+                                    отношений, инвестиционных проектов и устойчивого бизнеса.
+                                </li>
+                                <li>
+                                    Активно участвует в международных форумах и встречах на высшем уровне, 
+                                    включая Казахстанско-Германский деловой совет, где представляет немецкую 
+                                    сторону.
+                                
+                                </li>
+                                <li>
+                                    Основной акцент делает на укреплении связей в таких секторах, как 
+                                    энергетика, цифровизация, экология и транспорт.
+                                </li>   
+                            </ul>
+
+                            <div class="foreign__contacts">
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/call.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">+49 (0)30 206167-119</a>
+                                        <a href="">+49 (0)30 204457-876</a>
+                                    </div>
+                                </div>
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/whtsp.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">+49 (0)30 256477-120</a>
+                                    </div>
+                                </div>
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/mail2.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">info@oa-ev.de</a>
+                                    </div>
+                                </div>
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/www.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">www.ost-ausschuss.de</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img src="assets/img/icons/german.svg" alt="flag" class="foreign__flag">
+                    </div>
+                    <div class="sovet__item foreign__item">
+                        <div class="foreign__img">
+                            <picture>
+                                <img src="assets/img/speaker3.png" alt="person">
+                            </picture>
+                        </div>
+
+                        <div class="foreign__text">
+                            <div class="foreign__text--top">
+                                <b>Михаэль Хармс</b>
+                                <p>Директор Восточного комитета германской экономики</p>
+                            </div>
+                            
+                            <ul>
+                                <li>Руководит стратегическими инициативами, направленными на развитие торговых 
+                                    отношений, инвестиционных проектов и устойчивого бизнеса.
+                                </li>
+                                <li>
+                                    Активно участвует в международных форумах и встречах на высшем уровне, 
+                                    включая Казахстанско-Германский деловой совет, где представляет немецкую 
+                                    сторону.
+                                
+                                </li>
+                                <li>
+                                    Основной акцент делает на укреплении связей в таких секторах, как 
+                                    энергетика, цифровизация, экология и транспорт.
+                                </li>   
+                            </ul>
+
+                            <div class="foreign__contacts">
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/call.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">+49 (0)30 206167-119</a>
+                                        <a href="">+49 (0)30 204457-876</a>
+                                    </div>
+                                </div>
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/whtsp.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">+49 (0)30 256477-120</a>
+                                    </div>
+                                </div>
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/mail2.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">info@oa-ev.de</a>
+                                    </div>
+                                </div>
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/www.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">www.ost-ausschuss.de</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img src="assets/img/icons/german.svg" alt="flag" class="foreign__flag">
+                    </div>
+                    <div class="sovet__item foreign__item">
+                        <div class="foreign__img">
+                            <picture>
+                                <img src="assets/img/speaker2.png" alt="person">
+                            </picture>
+                        </div>
+
+                        <div class="foreign__text">
+                            <div class="foreign__text--top">
+                                <b>Михаэль Хармс</b>
+                                <p>Директор Восточного комитета германской экономики</p>
+                            </div>
+                            
+                            <ul>
+                                <li>Руководит стратегическими инициативами, направленными на развитие торговых 
+                                    отношений, инвестиционных проектов и устойчивого бизнеса.
+                                </li>
+                                <li>
+                                    Активно участвует в международных форумах и встречах на высшем уровне, 
+                                    включая Казахстанско-Германский деловой совет, где представляет немецкую 
+                                    сторону.
+                                
+                                </li>
+                                <li>
+                                    Основной акцент делает на укреплении связей в таких секторах, как 
+                                    энергетика, цифровизация, экология и транспорт.
+                                </li>   
+                            </ul>
+
+                            <div class="foreign__contacts">
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/call.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">+49 (0)30 206167-119</a>
+                                        <a href="">+49 (0)30 204457-876</a>
+                                    </div>
+                                </div>
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/whtsp.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">+49 (0)30 256477-120</a>
+                                    </div>
+                                </div>
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/mail2.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">info@oa-ev.de</a>
+                                    </div>
+                                </div>
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/www.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">www.ost-ausschuss.de</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img src="assets/img/icons/german.svg" alt="flag" class="foreign__flag">
+                    </div>
+                    <div class="sovet__item foreign__item">
+                        <div class="foreign__img">
+                            <picture>
+                                <img src="assets/img/speaker1.png" alt="person">
+                            </picture>
+                        </div>
+
+                        <div class="foreign__text">
+                            <div class="foreign__text--top">
+                                <b>Михаэль Хармс</b>
+                                <p>Директор Восточного комитета германской экономики</p>
+                            </div>
+                            
+                            <ul>
+                                <li>Руководит стратегическими инициативами, направленными на развитие торговых 
+                                    отношений, инвестиционных проектов и устойчивого бизнеса.
+                                </li>
+                                <li>
+                                    Активно участвует в международных форумах и встречах на высшем уровне, 
+                                    включая Казахстанско-Германский деловой совет, где представляет немецкую 
+                                    сторону.
+                                
+                                </li>
+                                <li>
+                                    Основной акцент делает на укреплении связей в таких секторах, как 
+                                    энергетика, цифровизация, экология и транспорт.
+                                </li>   
+                            </ul>
+
+                            <div class="foreign__contacts">
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/call.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">+49 (0)30 206167-119</a>
+                                        <a href="">+49 (0)30 204457-876</a>
+                                    </div>
+                                </div>
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/whtsp.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">+49 (0)30 256477-120</a>
+                                    </div>
+                                </div>
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/mail2.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">info@oa-ev.de</a>
+                                    </div>
+                                </div>
+                                <div class="foreign__contact">
+                                    <img src="assets/img/icons/www.svg" alt="icon">
+                                    <div class="foreign__contact--links">
+                                        <a href="">www.ost-ausschuss.de</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img src="assets/img/icons/german.svg" alt="flag" class="foreign__flag">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

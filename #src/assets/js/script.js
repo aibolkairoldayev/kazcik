@@ -22,7 +22,10 @@ $('.partners').css('margin-left', smallMargin + 'px');
 $('.block2__bot').css('margin-left', smallMargin + 'px');
 $('.gallery').css('margin-left', smallMargin + 'px');
 $('.gallery__slider .arrowRight').css('right', smallMargin + 'px');
+$('.chrono').css('margin-left', smallMargin + 'px');
 $('.gallery__slider .arrowLeft').css('right', smallMargin + 50 + 'px');
+$('.chrono__slider .arrowRight').css('right', smallMargin + 'px');
+$('.chrono__slider .arrowLeft').css('right', smallMargin + 50 + 'px');
 
 //main page tabs
 const titles = document.querySelectorAll('.events__group--title');
@@ -157,8 +160,7 @@ $(document).ready(function() {
     renderCalendar(currentDate);
   });
 
-  //events page tab
-  //main page tabs
+//events page tab
 const titles2 = document.querySelectorAll('.events2__tab');
 const items2 = document.querySelectorAll('.events2__content');
 
@@ -171,4 +173,82 @@ titles2.forEach((title, index) => {
     });
 });
 
+// sovet page items active toggle
+$(document).ready(function () {
+    $('.sovet__count').on('click', function () {
+      const index = $(this).index('.sovet__count');
+      $(this).toggleClass('active');
+      $('.sovet__item').eq(index).toggleClass('active');
+    });
+});
+
+//search burger open/close
+function searchOpen() {
+    $('.sovet__search').addClass('open');
+}
+
+function searchClose() {
+    $('.sovet__search').removeClass('open');
+}
+
+//search burger items active toggle
+$(document).ready(function () {
+    // Клик по элементам sovet__search--item
+    $('.sovet__search--item').on('click', function (e) {
+      // Проверяем, был ли клик по чекбоксу
+      if ($(e.target).is('input[type="checkbox"]')) {
+        return; // Сохраняем стандартное поведение чекбокса
+      }
   
+      // Предотвращаем стандартное поведение для остальной части label
+      e.preventDefault();
+  
+      // Переключаем состояние чекбокса
+      const checkbox = $(this).find('input[type="checkbox"]');
+      checkbox.prop('checked', !checkbox.prop('checked'));
+  
+      // Переключаем класс active у текущего элемента
+      $(this).toggleClass('active');
+  
+      // Проверяем активные элементы для sovet__accept
+      updateAcceptState();
+    });
+  
+    // Клик по элементу sovet__reset
+    $('.sovet__reset').on('click', function () {
+      // Убираем класс active у всех sovet__search--item
+      $('.sovet__search--item').removeClass('active');
+  
+      // Сбрасываем чекбоксы
+      $('.sovet__search--item input[type="checkbox"]').prop('checked', false);
+  
+      // Убираем класс active у sovet__accept
+      $('.sovet__accept').removeClass('active');
+    });
+  
+    // Функция для обновления состояния sovet__accept
+    function updateAcceptState() {
+      if ($('.sovet__search--item.active').length > 0) {
+        $('.sovet__accept').addClass('active');
+      } else {
+        $('.sovet__accept').removeClass('active');
+      }
+    }
+  });
+  
+//sovetpage members tabs
+const titles4 = document.querySelectorAll('.members__tab');
+const items4 = document.querySelectorAll('.members__items');
+
+titles4.forEach((title, index) => {
+    title.addEventListener('click', () => {
+        titles4.forEach(t => t.classList.remove('active'));
+        items4.forEach(item => item.classList.remove('active'));
+        title.classList.add('active');
+        items4[index].classList.add('active');
+    });
+});
+
+setTimeout(() => {
+    $('.members__items').eq(1).removeClass('active'); // eq(1) выбирает второй элемент (индексация с 0)
+}, 100);

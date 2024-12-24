@@ -1,0 +1,363 @@
+<main class="main sovetPage">
+    <div class="sovet forbg">
+        <div class="sovet__bg1 bgtype">
+            <picture>
+                <img src="assets/img/bg-circle3.png" alt="bg">
+            </picture>
+        </div>
+        <div class="sovet__bg2 bgtype">
+            <picture>
+                <img src="assets/img/bg-left.png" alt="bg">
+            </picture>
+        </div>
+
+        <div class="sovet__search">
+            <div class="sovet__search--top">
+                <svg onClick="searchClose()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M10.334 12.6668L5.66732 8.00016L10.334 3.3335" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <label for="search" class="sovet__search--input">
+                    <img src="assets/img/icons/search.svg" alt="search">
+                    <input type="text" name="search" placeholder="Поиск страны">
+                </label>
+                
+            </div>
+
+            <div class="sovet__search--items">
+                <label for="search__country--1" class="sovet__search--item">
+                    <b>Германия</b>
+                    <img src="assets/img/icons/check.svg" alt="check">
+                    <input type="checkbox" id="search__country--1">
+                </label>
+                <label class="sovet__search--item" for="search__country--2">
+                    <b>Австрия</b>
+                    <img src="assets/img/icons/check.svg" alt="check">
+                    <input type="checkbox" id="search__country--2">
+                </label>
+                <label class="sovet__search--item" for="search__country--3">
+                    <b>Венгрия</b>
+                    <img src="assets/img/icons/check.svg" alt="check">
+                    <input type="checkbox" id="search__country--3">
+                </label>
+                <label class="sovet__search--item" for="search__country--4">
+                    <b>Испания</b>
+                    <img src="assets/img/icons/check.svg" alt="check">
+                    <input type="checkbox" id="search__country--4">
+                </label>
+                <label class="sovet__search--item" for="search__country--5">
+                    <b>Франция</b>
+                    <img src="assets/img/icons/check.svg" alt="check">
+                    <input type="checkbox" id="search__country--5">
+                </label>
+                <label class="sovet__search--item" for="search__country--6">
+                    <b>Швейцария</b>
+                    <img src="assets/img/icons/check.svg" alt="check">
+                    <input type="checkbox" id="search__country--6">
+                </label>
+                <label class="sovet__search--item" for="search__country--7">
+                    <b>Канада</b>
+                    <img src="assets/img/icons/check.svg" alt="check">
+                    <input type="checkbox" id="search__country--7">
+                </label>
+                <label class="sovet__search--item" for="search__country--8">
+                    <b>Кыргызтан</b>
+                    <img src="assets/img/icons/check.svg" alt="check">
+                    <input type="checkbox" id="search__country--8">
+                </label>
+            </div>
+
+            <div class="sovet__search--btns">
+                <div class="sovet__accept">Применить</div>
+                <div class="sovet__reset">Сбросить</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="breads">
+                <a href="/">Главная</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M7 4.53075L10.2346 7.76537L7 11" stroke="#B1B1B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                
+                <span>Деловые советы</span>
+            </div>
+            <h1 class="sovet__title big-title">Деловые советы</h1>
+            <div class="sovet__content">
+                <div class="sovet__left">
+                    <b>Страны</b>
+                    <div class="sovet__counts">
+                        <div class="sovet__count active">
+                            <span>Германия</span>
+                            <img src="assets/img/icons/check.svg" alt="icon">
+                        </div>
+                        <div class="sovet__count">
+                            <span>Австрия</span>
+                            <img src="assets/img/icons/check.svg" alt="icon">
+                        </div>
+                        <div class="sovet__count">
+                            <span>Нидерланды</span>
+                            <img src="assets/img/icons/check.svg" alt="icon">
+                        </div>
+                        <div class="sovet__count">
+                            <span>Венгрия</span>
+                            <img src="assets/img/icons/check.svg" alt="icon">
+                        </div>
+                        <div class="sovet__count">
+                            <span>Испания</span>
+                            <img src="assets/img/icons/check.svg" alt="icon">
+                        </div>
+
+                        <div class="sovet__count sovet__multi">
+                            <span>Многосторонний формат</span>
+                            <img src="assets/img/icons/check.svg" alt="icon">
+                        </div>
+                    </div>
+
+                    <div class="sovet__all" onClick="searchOpen()">
+                        <span class="gradient-text">Все страны</span>
+                        <img src="assets/img/icons/right.svg" alt="arrow">
+                    </div>
+                </div>
+                <div class="sovet__right">
+                    <div class="sovet__item active">
+                        <div class="sovet__top">
+                            <div class="sovet__flag">
+                                <img src="assets/img/icons/german.svg" alt="flag">
+                                <b>Германия</b>
+                            </div>
+                            <div class="sovet__status">
+                                &#8226; Действующий
+                            </div>
+                        </div>
+
+                        <div class="sovet__text">
+                            <div class="sovet__text--item">
+                                <p>Наименование</p>
+                                <b>Казахстанско-Германский Деловой Совет</b>
+                            </div>
+                            <div class="sovet__text--item">
+                                <p>Предмет договора</p>
+                                <b>
+                                    Соглашение о создании Совместного Делового Совета
+                                    <br><br>
+                                    Меморандум о создании Германо-Казахстанского Делового совета по стратегическому 
+                                    сотрудничеству
+                                </b>
+                            </div>
+                            <div class="sovet__text--item">
+                                <p>Дата подписания</p>
+                                <b>
+                                    3 сентября 2008, Астана
+                                    <br><br>
+                                    18 июля 2010, Астана
+                                </b>
+                            </div>
+                            <a class="sovet__btn">
+                                <span class="gradient-text">Подробнее</span>
+                                <img src="assets/img/icons/right.svg" alt="arrow">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sovet__item">
+                        <div class="sovet__top">
+                            <div class="sovet__flag">
+                                <img src="assets/img/icons/german.svg" alt="flag">
+                                <b>Австрия</b>
+                            </div>
+                            <div class="sovet__status">
+                                &#8226; Действующий
+                            </div>
+                        </div>
+
+                        <div class="sovet__text">
+                            <div class="sovet__text--item">
+                                <p>Наименование</p>
+                                <b>Казахстанско-Германский Деловой Совет</b>
+                            </div>
+                            <div class="sovet__text--item">
+                                <p>Предмет договора</p>
+                                <b>
+                                    Соглашение о создании Совместного Делового Совета
+                                    <br><br>
+                                    Меморандум о создании Германо-Казахстанского Делового совета по стратегическому 
+                                    сотрудничеству
+                                </b>
+                            </div>
+                            <div class="sovet__text--item">
+                                <p>Дата подписания</p>
+                                <b>
+                                    3 сентября 2008, Астана
+                                    <br><br>
+                                    18 июля 2010, Астана
+                                </b>
+                            </div>
+                            <a class="sovet__btn">
+                                <span>Подробнее</span>
+                                <img src="assets/img/icons/right.svg" alt="arrow">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sovet__item">
+                        <div class="sovet__top">
+                            <div class="sovet__flag">
+                                <img src="assets/img/icons/nether.svg" alt="flag">
+                                <b>Нидерланды</b>
+                            </div>
+                            <div class="sovet__status">
+                                &#8226; Действующий
+                            </div>
+                        </div>
+
+                        <div class="sovet__text">
+                            <div class="sovet__text--item">
+                                <p>Наименование</p>
+                                <b>Казахстанско-Германский Деловой Совет</b>
+                            </div>
+                            <div class="sovet__text--item">
+                                <p>Предмет договора</p>
+                                <b>
+                                    Соглашение о создании Совместного Делового Совета
+                                    <br><br>
+                                    Меморандум о создании Германо-Казахстанского Делового совета по стратегическому 
+                                    сотрудничеству
+                                </b>
+                            </div>
+                            <div class="sovet__text--item">
+                                <p>Дата подписания</p>
+                                <b>
+                                    3 сентября 2008, Астана
+                                    <br><br>
+                                    18 июля 2010, Астана
+                                </b>
+                            </div>
+                            <a class="sovet__btn">
+                                <span>Подробнее</span>
+                                <img src="assets/img/icons/right.svg" alt="arrow">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sovet__item">
+                        <div class="sovet__top">
+                            <div class="sovet__flag">
+                                <img src="assets/img/icons/german.svg" alt="flag">
+                                <b>Венгрия/b>
+                            </div>
+                            <div class="sovet__status">
+                                &#8226; Действующий
+                            </div>
+                        </div>
+
+                        <div class="sovet__text">
+                            <div class="sovet__text--item">
+                                <p>Наименование</p>
+                                <b>Казахстанско-Германский Деловой Совет</b>
+                            </div>
+                            <div class="sovet__text--item">
+                                <p>Предмет договора</p>
+                                <b>
+                                    Соглашение о создании Совместного Делового Совета
+                                    <br><br>
+                                    Меморандум о создании Германо-Казахстанского Делового совета по стратегическому 
+                                    сотрудничеству
+                                </b>
+                            </div>
+                            <div class="sovet__text--item">
+                                <p>Дата подписания</p>
+                                <b>
+                                    3 сентября 2008, Астана
+                                    <br><br>
+                                    18 июля 2010, Астана
+                                </b>
+                            </div>
+                            <a class="sovet__btn">
+                                <span>Подробнее</span>
+                                <img src="assets/img/icons/right.svg" alt="arrow">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sovet__item">
+                        <div class="sovet__top">
+                            <div class="sovet__flag">
+                                <img src="assets/img/icons/nether.svg" alt="flag">
+                                <b>Испания</b>
+                            </div>
+                            <div class="sovet__status">
+                                &#8226; Действующий
+                            </div>
+                        </div>
+
+                        <div class="sovet__text">
+                            <div class="sovet__text--item">
+                                <p>Наименование</p>
+                                <b>Казахстанско-Германский Деловой Совет</b>
+                            </div>
+                            <div class="sovet__text--item">
+                                <p>Предмет договора</p>
+                                <b>
+                                    Соглашение о создании Совместного Делового Совета
+                                    <br><br>
+                                    Меморандум о создании Германо-Казахстанского Делового совета по стратегическому 
+                                    сотрудничеству
+                                </b>
+                            </div>
+                            <div class="sovet__text--item">
+                                <p>Дата подписания</p>
+                                <b>
+                                    3 сентября 2008, Астана
+                                    <br><br>
+                                    18 июля 2010, Астана
+                                </b>
+                            </div>
+                            <a class="sovet__btn">
+                                <span>Подробнее</span>
+                                <img src="assets/img/icons/right.svg" alt="arrow">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sovet__item sovet__many">
+                        <div class="sovet__top">
+                            <div class="sovet__flag">
+                                <div class="flags">
+                                    <img src="assets/img/icons/asia.svg" alt="flag">
+                                    <img src="assets/img/icons/indi.svg" alt="flag">
+                                </div>
+                                
+                                <b>Центральная Азия-Индия</b>
+                            </div>
+                            <div class="sovet__status">
+                                &#8226; Действующий
+                            </div>
+                        </div>
+
+                        <div class="sovet__text">
+                            <div class="sovet__text--item">
+                                <p>Наименование</p>
+                                <b>Центрально Азиатский-Индийский Деловой Совет</b>
+                            </div>
+                            <div class="sovet__text--item">
+                                <p>Предмет договора</p>
+                                <b>
+                                    Соглашение о создании Совместного Делового Совета
+                                    <br><br>
+                                    Меморандум о создании Германо-Казахстанского Делового совета по стратегическому 
+                                    сотрудничеству
+                                </b>
+                            </div>
+                            <div class="sovet__text--item">
+                                <p>Дата подписания</p>
+                                <b>
+                                    3 сентября 2008, Астана
+                                    <br><br>
+                                    18 июля 2010, Астана
+                                </b>
+                            </div>
+                            <a class="sovet__btn">
+                                <span>Подробнее</span>
+                                <img src="assets/img/icons/right.svg" alt="arrow">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
