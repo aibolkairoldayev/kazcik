@@ -16,6 +16,23 @@ body {
   padding-top: 104px;
   position: relative;
 }
+
+@font-face {
+  font-family: 'MuseoSansCyrillic';
+  src: url('../fonts/museosanscyrl-500.woff2') format('woff2'),
+       url('../fonts/museosanscyrl-500.woff') format('woff'),
+       url('../fonts/museosanscyrl-500.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MuseoSansCyrillic';
+  src: url('../fonts/museosanscyrl-700.woff2') format('woff2'),
+       url('../fonts/museosanscyrl-700.woff') format('woff'),
+       url('../fonts/museosanscyrl-700.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 .container {
   max-width: 1360px;
   margin: 0 auto;

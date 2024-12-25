@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Source Sans 3", serif;
 }
 
 html {
@@ -104,6 +105,20 @@ body {
   position: relative;
 }
 
+@font-face {
+  font-family: "MuseoSansCyrillic";
+  src: url("../fonts/museosanscyrl-500.woff2") format("woff2"), url("../fonts/museosanscyrl-500.woff") format("woff"), url("../fonts/museosanscyrl-500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrillic";
+  src: url("../fonts/museosanscyrl-700.woff2") format("woff2"), url("../fonts/museosanscyrl-700.woff") format("woff"), url("../fonts/museosanscyrl-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 .container {
   max-width: 1360px;
   margin: 0 auto;
@@ -172,7 +187,7 @@ body {
   margin: 0 12px;
   color: rgba(36, 38, 36, 0.72);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -217,7 +232,7 @@ body {
   margin: 0 3px 0 8px;
   color: var(--light-grey, #B1B1B1);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -235,7 +250,7 @@ body {
   margin-left: 8px;
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -352,7 +367,7 @@ body {
 .main-title {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -406,7 +421,7 @@ body {
 .breads__prev a {
   color: var(--grey, #666) !important;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -417,7 +432,7 @@ body {
 .breads a {
   color: var(--light-grey, #B1B1B1);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -428,7 +443,7 @@ body {
 .breads span {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -443,7 +458,7 @@ body {
 .big-title {
   color: #000;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 44px;
   font-style: normal;
   font-weight: 700;
@@ -503,7 +518,7 @@ body {
 .main-service__text b {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -534,7 +549,7 @@ body {
   display: block;
   color: var(--white, #FFF);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -559,7 +574,7 @@ body {
   padding: 12px 24px;
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -602,7 +617,7 @@ body {
 
 .event-type__info span {
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -614,7 +629,7 @@ body {
   display: block;
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -626,7 +641,7 @@ body {
 .event-type__info p {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

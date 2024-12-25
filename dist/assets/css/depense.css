@@ -45,7 +45,7 @@
 .footer__gov {
   color: rgba(255, 255, 255, 0.72);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -66,7 +66,7 @@
 .footer__menu a {
   color: var(--white, #FFF);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -90,7 +90,7 @@
 .footer__serv a {
   color: var(--white, #FFF);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -119,7 +119,7 @@
 .footer__item p {
   color: var(--white, #FFF);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -146,7 +146,7 @@
 .footer__call--text span {
   color: var(--light-grey, #B1B1B1);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -158,7 +158,7 @@
 .footer__call--text a {
   color: var(--white, #FFF);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -168,7 +168,7 @@
 .footer__mail a {
   color: var(--white, #FFF);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -189,7 +189,7 @@
 .footer__lang {
   color: var(--light-grey, #B1B1B1);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -200,7 +200,7 @@
 .footer__law {
   color: var(--light-grey, #B1B1B1);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -221,7 +221,7 @@
 .footer__bot--right a {
   color: var(--light-grey, #B1B1B1);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -241,7 +241,7 @@
 .footer__made p {
   color: var(--light-grey, #B1B1B1);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -341,7 +341,7 @@
 .about__block1--top h2 {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -357,7 +357,7 @@
 .about__block1--left p {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -398,7 +398,7 @@
 
 .about__block1--more b {
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -451,7 +451,7 @@
 .about__block3 b {
   color: var(--white, #FFF);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -463,7 +463,7 @@
 .about__block3 p {
   color: var(--white, #FFF);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -505,7 +505,7 @@
 .block2__top h3 {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -520,7 +520,7 @@
 
 .block2__item b {
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -531,7 +531,7 @@
 .block2__item p {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -555,7 +555,7 @@
 .block2__numbers h3 {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -584,7 +584,7 @@
 
 .block2__numbers--item b {
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -595,7 +595,7 @@
 .block2__numbers--item p {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -663,7 +663,7 @@
 .block2__res--item b {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -684,7 +684,7 @@
 
 .block2__res--text span {
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -696,7 +696,7 @@
 .block2__res--text p {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -768,7 +768,7 @@
 .docs__item p {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -871,7 +871,7 @@
 .organ__top h2 {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -912,7 +912,7 @@
 .organ__info b {
   color: #000;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -924,7 +924,7 @@
 .organ__info p {
   color: var(--grey, #7A7A7A);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -986,7 +986,7 @@
 .organ__tabs--item span {
   color: var(--grey, #7A7A7A);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -1021,7 +1021,7 @@
 .organ__content--top b {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -1034,7 +1034,7 @@
 .organ__content--top p {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1087,7 +1087,7 @@
 .organ__elem--bot b {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -1100,7 +1100,7 @@
 .organ__elem--bot p {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1121,7 +1121,7 @@
 .organ__elem--info b {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -1132,7 +1132,7 @@
 .organ__elem--info p {
   color: var(--grey, #7A7A7A);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1144,7 +1144,7 @@
 .organ__elem--info a {
   color: #000;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -1210,7 +1210,7 @@
 .news2__right--item span {
   color: var(--grey, #7A7A7A);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -1223,7 +1223,7 @@
 .news2__right--item b {
   color: #000;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -1280,7 +1280,7 @@
   padding: 8px 16px;
   color: var(--white, #FFF);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -1296,7 +1296,7 @@
 .news2__left--text b {
   color: #FFF;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -1335,7 +1335,7 @@
 .news2__info span {
   color: var(--blue, #295481);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -1348,7 +1348,7 @@
 .news2__info b {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -1363,7 +1363,7 @@
   padding: 12px 24px;
   color: var(--white, #FFF);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -1421,7 +1421,7 @@
   margin-bottom: 32px;
   color: #000;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -1450,7 +1450,7 @@
 .new__content b {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -1463,7 +1463,7 @@
 .new__content p {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1483,7 +1483,7 @@
   padding-left: 20px;
   color: var(--grey2, #484848);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: italic;
   font-weight: 300;
@@ -1530,7 +1530,7 @@
 .new__btn span {
   color: var(--grey, #7A7A7A);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1546,7 +1546,7 @@
   display: block;
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -1558,7 +1558,7 @@
 .new__elem span {
   color: var(--grey, #666);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -1575,7 +1575,7 @@
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
   margin-bottom: 8px;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -1606,7 +1606,7 @@
   font-variant-numeric: lining-nums tabular-nums;
   display: block;
   margin-bottom: 12px;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -1630,7 +1630,7 @@
   font-variant-numeric: lining-nums tabular-nums;
   display: block;
   margin-bottom: 12px;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -1641,7 +1641,7 @@
 .new__also--item b {
   color: #000;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -1656,7 +1656,7 @@
 .new__others--title {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -1696,7 +1696,7 @@
 
 .new__others--info span {
   display: block;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -1708,7 +1708,7 @@
 .new__others--info b {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -1748,7 +1748,7 @@
   color: var(--black, #242624);
   text-align: center;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -1768,7 +1768,7 @@
   color: var(--light-grey, #B1B1B1);
   text-align: center;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1788,7 +1788,7 @@
   color: var(--TEXT-text-primary, #242624);
   text-align: center;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -1857,7 +1857,7 @@
 .events2__tab {
   color: var(--grey, #7A7A7A);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -1946,7 +1946,7 @@
   width: fit-content;
   color: var(--white, #FFF);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -1957,7 +1957,7 @@
 .events2__info b {
   color: #FFF;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -1977,7 +1977,7 @@
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
   text-align: center;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -2008,7 +2008,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -2088,7 +2088,7 @@
 .future__date b {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -2101,7 +2101,7 @@
 .future__date span {
   color: var(--grey, #666);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -2115,7 +2115,7 @@
   margin-bottom: 30px;
   color: var(--white, #FFF);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -2147,7 +2147,7 @@
 .future__down b {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -2170,7 +2170,7 @@
 
 .future__down--btn p {
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -2192,7 +2192,7 @@
 .future__time {
   width: 270px;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -2209,7 +2209,7 @@
   margin-bottom: 12px;
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -2220,7 +2220,7 @@
 .future__content p {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -2243,7 +2243,7 @@
 
 .future__video b {
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -2261,7 +2261,7 @@
   display: block;
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -2277,7 +2277,7 @@
 .future__others--title {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -2321,7 +2321,7 @@
 
 .future__more b {
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -2380,7 +2380,7 @@
 .speaker__info b {
   color: #000;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -2393,7 +2393,7 @@
 .speaker__info p {
   color: var(--grey, #7A7A7A);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -2408,7 +2408,7 @@
 .gallery__title {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -2511,7 +2511,7 @@
 .sovet__search--input input {
   color: var(--light-grey, #B1B1B1);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2522,7 +2522,7 @@
 .sovet__search--input input::-webkit-input-placeholder {
   color: var(--light-grey, #B1B1B1);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2533,7 +2533,7 @@
 .sovet__search--input input::-moz-placeholder {
   color: var(--light-grey, #B1B1B1);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2544,7 +2544,7 @@
 .sovet__search--input input:-ms-input-placeholder {
   color: var(--light-grey, #B1B1B1);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2555,7 +2555,7 @@
 .sovet__search--input input::-ms-input-placeholder {
   color: var(--light-grey, #B1B1B1);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2566,7 +2566,7 @@
 .sovet__search--input input::placeholder {
   color: var(--light-grey, #B1B1B1);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2654,7 +2654,7 @@
 .sovet__search--item b {
   color: var(--TEXT-text-primary, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2692,7 +2692,7 @@
 .sovet__reset {
   color: var(--light-grey, #B1B1B1);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -2724,7 +2724,7 @@
 .sovet__left b {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -2783,7 +2783,7 @@
 
 .sovet__all span {
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -2831,7 +2831,7 @@
 .sovet__flag b {
   color: #000;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -2842,7 +2842,7 @@
 .sovet__status {
   color: var(--gold, #FAB130);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -2859,7 +2859,7 @@
 .sovet__text--item p {
   color: var(--grey, #7A7A7A);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -2870,7 +2870,7 @@
 .sovet__text--item b {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -2889,7 +2889,7 @@
 
 .sovet__btn span {
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -2951,7 +2951,7 @@
 .sovetpage__left h1 {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -2966,7 +2966,7 @@
 .sovetpage__right p {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -2990,7 +2990,7 @@
   width: fit-content;
   color: var(--white, #FFF);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -3016,7 +3016,7 @@
   width: 350px;
   color: var(--white, #FFF);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -3028,7 +3028,7 @@
   width: calc(100% - 400px);
   color: var(--white, #FFF);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3073,7 +3073,7 @@
 .sovetpage__person--info b {
   color: #000;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -3085,7 +3085,7 @@
   color: var(--grey, #7A7A7A);
   font-variant-numeric: lining-nums tabular-nums;
   margin-top: 12px;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3100,7 +3100,7 @@
 .sovetpage__sekr--title {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -3135,7 +3135,7 @@
   top: 24px;
   right: 24px;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -3180,7 +3180,7 @@
 .sovetpage__sekr--info b {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -3191,7 +3191,7 @@
 .sovetpage__sekr--info a {
   color: var(--grey, #7A7A7A);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3221,7 +3221,7 @@
 .sovetpage__doc b {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -3242,7 +3242,7 @@
 .sovetpage__doc--item p {
   color: var(--grey, #7A7A7A);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3253,7 +3253,7 @@
 .sovetpage__doc--item span {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -3268,7 +3268,7 @@
 .chrono__title {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -3303,7 +3303,7 @@
   padding-right: 30px;
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3315,7 +3315,7 @@
   padding-right: 30px;
   color: #747474;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3374,7 +3374,7 @@
 .members__title {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -3396,7 +3396,7 @@
   margin-right: 30px;
   color: var(--grey, #7A7A7A);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -3408,7 +3408,7 @@
 .members__tab.active {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -3523,7 +3523,7 @@
 .members__info b {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -3535,7 +3535,7 @@
   margin: 8px 0 12px;
   color: var(--grey, #7A7A7A);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3546,7 +3546,7 @@
 .members__info span {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -3567,7 +3567,7 @@
 .members__contact a {
   color: #000;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -3617,7 +3617,7 @@
 .foreign__text--top b {
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Museo Sans Cyrl";
+  font-family: "MuseoSansCyrillic", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -3629,7 +3629,7 @@
   color: var(--grey, #7A7A7A);
   font-variant-numeric: lining-nums tabular-nums;
   margin-top: 8px;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3674,10 +3674,324 @@
 .foreign__contact--links a {
   color: #000;
   font-variant-numeric: lining-nums tabular-nums;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans 3", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
   /* 19.2px */
+}
+
+.pull {
+  overflow-y: hidden;
+}
+
+.pull__bg1 {
+  top: 100px;
+  right: 0;
+}
+
+.pull__bg1 img {
+  max-width: 500px;
+}
+
+.pull__bg2 {
+  bottom: -400px;
+  left: 0;
+}
+
+.pull__bg2 img {
+  max-width: 300px;
+}
+
+.pull__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pull__title h1 {
+  color: #000;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "MuseoSansCyrillic", sans-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  /* 61.6px */
+}
+
+.pull__add {
+  border-radius: 16px;
+  background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 151.86%));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 24px;
+  width: 280px;
+  cursor: pointer;
+}
+
+.pull__add b {
+  color: var(--white, #FFF);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Source Sans 3", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  /* 19.2px */
+}
+
+.pull__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.pull__sort {
+  border-radius: 16px;
+  background: var(--white, #FFF);
+  padding: 16px 24px;
+  width: 270px;
+  cursor: pointer;
+}
+
+.pull__sort--current {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pull__search {
+  height: 48px;
+  border-radius: 16px;
+  background: var(--white, #FFF);
+  padding: 12px 16px;
+}
+
+.pull__search label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.pull__search label img {
+  margin-right: 12px;
+}
+
+.pull__search label input {
+  color: var(--light-grey, #B1B1B1);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Source Sans 3", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  /* 22.4px */
+}
+
+.pull__search label input::-webkit-input-placeholder {
+  color: var(--light-grey, #B1B1B1);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Source Sans 3", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.pull__search label input::-moz-placeholder {
+  color: var(--light-grey, #B1B1B1);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Source Sans 3", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.pull__search label input:-ms-input-placeholder {
+  color: var(--light-grey, #B1B1B1);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Source Sans 3", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.pull__search label input::-ms-input-placeholder {
+  color: var(--light-grey, #B1B1B1);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Source Sans 3", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.pull__search label input::placeholder {
+  color: var(--light-grey, #B1B1B1);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Source Sans 3", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.pull__table {
+  padding: 24px 32px;
+  border-radius: 32px;
+  background: var(--white, #FFF);
+  margin-bottom: 120px;
+}
+
+.pull__table table {
+  width: 100%;
+}
+
+.pull__table tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #d7d2d2;
+}
+
+.pull__table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.pull__table th {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 16px;
+  width: 15.4%;
+}
+
+.pull__table th:last-child {
+  width: 7.7%;
+}
+
+.pull__table th span {
+  color: var(--grey, #7A7A7A);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Source Sans 3", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 19.2px */
+  text-align: start;
+}
+
+.pull__table th img {
+  margin-left: 10px;
+}
+
+.pull__table td {
+  color: var(--black, #242624);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Source Sans 3", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 19.2px */
+  padding: 12px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 16px;
+  width: 15.4%;
+}
+
+.pull__table td:last-child {
+  width: 7.7%;
+}
+
+.pull__table td.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.pull__table td.comment:hover b {
+  display: block;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.pull__table td.comment b {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  color: var(--grey, #7A7A7A);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Source Sans 3", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 19.2px */
+}
+
+.table__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.table__contact p {
+  width: 100%;
+  text-align: start;
 }
