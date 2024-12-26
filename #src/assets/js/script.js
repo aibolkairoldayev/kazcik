@@ -20,6 +20,7 @@ $('.services__items').css('margin-left', smallMargin + 'px');
 $('.events__bot').css('margin-left', smallMargin + 'px');
 $('.partners').css('margin-left', smallMargin + 'px');
 $('.block2__bot').css('margin-left', smallMargin + 'px');
+$('.serv__docs').css('margin-left', smallMargin + 'px');
 $('.gallery').css('margin-left', smallMargin + 'px');
 $('.gallery__slider .arrowRight').css('right', smallMargin + 'px');
 $('.chrono').css('margin-left', smallMargin + 'px');
@@ -66,7 +67,7 @@ titles3.forEach((title, index) => {
     });
 });
 
-// open and close callback modal
+// open and close modal1
 if ($('.modal').length) {
     function openModal() {
         $('.modal').addClass('show');
@@ -76,8 +77,53 @@ if ($('.modal').length) {
         $('.modal').removeClass('show');
         $('body').css('overflow', 'unset'); 
     }   
-    $('.modal__wrapper').click(()=> {
+    $('.modal__wrapper1').click(()=> {
         closeModal()
+    })
+}
+
+// open and close modal1
+if ($('.modal2').length) {
+    function openModal2() {
+        $('.modal2').addClass('show');
+        $('body').css('overflow', 'hidden'); 
+    }  
+    function closeModal2() {
+        $('.modal2').removeClass('show');
+        $('body').css('overflow', 'unset'); 
+    }   
+    $('.modal__wrapper2').click(()=> {
+        closeModal2()
+    })
+}
+
+// open and close modal3
+if ($('.modal3').length) {
+    function openModal3() {
+        $('.modal3').addClass('show');
+        $('body').css('overflow', 'hidden'); 
+    }  
+    function closeModal3() {
+        $('.modal3').removeClass('show');
+        $('body').css('overflow', 'unset'); 
+    }   
+    $('.modal__wrapper3').click(()=> {
+        closeModal3()
+    })
+}
+
+// open and close modal4
+if ($('.modal4').length) {
+    function openModal4() {
+        $('.modal4').addClass('show');
+        $('body').css('overflow', 'hidden'); 
+    }  
+    function closeModal4() {
+        $('.modal4').removeClass('show');
+        $('body').css('overflow', 'unset'); 
+    }   
+    $('.modal__wrapper4').click(()=> {
+        closeModal4()
     })
 }
 

@@ -530,7 +530,133 @@
   </div>
 </div>
 
-    
+    <div class="modal modaltype">
+    <div class="modal__wrapper1 modal__wrapper"></div>
+    <div class="modal__content modaltype__content">
+        <div class="modaltype__top">
+            <b>Оставить заявку </b>
+            <img src="assets/img/icons/close.svg" alt="close" onClick="closeModal()">
+        </div>
+
+        <form action="" id="modal-main">
+            <div class="modaltype__form1">
+                <input class="input-type" type="text" placeholder="Фамилия*" required>
+                <input class="input-type" type="text" placeholder="Имя*" required>
+                <input class="input-type" type="text" placeholder="Отчество">
+                <input class="input-type" type="text" placeholder="E-mail*" required>
+                <div class="input-type" class="phone__input">
+                    <div class="phone__input--flags">
+                        <div class="phone__input--current">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <textarea class="textarea-type"  id="" placeholder="Комментарии"></textarea>
+                <button class="modaltype__btn" type="submit">Отправить заявку</button>
+            </div>
+        </form>
+        
+    </div>
+</div>
+
+<div class="modal2 modaltype">
+    <div class="modal__wrapper2 modal__wrapper"></div>
+    <div class="modalw__content modaltype__content">
+        <div class="modaltype__top">
+            <b>Заявка на участие</b>
+            <img src="assets/img/icons/close.svg" alt="close" onClick="closeModal2()">
+        </div>
+        <form action="" id="modal-party">
+            <div class="modaltype__form2">
+                <div class="modaltype__item">
+                    <input class="input-type" type="text" placeholder="Название организации*" required>
+                    <input class="input-type" type="number" placeholder="БИН/ИИН организации*" required>
+                    <input class="input-type" type="text" placeholder="Сфера деятельности*" required>
+                    <input class="input-type" type="number" placeholder="Основной ОКЭД*" required>
+
+                </div>
+                <div class="modaltype__item">
+                    <input class="input-type" type="text" placeholder="ФИО*" required>
+                    <input class="input-type" type="text" placeholder="Ваша должность*" required>
+                    <div class="input-type" class="phone__input"></div>
+                    <label for="file">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M16.6654 9.14133L10.3617 15.4581C9.58942 16.2319 8.54202 16.6667 7.4499 16.6667C6.35777 16.6667 5.31038 16.2319 4.53813 15.4581C3.76588 14.6842 3.33203 13.6347 3.33203 12.5403C3.33203 11.4459 3.76588 10.3963 4.53813 9.62247L10.8418 3.30573C11.3567 2.78983 12.0549 2.5 12.783 2.5C13.5111 2.5 14.2094 2.78983 14.7242 3.30573C15.239 3.82163 15.5282 4.52134 15.5282 5.25093C15.5282 5.98052 15.239 6.68023 14.7242 7.19613L8.41363 13.5129C8.15621 13.7708 7.80708 13.9157 7.44304 13.9157C7.079 13.9157 6.72987 13.7708 6.47245 13.5129C6.21503 13.2549 6.07042 12.9051 6.07042 12.5403C6.07042 12.1755 6.21503 11.8256 6.47245 11.5677L12.296 5.73895" stroke="#7A7A7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input type="file" placeholder="Прикрепить удостоверение или паспорт">
+                    </label>
+                </div>
+                <button class="modaltype__btn" type="submit">Отправить заявку</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal3 modaltype">
+    <div class="modal__wrapper3 modal__wrapper"></div>
+    <div class="modalw__content modaltype__content">
+        <div class="modaltype__top">
+            <b>Вступить в Деловой Совет</b>
+            <img src="assets/img/icons/close.svg" alt="close" onClick="closeModal3()">
+        </div>
+        <form action="" id="modal-inner">
+            <div class="modaltype__form2">
+                <div class="modaltype__item">
+                    <input class="input-type" type="text" placeholder="Название организации*" required>
+                    <input class="input-type" type="number" placeholder="БИН/ИИН организации*" required>
+                    <input class="input-type" type="text" placeholder="Сфера деятельности*" required>
+                    <input class="input-type" type="number" placeholder="Основной ОКЭД*" required>
+                    <a href="">
+                        <img src="assets/img/icons/down.svg" alt="down">
+                        <span>Скачать шаблон .doc</span>
+                    </a>
+                </div>
+                <div class="modaltype__item">
+                    <input class="input-type" type="text" placeholder="ФИО*" required>
+                    <input class="input-type" type="text" placeholder="Ваша должность*" required>
+                    <div class="input-type" class="phone__input"></div>
+                    <label for="file">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M16.6654 9.14133L10.3617 15.4581C9.58942 16.2319 8.54202 16.6667 7.4499 16.6667C6.35777 16.6667 5.31038 16.2319 4.53813 15.4581C3.76588 14.6842 3.33203 13.6347 3.33203 12.5403C3.33203 11.4459 3.76588 10.3963 4.53813 9.62247L10.8418 3.30573C11.3567 2.78983 12.0549 2.5 12.783 2.5C13.5111 2.5 14.2094 2.78983 14.7242 3.30573C15.239 3.82163 15.5282 4.52134 15.5282 5.25093C15.5282 5.98052 15.239 6.68023 14.7242 7.19613L8.41363 13.5129C8.15621 13.7708 7.80708 13.9157 7.44304 13.9157C7.079 13.9157 6.72987 13.7708 6.47245 13.5129C6.21503 13.2549 6.07042 12.9051 6.07042 12.5403C6.07042 12.1755 6.21503 11.8256 6.47245 11.5677L12.296 5.73895" stroke="#7A7A7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input type="file" placeholder="Прикрепить удостоверение или паспорт">
+                    </label>
+                </div>
+                <button class="modaltype__btn" type="submit">Отправить заявку</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal4 modaltype">
+    <div class="modal__wrapper4 modal__wrapper"></div>
+    <div class="modal__content modaltype__content">
+        <div class="modaltype__top">
+            <b>Оставить заявку </b>
+            <img src="assets/img/icons/close.svg" alt="close" onClick="closeModal4()">
+        </div>
+
+        <form action="" id="modal-serv">
+            <div class="modaltype__form1">
+                <input class="input-type" type="text" placeholder="Наименование компании*" required>
+                <input class="input-type" type="text" placeholder="Отрасль*" required>
+                <input class="input-type" type="text" placeholder="Страна*">
+                <div class="input-type" class="phone__input">
+                    <div class="phone__input--flags">
+                        <div class="phone__input--current">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <input class="input-type" type="text" placeholder="E-mail">
+                <input class="input-type" type="text" placeholder="Дата визита">
+                <textarea class="textarea-type"  id="" placeholder="Комментарии"></textarea>
+                <button class="modaltype__btn" type="submit">Отправить заявку</button>
+            </div>
+        </form>
+        
+    </div>
+</div>
     <script src="./assets/js/jquery-3.2.1.min.js" defer></script>
 <script src="./assets/js/mask.min.js" defer></script>
  <script src="./assets/js/slick.js" defer></script>
