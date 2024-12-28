@@ -298,3 +298,30 @@ titles4.forEach((title, index) => {
 setTimeout(() => {
     $('.members__items').eq(1).removeClass('active'); // eq(1) выбирает второй элемент (индексация с 0)
 }, 100);
+
+// open and close search in header
+if ($('.header__search').length) {
+    function openSeacrh() {
+        $('.header__menu').addClass('hidden');
+        $('.header__input').addClass('show');
+        $('.header__search').addClass('hidden');
+    }  
+    function closeSearch() {
+        $('.header__menu').removeClass('hidden');
+        $('.header__input').removeClass('show');
+        $('.header__search').removeClass('hidden');
+    }   
+}
+
+//header search options open/close
+$(document).ready(function () {
+    $('.header__input input').on('input', function () {
+      const $options = $('.header__input--options');
+      if ($(this).val().trim() !== '') {
+        $options.addClass('active');
+      } else {
+        $options.removeClass('active');
+      }
+    });
+  });
+  

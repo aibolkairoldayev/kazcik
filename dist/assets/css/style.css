@@ -183,6 +183,85 @@ body {
   width: 100%;
 }
 
+.header__input {
+  display: none;
+  width: 800px;
+  border-radius: 16px;
+  background: rgba(225, 225, 225, 0.32);
+  padding: 12px 16px;
+  position: relative;
+}
+
+.header__input--close {
+  cursor: pointer;
+}
+
+.header__input--options {
+  position: absolute;
+  display: none;
+  border-radius: 24px;
+  background: var(--grey-0, #FFF);
+  -webkit-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  bottom: -140px;
+  left: 0;
+  padding: 8px;
+}
+
+.header__input--options.active {
+  display: block;
+}
+
+.header__input--option {
+  padding: 12px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.header__input--option span {
+  display: block;
+  width: calc(100% - 30px);
+  margin-left: 15px;
+  color: var(--black, #242624);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  /* 22.4px */
+}
+
+.header__input input {
+  width: 100%;
+  height: 100%;
+  margin: 0 12px;
+  color: var(--black, #242624);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.header__input.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__menu.hidden {
+  display: none;
+}
+
 .header__menu a {
   margin: 0 12px;
   color: rgba(36, 38, 36, 0.72);
@@ -210,6 +289,10 @@ body {
 .header__search {
   margin-right: 24px;
   cursor: pointer;
+}
+
+.header__search.hidden {
+  display: none;
 }
 
 .header__lang {

@@ -4042,7 +4042,7 @@
   height: -moz-fit-content;
   height: fit-content;
   position: sticky;
-  top: 0px;
+  top: 50px;
 }
 
 .serv__left {
@@ -4217,10 +4217,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 70px 0 80px;
 }
 
 .serv__info--title {
-  width: 375px;
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
   font-family: "MuseoSansCyrillic", sans-serif;
@@ -4229,10 +4233,6 @@
   font-weight: 700;
   line-height: 140%;
   /* 33.6px */
-}
-
-.serv__info--content {
-  width: calc(100% - 405px);
 }
 
 .serv__text {
@@ -4541,4 +4541,197 @@
 
 .include .serv__display h2 {
   width: 360px;
+}
+
+.contacts {
+  margin-bottom: 120px;
+}
+
+.contacts__bg1 {
+  top: 0px;
+  right: 0;
+}
+
+.contacts__bg1 img {
+  max-width: 400px;
+}
+
+.contacts__map {
+  margin: 45px 0;
+}
+
+.contacts__items {
+  border-radius: 24px;
+  background: var(--white, #FFF);
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px 16px;
+}
+
+.contacts__item b {
+  color: var(--black, #242624);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  font-family: "MuseoSansCyrillic", sans-serif;
+  display: block;
+  margin-bottom: 16px;
+  max-width: 400px;
+}
+
+.contacts__item--numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__item--numbers img {
+  margin-right: 8px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.contacts__item--links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts__item--links a {
+  color: #000;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  /* 19.2px */
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts__item--links a span {
+  color: var(--grey, #7A7A7A);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  /* 19.2px */
+}
+
+.map {
+  height: 580px;
+  position: relative;
+  padding: 48px;
+  margin: 48px 0;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
+  z-index: -1;
+}
+
+.map__items {
+  border-radius: 24px;
+  background: var(--white, #FFF);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 390px;
+  padding: 24px;
+}
+
+.map__item {
+  margin-bottom: 32px;
+}
+
+.map__item--title {
+  color: var(--black, #242624);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "MuseoSansCyrillic", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  margin-bottom: 12px;
+}
+
+.map__item--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.map__item--content img {
+  width: 20px;
+  margin-right: 8px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.map__item--text {
+  color: #000;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.map__item--text a {
+  color: #000;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.map__item--content2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.map__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+
+.map__social img {
+  margin-right: 8px;
+}
+
+.map__social span {
+  color: #000;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  /* 19.2px */
 }
