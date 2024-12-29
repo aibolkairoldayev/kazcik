@@ -86,10 +86,12 @@
         }
     }
     &__menu {
+        display: flex;
+        max-width: 780px;
         &.hidden {
             display: none;
         }
-        a {
+        &--link {
             margin: 0 12px;
             color: rgba(36, 38, 36, 0.72);
             font-variant-numeric: lining-nums tabular-nums;
@@ -97,7 +99,82 @@
             font-size: 16px;
             font-style: normal;
             font-weight: 600;
-            line-height: 120%; /* 19.2px */
+            line-height: 120%;
+            position: relative;
+            &.with-drop {
+                &:hover {
+                    .header__drop--up {
+                        display: block;
+                    }
+                    .header__drop--down {
+                        display: none;
+                    }
+                    span {
+                        background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 110.61%));
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                    .header__menu--drop {
+                        display: block;
+                    }
+                }
+            }
+        }
+        &--current {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            img {
+                transition: .3s linear;
+            }
+            .header__drop--up {
+                display: none;
+                transform: rotate(180deg);
+            }
+            span {
+                color: rgba(36, 38, 36, 0.72);
+                font-variant-numeric: lining-nums tabular-nums;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 120%; 
+            }
+           
+        }
+        &--hidden {
+            position: absolute;
+            width: 150%;
+            height: 60px;
+            bottom: -50px;
+        }
+        &--drop {
+            position: absolute;
+            border-radius: 24px;
+            background: var(--white, #FFF);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            padding: 24px;
+            bottom: -150px;
+            display: none;
+            left: 0;
+            a {
+                color: var(--black, #242624);
+                font-variant-numeric: lining-nums tabular-nums;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 120%;
+                margin-bottom: 8px;
+                white-space: nowrap;
+                display: block;
+                &:hover {
+                    background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 110.61%));
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            // display: none;
         }
     }
     &__mid {
@@ -113,20 +190,38 @@
         }
     }
     &__lang {
-        position: relative;
+        &--hidden {
+            height: 50px;
+            bottom: -48px;
+        }
+        &--drop {
+            bottom: -172px;
+        }
         &--current {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            span {
-                margin: 0 3px 0 8px;
-                color: var(--light-grey, #B1B1B1);
-                font-variant-numeric: lining-nums tabular-nums;
-                font-family: "Source Sans 3", serif;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 120%; /* 19.2px */
+            
+        }
+        &:hover {
+            .header__lang--current {
+                span {
+                    background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 110.61%));
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                .dropy {
+                    display: none;
+                }
+                .dropy2 {
+                    display: block;
+                    transition: .2s linear;
+                    transform: rotate(180deg);
+                }
+                .world {
+                    display: none;
+                }
+                .world2 {
+                    display: block;
+                }
             }
         }
     }
@@ -136,7 +231,6 @@
             margin-left: 8px;
             color: var(--black, #242624);
             font-variant-numeric: lining-nums tabular-nums;
-            font-family: "Source Sans 3", serif;
             font-size: 18px;
             font-style: normal;
             font-weight: 600;

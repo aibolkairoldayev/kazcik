@@ -5,12 +5,48 @@
         </a>
         <div class="header__text">
             <nav class="header__menu">
-                <a href="">О палате</a>
-                <a href="">Услуги</a>
-                <a href="">Международная деятельность</a>
-                <a href="">Новости</a>
-                <a href="">Мероприятия</a>
-                <a href="">Контакты</a>
+                <div class="header__menu--link with-drop" href="">
+                    <div class="header__menu--current">
+                        <span>О палате</span>
+                        <img class="header__drop--down" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="header__drop--up" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="header__menu--hidden"></div>
+                    <div class="header__menu--drop">
+                        <a href="">О палате</a>
+                        <a href="">Организационная структура</a>
+                        <a href="">Учредительные документы</a>
+                    </div>
+                </div>
+                <div class="header__menu--link with-drop" href="">
+                    <div class="header__menu--current">
+                        <span>Услуги</span>
+                        <img class="header__drop--down" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="header__drop--up" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="header__menu--hidden"></div>
+                    <div class="header__menu--drop">
+                        <a href="">Юридические услуги</a>
+                        <a href="">Carnet ATA</a>
+                        <a href="">Проведение мероприятий</a>
+                    </div>
+                </div>
+                <div class="header__menu--link with-drop" href="">
+                    <div class="header__menu--current">
+                        <span>Международная деятельность</span>
+                        <img class="header__drop--down" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="header__drop--up" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="header__menu--hidden"></div>
+                    <div class="header__menu--drop">
+                        <a href="">Деловые советы</a>
+                        <a href="">Зарубежные представители</a>
+                        <a href="">Пул иностранных предприятий</a>
+                    </div>
+                </div>
+                <a class="header__menu--link" href="">Новости</a>
+                <a class="header__menu--link" href="">Мероприятия</a>
+                <a class="header__menu--link" href="">Контакты</a>
             </nav>
 
             <div class="header__input">
@@ -34,11 +70,19 @@
                     <img src="assets/img/icons/search.svg" alt="search" onclick="openSeacrh()">
                 </div>
 
-                <div class="header__lang">
-                    <div class="header__lang--current">
-                        <img src="assets/img/icons/world.svg" alt="lang">
+                <div class="header__lang lang">
+                    <div class="header__lang--current lang__current">
+                        <img class="world" src="assets/img/icons/world.svg" alt="lang">
+                        <img class="world2" src="assets/img/icons/world2.svg" alt="lang">
                         <span>Русский</span>
                         <img class="dropy" src="assets/img/icons/drop.svg" alt="drop" >
+                        <img class="dropy2" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="header__lang--hidden lang__hidden"></div>
+                    <div class="header__lang--drop lang__drop">
+                        <span>Русский</span>
+                        <a href="">Қазақ</a>
+                        <a href="">English</a>
                     </div>
                 </div>                
             </div>
