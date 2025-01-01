@@ -5,15 +5,35 @@
         display: flex;
         justify-content: space-between;
         border-bottom: .5px solid #B1B1B1;
+        @media(max-width: 992px) {
+            padding: 30px 0;
+        }
+        @media(max-width: 768px) {
+            flex-direction: column;
+        }
     }
     &__left {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding-right: 100px;
+        @media(max-width: 1400px) {
+            padding-right: 70px;
+        }
+        @media(max-width: 1200px) {
+            padding-right: 20px;
+        }
+        @media(max-width: 768px) {
+            width: 100%;
+        }
     }
     &__logo {
         width: 170px;
+        @media(max-width: 768px) {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
         a {
             display: block;
             margin-bottom: 30px;
@@ -36,6 +56,13 @@
     &__menu {
         display: flex;
         flex-direction: column;
+        @media(max-width: 1200px) {
+            max-width: 260px;
+        }
+        @media(max-width: 768px) {
+            width: 100%;
+            margin: 24px 0;
+        }
         a {
             color: var(--white, #FFF);
             font-variant-numeric: lining-nums tabular-nums;
@@ -46,12 +73,25 @@
             line-height: 140%; /* 25.2px */
             margin-bottom: 12px;
             white-space: nowrap;
+            @media(max-width: 1200px) {
+                white-space:unset; 
+            }
+            @media(max-width: 992px) {
+                font-size: 16px;
+            }
         }
     }
     &__serv {
         display: flex;
         flex-direction: column;
         width: 255px;
+        @media(max-width: 1400px) {
+            margin: 0 20px;
+        }
+        @media(max-width: 768px) {
+            margin: 0;
+            width: 100%;
+        }
         a {
             color: var(--white, #FFF);
             font-variant-numeric: lining-nums tabular-nums;
@@ -64,6 +104,14 @@
             &.footer__serv--title {
                 font-weight: 600;
             }
+            @media(max-width: 992px) {
+                font-size: 16px;
+            }
+        }
+    }
+    &__right {
+        @media(max-width: 768px) {
+            margin-top: 24px;
         }
     }
     &__item {
@@ -81,7 +129,10 @@
             font-size: 18px;
             font-style: normal;
             font-weight: 600;
-            line-height: 140%; /* 25.2px */
+            line-height: 140%; 
+            @media(max-width: 768px) {
+                font-size: 16px;
+            }
         }
     }
     &__call {
@@ -107,6 +158,9 @@
                 font-style: normal;
                 font-weight: 600;
                 line-height: 140%;
+                @media(max-width: 768px) {
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -118,13 +172,47 @@
             font-size: 18px;
             font-style: normal;
             font-weight: 600;
-            line-height: 140%; /* 25.2px */
+            line-height: 140%; 
+            @media(max-width: 768px) {
+                font-size: 16px;
+            }
         }
     }
     &__bot {
         padding: 24px 0;
         display: flex;
         justify-content: space-between;
+        @media(max-width: 992px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &--right {
+            display: flex;
+            align-items: center;
+            gap: 45px;
+            @media(max-width: 576px) {
+                gap: 15px;
+            }
+            @media(max-width: 992px) {
+                margin-top: 20px;
+                width: 100%;
+                justify-content: space-between;
+            }
+            @media(max-width: 576px) {
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+            }
+            a {
+                color: var(--light-grey, #B1B1B1);
+                font-variant-numeric: lining-nums tabular-nums;
+                font-family: "Source Sans 3", serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%; /* 19.2px */
+            }
+        }
     }
     &__lang {
         &--hidden {
@@ -148,22 +236,10 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 120%; /* 19.2px */
-    }
-    &__bot {
-        &--right {
-            display: flex;
-            align-items: center;
-            gap: 45px;
-            a {
-                color: var(--light-grey, #B1B1B1);
-                font-variant-numeric: lining-nums tabular-nums;
-                font-family: "Source Sans 3", serif;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 120%; /* 19.2px */
-            }
+        line-height: 120%; 
+        @media(max-width: 576px) {
+            width: 100%;
+            margin-top: 12px;
         }
     }
     &__made {

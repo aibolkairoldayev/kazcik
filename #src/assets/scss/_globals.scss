@@ -15,6 +15,9 @@ body {
 .main {
   padding-top: 104px;
   position: relative;
+  @media (max-width: 576px) {
+    padding-top: 65px;
+  }
 }
 
 @font-face {
@@ -56,7 +59,7 @@ body {
   }
 
   @media (max-width: 576px) {
-    max-width: 100%;
+    max-width: calc(100% - 40px);
     margin: 0 20px;
   }
 }

@@ -16,6 +16,32 @@ $('.partners__items').slick({
     infinite: true,
     autoplay: true,
     arrows: false,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1.3,
+            }
+        }
+    ],
 });
 
 //event page gallery
@@ -27,7 +53,7 @@ $('.gallery__slider').slick({
     dots: false,
     nextArrow: '<div class="arrowRight"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M6.66602 16H25.3327" stroke="url(#paint0_linear_3095_62510)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 6.66666L25.3333 16L16 25.3333" stroke="url(#paint1_linear_3095_62510)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="paint0_linear_3095_62510" x1="15.0476" y1="15.9278" x2="14.7358" y2="19.2068" gradientUnits="userSpaceOnUse"><stop stop-color="#29817A"/><stop offset="1" stop-color="#0D1457"/></linearGradient><linearGradient id="paint1_linear_3095_62510" x1="20.1908" y1="5.31851" x2="4.07565" y2="9.85675" gradientUnits="userSpaceOnUse"><stop stop-color="#29817A"/><stop offset="1" stop-color="#0D1457"/></linearGradient></defs></svg></div>',
     prevArrow: '<div class="arrowLeft"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M6.66602 16H25.3327" stroke="url(#paint0_linear_3095_62510)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 6.66666L25.3333 16L16 25.3333" stroke="url(#paint1_linear_3095_62510)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="paint0_linear_3095_62510" x1="15.0476" y1="15.9278" x2="14.7358" y2="19.2068" gradientUnits="userSpaceOnUse"><stop stop-color="#29817A"/><stop offset="1" stop-color="#0D1457"/></linearGradient><linearGradient id="paint1_linear_3095_62510" x1="20.1908" y1="5.31851" x2="4.07565" y2="9.85675" gradientUnits="userSpaceOnUse"><stop stop-color="#29817A"/><stop offset="1" stop-color="#0D1457"/></linearGradient></defs></svg></div>',
-   
+    
 });
 
 //sovetpage chrono

@@ -29,7 +29,8 @@
 <header class="header">
     <div class="container">
         <a href="/" class="header__logo">
-            <img src="assets/img/icons/logo.svg" alt="logo">
+            <img class="header__logo--desk" src="assets/img/icons/logo.svg" alt="logo">
+            <img class="header__logo--mob" src="assets/img/icons/logo3.svg" alt="mob-logo">
         </a>
         <div class="header__text">
             <nav class="header__menu">
@@ -39,11 +40,11 @@
                         <img class="header__drop--down" src="assets/img/icons/drop.svg" alt="drop">
                         <img class="header__drop--up" src="assets/img/icons/drop2.svg" alt="drop">
                     </div>
-                    <div class="header__menu--hidden"></div>
+                    
                     <div class="header__menu--drop">
-                        <a href="">О палате</a>
-                        <a href="">Организационная структура</a>
-                        <a href="">Учредительные документы</a>
+                        <a href="about.html">О палате</a>
+                        <a href="organ.html">Организационная структура</a>
+                        <a href="docs.html">Учредительные документы</a>
                     </div>
                 </div>
                 <div class="header__menu--link with-drop" href="">
@@ -52,11 +53,11 @@
                         <img class="header__drop--down" src="assets/img/icons/drop.svg" alt="drop">
                         <img class="header__drop--up" src="assets/img/icons/drop2.svg" alt="drop">
                     </div>
-                    <div class="header__menu--hidden"></div>
+                    
                     <div class="header__menu--drop">
-                        <a href="">Юридические услуги</a>
-                        <a href="">Carnet ATA</a>
-                        <a href="">Проведение мероприятий</a>
+                        <a href="serv.html">Юридические услуги</a>
+                        <a href="serv.html">Carnet ATA</a>
+                        <a href="serv.html">Проведение мероприятий</a>
                     </div>
                 </div>
                 <div class="header__menu--link with-drop" href="">
@@ -65,16 +66,16 @@
                         <img class="header__drop--down" src="assets/img/icons/drop.svg" alt="drop">
                         <img class="header__drop--up" src="assets/img/icons/drop2.svg" alt="drop">
                     </div>
-                    <div class="header__menu--hidden"></div>
+                    
                     <div class="header__menu--drop">
-                        <a href="">Деловые советы</a>
-                        <a href="">Зарубежные представители</a>
-                        <a href="">Пул иностранных предприятий</a>
+                        <a href="sovet.html">Деловые советы</a>
+                        <a href="foreign.html">Зарубежные представители</a>
+                        <a href="pull.html">Пул иностранных предприятий</a>
                     </div>
                 </div>
-                <a class="header__menu--link" href="">Новости</a>
-                <a class="header__menu--link" href="">Мероприятия</a>
-                <a class="header__menu--link" href="">Контакты</a>
+                <a class="header__menu--link" href="news.html">Новости</a>
+                <a class="header__menu--link" href="events.html">Мероприятия</a>
+                <a class="header__menu--link" href="contacts.html">Контакты</a>
             </nav>
 
             <div class="header__input">
@@ -109,8 +110,8 @@
                     <div class="header__lang--hidden lang__hidden"></div>
                     <div class="header__lang--drop lang__drop">
                         <span>Русский</span>
-                        <a href="">Қазақ</a>
-                        <a href="">English</a>
+                        <a href="#">Қазақ</a>
+                        <a href="#">English</a>
                     </div>
                 </div>                
             </div>
@@ -118,6 +119,15 @@
                 <img src="assets/img/icons/call.svg" alt="call">
                 <b>+7 7172 27-96-16</b>
             </a>
+
+            <div class="burger__btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <path d="M31.5 15H10.5" stroke="#242624" stroke-opacity="0.72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M31.5 9H4.5" stroke="#242624" stroke-opacity="0.72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M31.5 21H4.5" stroke="#242624" stroke-opacity="0.72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M31.5 27H10.5" stroke="#242624" stroke-opacity="0.72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
         </div>
     </div>
 </header>
@@ -165,7 +175,7 @@
             <div class="banner__left">
                 <span class="banner__inf">Предстоящее мероприятие</span>
                 <div class="banner__slider">
-                    <a href="" class="banner__slide">
+                    <a href="future.html" class="banner__slide">
                         <div class="banner__slide--img">
                             <picture>
                                 <img src="assets/img/banner1.png" alt="banner">
@@ -177,7 +187,7 @@
                         </div>
                     </a>
 
-                    <a href="" class="banner__slide">
+                    <a href="future.html" class="banner__slide">
                         <div class="banner__slide--img">
                             <picture>
                                 <img src="assets/img/banner2.png" alt="banner">
@@ -191,12 +201,14 @@
                 </div>
             </div>
             <div class="banner__right">
-                <div class="banner__item">
+                <a href="past.html" class="banner__item">
                     <div class="banner__item--img">
                         <picture>
                             <img src="assets/img/banner2.png" alt="banner">
                         </picture>
                     </div>
+
+                    <span class="banner__inf2">Предстоящее мероприятие</span>
 
                     <div class="banner__item--info">
                         <p>21 апреля</p>
@@ -205,14 +217,16 @@
                             Пекине
                         </b>
                     </div>
-                </div>
+                </a>
 
-                <div class="banner__item">
+                <a href="past.html" class="banner__item">
                     <div class="banner__item--img">
                         <picture>
                             <img src="assets/img/banner3.png" alt="banner">
                         </picture>
                     </div>
+
+                    <span class="banner__inf2">Предстоящее мероприятие</span>
 
                     <div class="banner__item--info">
                         <p>25 марта</p>
@@ -220,7 +234,7 @@
                             Визит Министра Министерства иностранных дел РК К.Комбоса в РК
                         </b>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -230,7 +244,7 @@
             <div class="container">
                 <div class="small-width">
                     <h2 class="services__title main-title">Наши услуги</h2>
-                    <a class="center-btw" href="">
+                    <a class="center-btw" href="services.html">
                         <span class="gradient-text">Все услуги</span>
                         <img src="assets/img/icons/right.svg" alt="arrow">
                     </a>
@@ -239,7 +253,7 @@
         </div>
 
         <div class="services__items">
-            <a href="" class="services__item main-service">
+            <a href="serv.html" class="services__item main-service">
                 <div class="service__top main-service__top">
                     <div class="service__icon main-service__icon">
                         <img src="assets/img/icons/serv1.svg" alt="icon">
@@ -255,7 +269,7 @@
                 </div>
             </a>
 
-            <a href="" class="services__item main-service">
+            <a href="serv.html" class="services__item main-service">
                 <div class="service__top main-service__top">
                     <div class="service__icon main-service__icon">
                         <img src="assets/img/icons/serv2.svg" alt="icon">
@@ -271,7 +285,7 @@
                 </div>
             </a>
 
-            <a href="" class="services__item main-service">
+            <a href="serv.html" class="services__item main-service">
                 <div class="service__top main-service__top">
                     <div class="service__icon main-service__icon">
                         <img src="assets/img/icons/serv3.svg" alt="icon">
@@ -287,7 +301,7 @@
                 </div>
             </a>
 
-            <a href="" class="services__item main-service">
+            <a href="serv.html" class="services__item main-service">
                 <div class="service__top main-service__top">
                     <div class="service__icon main-service__icon">
                         <img src="assets/img/icons/serv4.svg" alt="icon">
@@ -301,7 +315,7 @@
                 </div>
             </a>
 
-            <a href="" class="services__item main-service">
+            <a href="serv.html" class="services__item main-service">
                 <div class="service__top main-service__top">
                     <div class="service__icon main-service__icon">
                         <img src="assets/img/icons/serv5.svg" alt="icon">
@@ -324,14 +338,14 @@
                 <section class="news">
                     <div class="news__top center-btw">
                         <h2 class="news__title main-title">Новости</h2>
-                        <a href="" class="center-btw">
+                        <a href="news.html" class="center-btw">
                             <span class="gradient-text">Все новости</span>
                             <img src="assets/img/icons/right.svg" alt="arrow">
                         </a>
                     </div>
     
                     <div class="news__items center-btw">
-                        <div class="news__item">
+                        <a href="newpage.html" class="news__item">
                             <div class="news__item--img">
                                 <picture>
                                     <img src="assets/img/new1.png" alt="new">
@@ -343,9 +357,9 @@
                                     Представитель ВПК Арман Есентаев об особенностях торговли с Афганистаном
                                 </p>
                             </div>
-                        </div>
+                        </a>
     
-                        <div class="news__item">
+                        <a href="newpage.html" class="news__item">
                             <div class="news__item--img">
                                 <picture>
                                     <img src="assets/img/new2.png" alt="new">
@@ -357,9 +371,9 @@
                                     В Белграде прошел Казахстанско-Сербский Бизнес-Форум
                                 </p>
                             </div>
-                        </div>
+                        </a>
     
-                        <div class="news__item">
+                        <a href="newpage.html" class="news__item">
                             <div class="news__item--img">
                                 <picture>
                                     <img src="assets/img/new3.png" alt="new">
@@ -371,9 +385,9 @@
                                     Деловой совет "Республика Корея - Центральная Азия"в...
                                 </p>
                             </div>
-                        </div>
+                        </a>
     
-                        <div class="news__item">
+                        <a href="newpage.html" class="news__item">
                             <div class="news__item--img">
                                 <picture>
                                     <img src="assets/img/new4.png" alt="new">
@@ -385,7 +399,7 @@
                                     Представитель ВПК Арман Есентаев об особенностях торговли с Афганистаном
                                 </p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </section>
     
@@ -469,7 +483,7 @@
                             <span class="events__group--title active">Предстоящие</span>
                             <span class="events__group--title">Прошедшие</span>
                         </div>
-                        <a href="">
+                        <a href="events.html">
                             Все мероприятия
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path d="M8 5.29612L12.8519 10.1481L8 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -670,7 +684,7 @@
             <div class="footer__top">
                 <div class="footer__left">
                     <div class="footer__logo">
-                        <a href="">
+                        <a href="/">
                             <img src="assets/img/icons/logo2.svg" alt="logo">
                         </a>
                         <a href="">
@@ -681,24 +695,24 @@
                 </div>
 
                 <nav class="footer__menu">
-                    <a href="">Главная</a>
-                    <a href="">О палате</a>
-                    <a href="">Новости</a>
-                    <a href="">Деловые советы</a>
-                    <a href="">Пул иностранных предприятий</a>
-                    <a href="">Зарубежные представители</a>
-                    <a href="">Контакты</a>
+                    <a href="/">Главная</a>
+                    <a href="about.html">О палате</a>
+                    <a href="news.html">Новости</a>
+                    <a href="sovet.html">Деловые советы</a>
+                    <a href="pull.html">Пул иностранных предприятий</a>
+                    <a href="foreign.html">Зарубежные представители</a>
+                    <a href="contacts.html">Контакты</a>
                 </nav>
 
                 <div class="footer__serv">
-                    <a href="" class="footer__serv--title">Услуги</a>
-                    <a href="">Проведение мероприятий</a>
-                    <a href="">Информационно-консалтинговые услуги</a>
-                    <a href="">Юридические услуги</a>
-                    <a href="">Таможенное сопровождение</a>
-                    <a href="">Carnet ATA</a>
-                    <a href="">Услуги для иностранных компаний</a>
-                    <a href="">Форс-мажор</a>
+                    <a href="services.html" class="footer__serv--title">Услуги</a>
+                    <a href="events.html">Проведение мероприятий</a>
+                    <a href="serv.html">Информационно-консалтинговые услуги</a>
+                    <a href="serv.html">Юридические услуги</a>
+                    <a href="serv.html">Таможенное сопровождение</a>
+                    <a href="serv.html">Carnet ATA</a>
+                    <a href="serv.html">Услуги для иностранных компаний</a>
+                    <a href="serv.html">Форс-мажор</a>
                 </div>
 
                 <div class="footer__right">
@@ -744,7 +758,7 @@
                     <a href="">Политика конфиденциальности</a>
                     <div class="footer__made">
                         <p>Разработано</p>
-                        <a href="">
+                        <a href="https://i-marketing.kz/">
                             <img src="assets/img/icons/imark.svg" alt="icon">
                         </a>
                     </div>

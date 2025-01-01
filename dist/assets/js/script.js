@@ -16,10 +16,18 @@ var wholeWidth = $(window).width();
 var containerWidth = $('.container').width();
 var containerMargin = (wholeWidth - containerWidth) / 2;
 var smallMargin =  containerMargin + 70;
-$('.services__items').css('margin-left', smallMargin + 'px');
-$('.events__bot').css('margin-left', smallMargin + 'px');
-$('.partners').css('margin-left', smallMargin + 'px');
-$('.block2__bot').css('margin-left', smallMargin + 'px');
+if($(window).width() > 1200) {
+    $('.services__items').css('margin-left', smallMargin + 'px');
+    $('.events__bot').css('margin-left', smallMargin + 'px');
+    $('.partners').css('margin-left', smallMargin + 'px');
+    $('.block2__bot').css('margin-left', smallMargin + 'px');
+} else {
+    $('.services__items').css('margin-left', containerMargin + 'px');
+    $('.events__bot').css('margin-left', containerMargin + 'px');
+    $('.partners').css('margin-left', containerMargin + 'px');
+    $('.block2__bot').css('margin-left', containerMargin + 'px');
+}
+
 $('.serv__docs').css('margin-left', smallMargin + 'px');
 $('.gallery').css('margin-left', smallMargin + 'px');
 $('.gallery__slider .arrowRight').css('right', smallMargin + 'px');
@@ -324,4 +332,38 @@ $(document).ready(function () {
       }
     });
   });
-  
+
+// menu dropdown active 
+$(document).ready(function() {
+    $('.with-drop').on('click', function() {
+      $('.with-drop').not(this).removeClass('active'); // Убирает класс у всех остальных
+      $(this).toggleClass('active'); // Переключает класс только у текущего элемента
+    });
+  });
+
+// sort dropdown in pull page
+$('.pull__sort--current').click(()=> {
+    $('.pull__sort--current').toggleClass('active');
+    $('.pull__sort--others').toggleClass('active');
+})
+
+//speakers modal close/open
+$(document).ready(function () {
+    const $modal = $(".modal-s");
+    const $modalItems = $(".modal-s__item");
+    
+    // Обработчик клика на спикеры
+    $(".speaker").on("click", function () {
+        const index = $(this).index(); // Получаем индекс текущего элемента
+
+        $modal.addClass("open"); // Добавляем класс "опэн" модальному окну
+        $modalItems.removeClass("active"); // Убираем класс "актив" у всех модальных элементов
+        $modalItems.eq(index).addClass("active"); // Добавляем класс "актив" нужному модальному элементу
+    });
+
+    // Обработчик клика на modal-s__close и modal-s__wrapper
+    $(".modal-s__close, .modal-s__wrapper").on("click", function () {
+        $modal.removeClass("open"); // Убираем класс "опэн" у модального окна
+        $modalItems.removeClass("active"); // Убираем класс "актив" у всех модальных элементов
+    });
+});
