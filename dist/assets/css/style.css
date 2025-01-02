@@ -94,6 +94,10 @@ body {
   background: #F5F5F7;
 }
 
+body::-webkit-scrollbar {
+  width: 0;
+}
+
 :root {
   --black: #242624;
   --white: #fff;
@@ -1408,6 +1412,11 @@ body {
     font-size: 24px;
   }
 
+  .breads {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .breads__prev a {
     font-size: 12px;
   }
@@ -1418,6 +1427,11 @@ body {
 
   .breads span {
     font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .breads svg {
+    margin: 0 5px;
   }
 
   .big-title {

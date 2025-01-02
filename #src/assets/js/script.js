@@ -21,15 +21,19 @@ if($(window).width() > 1200) {
     $('.events__bot').css('margin-left', smallMargin + 'px');
     $('.partners').css('margin-left', smallMargin + 'px');
     $('.block2__bot').css('margin-left', smallMargin + 'px');
+    $('.gallery').css('margin-left', smallMargin + 'px');
+    $('.serv__docs').css('margin-left', smallMargin + 'px');
 } else {
     $('.services__items').css('margin-left', containerMargin + 'px');
     $('.events__bot').css('margin-left', containerMargin + 'px');
     $('.partners').css('margin-left', containerMargin + 'px');
     $('.block2__bot').css('margin-left', containerMargin + 'px');
+    $('.gallery').css('margin-left', containerMargin + 'px');
+    $('.serv__docs').css('margin-left', containerMargin + 'px');
 }
 
-$('.serv__docs').css('margin-left', smallMargin + 'px');
-$('.gallery').css('margin-left', smallMargin + 'px');
+
+
 $('.gallery__slider .arrowRight').css('right', smallMargin + 'px');
 $('.chrono').css('margin-left', smallMargin + 'px');
 $('.gallery__slider .arrowLeft').css('right', smallMargin + 50 + 'px');
@@ -143,6 +147,21 @@ if($('.burger').length) {
 
     $('.burger__wrapper').click(()=> {
         toggleBurger()
+    })
+}
+
+// open and close video
+if ($('.modal-v').length) {
+    function openVideo() {
+        $('.modal-v').addClass('show');
+        $('body').css('overflow', 'hidden'); 
+    }  
+    function closeVideo() {
+        $('.modal-v').removeClass('show');
+        $('body').css('overflow', 'unset'); 
+    }   
+    $('.modal-v__wrapper').click(()=> {
+        closeVideo()
     })
 }
 
@@ -365,5 +384,23 @@ $(document).ready(function () {
     $(".modal-s__close, .modal-s__wrapper").on("click", function () {
         $modal.removeClass("open"); // Убираем класс "опэн" у модального окна
         $modalItems.removeClass("active"); // Убираем класс "актив" у всех модальных элементов
+    });
+});
+
+//organ person modal close/open
+$(document).ready(function () {
+    const $modal = $(".modal-o");
+    const $modalItems = $(".modal-o__item");
+
+    $(".organ__item").on("click", function () {
+        const index = $(this).index(); 
+        $modal.addClass("open"); 
+        $modalItems.removeClass("active"); 
+        $modalItems.eq(index).addClass("active"); 
+    });
+
+    $(".modal-o__close, .modal-o__wrapper").on("click", function () {
+        $modal.removeClass("open"); 
+        $modalItems.removeClass("active");
     });
 });

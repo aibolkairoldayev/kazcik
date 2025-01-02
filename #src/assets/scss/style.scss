@@ -168,6 +168,10 @@
     @media(max-width: 768px) {
         padding: 16px 0;
     }
+    @media(max-width: 576px) {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     &__prev {
         display: flex;
         align-items: center;
@@ -206,10 +210,14 @@
         line-height: 100%; 
         @media(max-width: 576px) {
             font-size: 12px;
+            white-space: nowrap;
         }
     }
     svg {
         margin: 0 8px;
+        @media(max-width: 576px) {
+            margin: 0 5px;
+        }
     }
 }
 

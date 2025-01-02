@@ -466,6 +466,16 @@
             </div>
         </div>
 
+        <div class="modal-v modaltype">
+            <div class="modal-v__wrapper modal__wrapper"></div>
+            <div class="modal-v__content modaltype__content">
+                <div class="modal-v__close" onClick="closeVideo()">
+                    <img src="assets/img/icons/close2.svg" alt="close">
+                </div>
+                <iframe src="https://www.youtube.com/embed/ZV1_5lm5ZQY?si=T1ZZzz1hLOT30N5S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
         <div class="container">
             <div class="breads">
                 <div class="breads__prev">
@@ -481,7 +491,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M7 4.53075L10.2346 7.76537L7 11" stroke="#B1B1B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>    
-                <a href="events.html">Новости</a>
+                <a href="events.html">Мероприятия</a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M7 4.53075L10.2346 7.76537L7 11" stroke="#B1B1B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>                
@@ -625,7 +635,7 @@
                                         Панельная сессия: «Текущие тенденции на мировых рынках и в индустриях, 
                                         их влияние на инвестиционные стратегии»
                                     </b>
-                                    <img class="future__video--btn" src="assets/img/icons/video.svg" alt="icon">
+                                    <img class="future__video--btn" src="assets/img/icons/video.svg" alt="icon" onClick="openVideo()">
                                 </div>                                
                                 <p>
                                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 

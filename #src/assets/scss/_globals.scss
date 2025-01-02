@@ -5,7 +5,10 @@ html, body { height: 100%;}
 body { 
   margin: 0; 
   font-family: "Source Sans 3", serif;
-  background: #F5F5F7;  
+  background: #F5F5F7;
+  &::-webkit-scrollbar {
+    width: 0;
+}  
 }
 :root {
   --black: #242624;
