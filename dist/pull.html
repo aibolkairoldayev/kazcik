@@ -188,7 +188,7 @@
                 </div>
             </div>
 
-            <div class="pull__table">
+            <div class="pull__table desk992">
                 <table>
                     <thead>
                         <tr>
@@ -344,6 +344,107 @@
                     </tbody>
                 </table>
             </div>
+
+            <div class="pull__items mob992">
+                <div class="pull_item">
+                    <div class="pull__row">
+                        <span>Пул иностранных предприятий</span>
+                        <b>Apple Inc.</b>
+                    </div>
+                    <div class="pull__row">
+                        <span>Отрасль</span>
+                        <p>Информационные технологии</p>
+                    </div>
+                    <div class="pull__row">
+                        <span>Страна</span>
+                        <p>США</p>
+                    </div>
+                    <div class="pull__row">
+                        <span>Контакты</span>
+                        <p>
+                            info@apple.com |  +1-800-275-2273
+                        </p>
+                    </div>
+                    <div class="pull__row">
+                        <span>Дата визита</span>
+                        <p>01.11.2024</p>
+                    </div>
+                    <div class="pull__row">
+                        <span>Интерес в работе с Казахста-ном</span>
+                        <p>Описание интереса 1</p>
+                    </div>
+                    <div class="pull__row">
+                        <span>Комментарий</span>
+                        <img src="assets/img/icons/comment.svg" alt="icon">
+                    </div>
+                </div>
+
+                <div class="pull_item">
+                    <div class="pull__row">
+                        <span>Пул иностранных предприятий</span>
+                        <b>Siemens AG</b>
+                    </div>
+                    <div class="pull__row">
+                        <span>Отрасль</span>
+                        <p>Машиностроение и промышленное оборудование </p>
+                    </div>
+                    <div class="pull__row">
+                        <span>Страна</span>
+                        <p>Германия</p>
+                    </div>
+                    <div class="pull__row">
+                        <span>Контакты</span>
+                        <p>
+                            info@apple.com |  +1-800-275-2273
+                        </p>
+                    </div>
+                    <div class="pull__row">
+                        <span>Дата визита</span>
+                        <p>01.11.2024</p>
+                    </div>
+                    <div class="pull__row">
+                        <span>Интерес в работе с Казахста-ном</span>
+                        <p>Описание интереса 1</p>
+                    </div>
+                    <div class="pull__row">
+                        <span>Комментарий</span>
+                        <img src="assets/img/icons/comment.svg" alt="icon">
+                    </div>
+                </div>
+
+                <div class="pull_item">
+                    <div class="pull__row">
+                        <span>Наименование компании</span>
+                        <b>Toyota Motor Corporation</b>
+                    </div>
+                    <div class="pull__row">
+                        <span>Отрасль</span>
+                        <p>Автомобилестроение </p>
+                    </div>
+                    <div class="pull__row">
+                        <span>Страна</span>
+                        <p>Япония</p>
+                    </div>
+                    <div class="pull__row">
+                        <span>Контакты</span>
+                        <p>
+                            info@apple.com |  +1-800-275-2273
+                        </p>
+                    </div>
+                    <div class="pull__row">
+                        <span>Дата визита</span>
+                        <p>01.11.2024</p>
+                    </div>
+                    <div class="pull__row">
+                        <span>Интерес в работе с Казахста-ном</span>
+                        <p>Описание интереса 1</p>
+                    </div>
+                    <div class="pull__row">
+                        <span>Комментарий</span>
+                        <img src="assets/img/icons/comment.svg" alt="icon">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </main>
@@ -480,7 +581,7 @@
                     </div>
                 </div>
                 <textarea class="textarea-type"  id="" placeholder="Комментарии"></textarea>
-                <button class="modaltype__btn" type="submit">Отправить заявку</button>
+                <button class="modaltype__btn" type="submit" onclick="thanksOpen()">Отправить заявку</button>
             </div>
         </form>
         
@@ -514,7 +615,7 @@
                         <input type="file" placeholder="Прикрепить удостоверение или паспорт">
                     </label>
                 </div>
-                <button class="modaltype__btn" type="submit">Отправить заявку</button>
+                <button class="modaltype__btn" type="submit" onclick="thanksOpen()">Отправить заявку</button>
             </div>
         </form>
     </div>
@@ -550,7 +651,7 @@
                         <input type="file" placeholder="Прикрепить удостоверение или паспорт">
                     </label>
                 </div>
-                <button class="modaltype__btn" type="submit">Отправить заявку</button>
+                <button class="modaltype__btn" type="submit" onclick="thanksOpen()">Отправить заявку</button>
             </div>
         </form>
     </div>
@@ -579,10 +680,23 @@
                 <input class="input-type" type="text" placeholder="E-mail">
                 <input class="input-type" type="text" placeholder="Дата визита">
                 <textarea class="textarea-type"  id="" placeholder="Комментарии"></textarea>
-                <button class="modaltype__btn" type="submit">Отправить заявку</button>
+                <button class="modaltype__btn" type="submit" onclick="thanksOpen()">Отправить заявку</button>
             </div>
         </form>
         
+    </div>
+</div>
+
+<div class="thanks modaltype">
+    <div class="thanks__wrapper modaltype__wrapper"></div>
+    <div class="thanks__content modaltype__content">
+        <div class="thanks__close" onclick="thanksClose()">
+            <img src="assets/img/icons/close2.svg" alt="close">
+        </div>
+        <b>
+            Ваша заявка была успешно отправлена
+        </b>
+        <p>Мы уже обрабатываем вашу заявку.</p>
     </div>
 </div>
     <script src="./assets/js/jquery-3.2.1.min.js" defer></script>

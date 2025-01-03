@@ -706,7 +706,7 @@
                     </div>
                 </div>
                 <textarea class="textarea-type"  id="" placeholder="Комментарии"></textarea>
-                <button class="modaltype__btn" type="submit">Отправить заявку</button>
+                <button class="modaltype__btn" type="submit" onclick="thanksOpen()">Отправить заявку</button>
             </div>
         </form>
         
@@ -740,7 +740,7 @@
                         <input type="file" placeholder="Прикрепить удостоверение или паспорт">
                     </label>
                 </div>
-                <button class="modaltype__btn" type="submit">Отправить заявку</button>
+                <button class="modaltype__btn" type="submit" onclick="thanksOpen()">Отправить заявку</button>
             </div>
         </form>
     </div>
@@ -776,7 +776,7 @@
                         <input type="file" placeholder="Прикрепить удостоверение или паспорт">
                     </label>
                 </div>
-                <button class="modaltype__btn" type="submit">Отправить заявку</button>
+                <button class="modaltype__btn" type="submit" onclick="thanksOpen()">Отправить заявку</button>
             </div>
         </form>
     </div>
@@ -805,10 +805,23 @@
                 <input class="input-type" type="text" placeholder="E-mail">
                 <input class="input-type" type="text" placeholder="Дата визита">
                 <textarea class="textarea-type"  id="" placeholder="Комментарии"></textarea>
-                <button class="modaltype__btn" type="submit">Отправить заявку</button>
+                <button class="modaltype__btn" type="submit" onclick="thanksOpen()">Отправить заявку</button>
             </div>
         </form>
         
+    </div>
+</div>
+
+<div class="thanks modaltype">
+    <div class="thanks__wrapper modaltype__wrapper"></div>
+    <div class="thanks__content modaltype__content">
+        <div class="thanks__close" onclick="thanksClose()">
+            <img src="assets/img/icons/close2.svg" alt="close">
+        </div>
+        <b>
+            Ваша заявка была успешно отправлена
+        </b>
+        <p>Мы уже обрабатываем вашу заявку.</p>
     </div>
 </div>
     <script src="./assets/js/jquery-3.2.1.min.js" defer></script>

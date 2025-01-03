@@ -534,6 +534,9 @@
         font-weight: 600;
         line-height: 120%; 
         margin-top: 24px;
+        &:hover {
+            background: linear-gradient(242deg, #29817A -65.93%, #0D1457 151.47%);
+        }
     }
 
 }
@@ -666,4 +669,104 @@
             display: block;
         }
     }
+}
+
+.thanks {
+    display: none;
+    &.open {
+        display: block;
+    }
+    &__wrapper {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.6;
+        z-index: 201;
+    }
+    &__content {
+        padding: 60px 32px 32px 32px;
+        width: 530px;
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: calc(50% - 110px);
+        @media(max-width: 576px) {
+            width: 90%;
+        }
+        b {
+            color: var(--black, #242624);
+            font-variant-numeric: lining-nums tabular-nums;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%; 
+            font-family: 'MuseoSansCyrillic', sans-serif;
+            display: block;
+            margin-bottom: 16px;
+            @media(max-width: 576px) {
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+        p {
+            color: var(--black, #242624);
+            text-align: center;
+            font-variant-numeric: lining-nums tabular-nums;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%; 
+            @media(max-width: 576px) {
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+    }
+    &__close {
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        cursor: pointer;
+    }
+
+}
+
+.desk992 {
+    @media(max-width: 992px) {
+        display: none;
+    }
+}
+
+.mob992 {
+    display: none;
+    @media(max-width: 992px) {
+        display: block;
+    }
+}
+
+.desk576 {
+    &.future__down--btn {
+        @media(max-width: 576px) {
+            display: none;
+        }
+    }
+    @media(max-width: 576px) {
+        display: none;
+    }
+}
+
+.mob576 {
+    display: none;
+    &.future__down--btn {
+        display: none;
+        @media(max-width: 576px) {
+            display: flex;
+        }
+    }
+    
 }
