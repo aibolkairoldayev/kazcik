@@ -146,7 +146,9 @@ if ($('.modal4').length) {
 //burger open/closes
 if($('.burger').length) {
     function toggleBurger() {
-        $('.burger').toggleClass('open');   
+        $('.burger').toggleClass('open'); 
+        $('.burger__btn').toggleClass('open'); 
+        $('body').toggleClass('hidden')
     }  
 
     $('.burger__wrapper').click(()=> {
@@ -391,24 +393,6 @@ $(document).ready(function () {
     });
 });
 
-//organ person modal close/open
-$(document).ready(function () {
-    const $modal = $(".modal-o");
-    const $modalItems = $(".modal-o__item");
-
-    $(".organ__item").on("click", function () {
-        const index = $(this).index(); 
-        $modal.addClass("open"); 
-        $modalItems.removeClass("active"); 
-        $modalItems.eq(index).addClass("active"); 
-    });
-
-    $(".modal-o__close, .modal-o__wrapper").on("click", function () {
-        $modal.removeClass("open"); 
-        $modalItems.removeClass("active");
-    });
-});
-
 //thanks modal open/close
 function thanksOpen() {
     $('.thanks').addClass('open');
@@ -422,3 +406,73 @@ function thanksClose() {
 $(".thanks__wrapper").on("click", function () {
     thanksClose();
 });
+
+
+//live popup open/close
+function liveOpen() {
+    $('.modal-o').addClass('open');
+    $('body').css('overflow', 'hidden'); 
+}  
+
+function liveClose() {
+    $('.modal-o').removeClass('open');
+    $('body').css('overflow', 'unset'); 
+}
+$(".modal-o__wrapper").on("click", function () {
+    liveClose();
+});
+
+// comments show/hide in pull page
+$(document).ready(function () {
+    // Обработка клика по кнопке comment__btn
+    $('.comment__btn').on('click', function (e) {
+      e.stopPropagation(); // Останавливаем всплытие, чтобы не закрыть при клике на кнопку
+      const parent = $(this).closest('.pull__item'); // Находим родительский pull__item
+      const comment = parent.find('.pull__comment'); // Находим pull__comment внутри этого pull__item
+  
+      $('.pull__comment').not(comment).removeClass('active'); // Убираем active у всех других pull__comment
+      comment.toggleClass('active'); // Переключаем active на текущем pull__comment
+    });
+  
+    // Убираем класс active при клике вне pull__comment
+    $(document).on('click', function () {
+      $('.pull__comment').removeClass('active');
+    });
+  
+    // Предотвращаем закрытие при клике на pull__comment
+    $('.pull__comment').on('click', function (e) {
+      e.stopPropagation(); // Останавливаем всплытие
+    });
+  });
+  
+//menu dropdown in burger
+$(document).ready(function () {
+    $('.burger__title').on('click', function () {
+        const parentItem = $(this).closest('.burger__item');
+        const isActive = parentItem.hasClass('active');
+        $('.burger__item').removeClass('active');
+        if (!isActive) {
+            parentItem.addClass('active');
+        }
+    });
+});
+
+// modal dropdown func
+$(document).ready(function () {
+    $(".input__drop--current").on("click", function () {
+        $(this).parent(".input__drop").toggleClass("active");
+    });
+
+    $(".input__drop--other").on("click", function () {
+        const selectedText = $(this).text(); 
+        $(".input__drop--current b").text(selectedText); 
+        $(this).closest(".input__drop").removeClass("active"); 
+    });
+
+    $(document).on("click", function (e) {
+        if (!$(e.target).closest(".input__drop").length) {
+            $(".input__drop").removeClass("active");
+        }
+    });
+});  
+  

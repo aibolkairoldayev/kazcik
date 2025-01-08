@@ -73,6 +73,9 @@
             line-height: 140%; /* 25.2px */
             margin-bottom: 12px;
             white-space: nowrap;
+            &:hover {
+                color: #fab130;
+            }
             @media(max-width: 1200px) {
                 white-space:unset; 
             }
@@ -101,8 +104,14 @@
             font-weight: 400;
             line-height: 120%; /* 21.6px */
             margin-bottom: 12px;
+            &:hover {
+                color: #fab130;
+            }
             &.footer__serv--title {
                 font-weight: 600;
+                &:hover {
+                    color: #fab130;
+                }
             }
             @media(max-width: 992px) {
                 font-size: 16px;

@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" type="text/css" media="screen" />
   <!-- Fallback that only gets inserted when JavaScript is disabled, in which case we can't load CSS asynchronously. -->
   <noscript>
     <link rel="stylesheet" href="./assets/css/depense.min.css">
@@ -41,6 +42,8 @@
                         <img class="header__drop--down" src="assets/img/icons/drop.svg" alt="drop">
                         <img class="header__drop--up" src="assets/img/icons/drop2.svg" alt="drop">
                     </div>
+
+                    <div class="header__menu--line"></div>
                     
                     <div class="header__menu--drop">
                         <a href="about.html">О палате</a>
@@ -55,6 +58,8 @@
                         <img class="header__drop--up" src="assets/img/icons/drop2.svg" alt="drop">
                     </div>
                     
+                    <div class="header__menu--line"></div>
+
                     <div class="header__menu--drop">
                         <a href="serv.html">Юридические услуги</a>
                         <a href="serv.html">Carnet ATA</a>
@@ -68,6 +73,8 @@
                         <img class="header__drop--up" src="assets/img/icons/drop2.svg" alt="drop">
                     </div>
                     
+                    <div class="header__menu--line"></div>
+
                     <div class="header__menu--drop">
                         <a href="sovet.html">Деловые советы</a>
                         <a href="foreign.html">Зарубежные представители</a>
@@ -80,9 +87,9 @@
             </nav>
 
             <div class="header__input">
-                <img src="assets/img/icons/search.svg" alt="search">
+                <img src="assets/img/icons/search.svg" alt="search" class="header__input--search">
                 <input type="text">
-                <img class="header__input--close" src="assets/img/icons/close.svg" alt="close" onClick="closeSearch()">
+                <img class="header__input--close" src="assets/img/icons/close3.svg" alt="close" onClick="closeSearch()">
                 <div class="header__input--options">
                     <div class="header__input--option">
                         <img src="assets/img/icons/search.svg" alt="search">
@@ -108,6 +115,7 @@
                         <img class="dropy" src="assets/img/icons/drop.svg" alt="drop" >
                         <img class="dropy2" src="assets/img/icons/drop2.svg" alt="drop">
                     </div>
+                    <div class="header__lang--line"></div>
                     <div class="header__lang--hidden lang__hidden"></div>
                     <div class="header__lang--drop lang__drop">
                         <span>Русский</span>
@@ -121,12 +129,15 @@
                 <b>+7 7172 27-96-16</b>
             </a>
 
-            <div class="burger__btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <div class="burger__btn" onclick="toggleBurger()">
+                <svg class="burger__icon1" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                     <path d="M31.5 15H10.5" stroke="#242624" stroke-opacity="0.72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M31.5 9H4.5" stroke="#242624" stroke-opacity="0.72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M31.5 21H4.5" stroke="#242624" stroke-opacity="0.72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M31.5 27H10.5" stroke="#242624" stroke-opacity="0.72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <svg class="burger__icon2" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <path d="M29 8L8 28M8 8L29 28" stroke="#242624" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </div>
         </div>
@@ -136,7 +147,83 @@
 <div class="burger">
     <div class="burger__wrapper"></div>
     <div class="burger__content">
-        
+        <div class="container">
+            <div class="burger__items">
+                <div class="burger__item">
+                    <a class="burger__link" href="/">Главная</a>
+                </div>
+                <div class="burger__item">
+                    <div class="burger__title">
+                        <b>О палате</b>
+                        <img class="burger__drop1" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="burger__drop2" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="burger__subs">
+                        <a class="burger__sub" href="about.html">О палате</a>
+                        <a class="burger__sub" href="organ.html">Организационная структура</a>
+                        <a class="burger__sub" href="docs.html">Учредительные документы</a>
+                    </div>
+                </div>
+    
+                <div class="burger__item">
+                    <div class="burger__title">
+                        <b>Услуги</b>
+                        <img class="burger__drop1" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="burger__drop2" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="burger__subs">
+                        <a class="burger__sub" href="serv.html">Юридические услуги</a>
+                        <a class="burger__sub" href="serv.html">Carnet ATA</a>
+                        <a class="burger__sub" href="serv.html">Проведение мероприятий</a>
+                    </div>
+                </div>
+    
+                <div class="burger__item">
+                    <div class="burger__title">
+                        <b>Международная деятельность</b>
+                        <img class="burger__drop1" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="burger__drop2" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="burger__subs">
+                        <a class="burger__sub" href="sovet.html">Деловые советы</a>
+                        <a class="burger__sub" href="foreign.html">Зарубежные представители</a>
+                        <a class="burger__sub" href="pull.html">Пул иностранных предприятий</a>
+                    </div>
+                </div>
+    
+                <div class="burger__item">
+                    <a class="burger__link" href="news.html">Новости</a>                    
+                </div>
+                <div class="burger__item">
+                    <a class="burger__link" href="events.html">Мероприятия</a>
+                </div>
+                <div class="burger__item">
+                    <a class="burger__link" href="contacts.html">Контакты</a>
+                </div>   
+                
+                <div class="burger__item">
+                    <div class="burger__title">
+                        <b>Язык</b>
+                        <img class="burger__drop1" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="burger__drop2" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="burger__subs">
+                        <a class="burger__sub burger__lang" href="sovet.html">
+                            <span>Қазақша</span>
+                            <img src="assets/img/icons/kaz.svg" alt="flag">
+                        </a>
+                        <a class="burger__sub burger__lang" href="foreign.html">
+                            <span>English</span>
+                            <img src="assets/img/icons/eng.svg" alt="flag">
+                        </a>
+                        <a class="burger__sub burger__lang" href="pull.html">
+                            <span>中国人</span>
+                            <img src="assets/img/icons/china.svg" alt="flag">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
     <main class="main contactsPage">
@@ -299,6 +386,7 @@
                     <a href="/">Главная</a>
                     <a href="about.html">О палате</a>
                     <a href="news.html">Новости</a>
+                    <a href="events.html">Мероприятия</a>
                     <a href="sovet.html">Деловые советы</a>
                     <a href="pull.html">Пул иностранных предприятий</a>
                     <a href="foreign.html">Зарубежные представители</a>
@@ -356,7 +444,7 @@
                 </div>  
                 <div class="footer__law">© 2024  kazcic.kz. Все права защищены.</div>
                 <div class="footer__bot--right">
-                    <a href="">Политика конфиденциальности</a>
+                    <a href="policy.html">Политика конфиденциальности</a>
                     <div class="footer__made">
                         <p>Разработано</p>
                         <a href="https://i-marketing.kz/">
@@ -404,13 +492,14 @@
                 <input class="input-type" type="text" placeholder="Имя*" required>
                 <input class="input-type" type="text" placeholder="Отчество">
                 <input class="input-type" type="text" placeholder="E-mail*" required>
-                <div class="input-type" class="phone__input">
+                <input class="input-type" placeholder="+7 ___-___-__-__" type="tel" required>
+                <!-- <div class="input-type" class="phone__input">
                     <div class="phone__input--flags">
                         <div class="phone__input--current">
                             <img src="" alt="">
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <textarea class="textarea-type"  id="" placeholder="Комментарии"></textarea>
                 <button class="modaltype__btn" type="submit" onclick="thanksOpen()">Отправить заявку</button>
             </div>
@@ -421,7 +510,7 @@
 
 <div class="modal2 modaltype">
     <div class="modal__wrapper2 modal__wrapper"></div>
-    <div class="modalw__content modaltype__content">
+    <div class="modal__content modaltype__content">
         <div class="modaltype__top">
             <b>Заявка на участие</b>
             <img src="assets/img/icons/close.svg" alt="close" onClick="closeModal2()">
@@ -438,13 +527,19 @@
                 <div class="modaltype__item">
                     <input class="input-type" type="text" placeholder="ФИО*" required>
                     <input class="input-type" type="text" placeholder="Ваша должность*" required>
-                    <div class="input-type" class="phone__input"></div>
-                    <label for="file">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M16.6654 9.14133L10.3617 15.4581C9.58942 16.2319 8.54202 16.6667 7.4499 16.6667C6.35777 16.6667 5.31038 16.2319 4.53813 15.4581C3.76588 14.6842 3.33203 13.6347 3.33203 12.5403C3.33203 11.4459 3.76588 10.3963 4.53813 9.62247L10.8418 3.30573C11.3567 2.78983 12.0549 2.5 12.783 2.5C13.5111 2.5 14.2094 2.78983 14.7242 3.30573C15.239 3.82163 15.5282 4.52134 15.5282 5.25093C15.5282 5.98052 15.239 6.68023 14.7242 7.19613L8.41363 13.5129C8.15621 13.7708 7.80708 13.9157 7.44304 13.9157C7.079 13.9157 6.72987 13.7708 6.47245 13.5129C6.21503 13.2549 6.07042 12.9051 6.07042 12.5403C6.07042 12.1755 6.21503 11.8256 6.47245 11.5677L12.296 5.73895" stroke="#7A7A7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <input type="file" placeholder="Прикрепить удостоверение или паспорт">
-                    </label>
+                    <input class="input-type" placeholder="+7 ___-___-__-__" type="tel" required>
+                    <!-- <div class="input-type" class="phone__input"></div> -->
+                    <div class="modaltype__file">
+                        <label for="file" >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6654 9.14133L10.3617 15.4581C9.58942 16.2319 8.54202 16.6667 7.4499 16.6667C6.35777 16.6667 5.31038 16.2319 4.53813 15.4581C3.76588 14.6842 3.33203 13.6347 3.33203 12.5403C3.33203 11.4459 3.76588 10.3963 4.53813 9.62247L10.8418 3.30573C11.3567 2.78983 12.0549 2.5 12.783 2.5C13.5111 2.5 14.2094 2.78983 14.7242 3.30573C15.239 3.82163 15.5282 4.52134 15.5282 5.25093C15.5282 5.98052 15.239 6.68023 14.7242 7.19613L8.41363 13.5129C8.15621 13.7708 7.80708 13.9157 7.44304 13.9157C7.079 13.9157 6.72987 13.7708 6.47245 13.5129C6.21503 13.2549 6.07042 12.9051 6.07042 12.5403C6.07042 12.1755 6.21503 11.8256 6.47245 11.5677L12.296 5.73895" stroke="#7A7A7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <span>Прикрепить удостоверение или паспорт</span>
+                            
+                        </label>
+                        <input type="file" id="file" placeholder="Прикрепить удостоверение или паспорт">
+                    </div>
                 </div>
                 <button class="modaltype__btn" type="submit" onclick="thanksOpen()">Отправить заявку</button>
             </div>
@@ -454,7 +549,7 @@
 
 <div class="modal3 modaltype">
     <div class="modal__wrapper3 modal__wrapper"></div>
-    <div class="modalw__content modaltype__content">
+    <div class="modal__content modaltype__content">
         <div class="modaltype__top">
             <b>Вступить в Деловой Совет</b>
             <img src="assets/img/icons/close.svg" alt="close" onClick="closeModal3()">
@@ -474,13 +569,20 @@
                 <div class="modaltype__item">
                     <input class="input-type" type="text" placeholder="ФИО*" required>
                     <input class="input-type" type="text" placeholder="Ваша должность*" required>
-                    <div class="input-type" class="phone__input"></div>
-                    <label for="file">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M16.6654 9.14133L10.3617 15.4581C9.58942 16.2319 8.54202 16.6667 7.4499 16.6667C6.35777 16.6667 5.31038 16.2319 4.53813 15.4581C3.76588 14.6842 3.33203 13.6347 3.33203 12.5403C3.33203 11.4459 3.76588 10.3963 4.53813 9.62247L10.8418 3.30573C11.3567 2.78983 12.0549 2.5 12.783 2.5C13.5111 2.5 14.2094 2.78983 14.7242 3.30573C15.239 3.82163 15.5282 4.52134 15.5282 5.25093C15.5282 5.98052 15.239 6.68023 14.7242 7.19613L8.41363 13.5129C8.15621 13.7708 7.80708 13.9157 7.44304 13.9157C7.079 13.9157 6.72987 13.7708 6.47245 13.5129C6.21503 13.2549 6.07042 12.9051 6.07042 12.5403C6.07042 12.1755 6.21503 11.8256 6.47245 11.5677L12.296 5.73895" stroke="#7A7A7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <input type="file" placeholder="Прикрепить удостоверение или паспорт">
-                    </label>
+                    <input class="input-type" placeholder="+7 ___-___-__-__" type="tel" required>
+                    <!-- <div class="input-type" class="phone__input"></div> -->
+                    <div class="modaltype__file">
+                        <label for="file" >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6654 9.14133L10.3617 15.4581C9.58942 16.2319 8.54202 16.6667 7.4499 16.6667C6.35777 16.6667 5.31038 16.2319 4.53813 15.4581C3.76588 14.6842 3.33203 13.6347 3.33203 12.5403C3.33203 11.4459 3.76588 10.3963 4.53813 9.62247L10.8418 3.30573C11.3567 2.78983 12.0549 2.5 12.783 2.5C13.5111 2.5 14.2094 2.78983 14.7242 3.30573C15.239 3.82163 15.5282 4.52134 15.5282 5.25093C15.5282 5.98052 15.239 6.68023 14.7242 7.19613L8.41363 13.5129C8.15621 13.7708 7.80708 13.9157 7.44304 13.9157C7.079 13.9157 6.72987 13.7708 6.47245 13.5129C6.21503 13.2549 6.07042 12.9051 6.07042 12.5403C6.07042 12.1755 6.21503 11.8256 6.47245 11.5677L12.296 5.73895" stroke="#7A7A7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <span>Прикрепить удостоверение или паспорт</span>
+                            
+                        </label>
+                        <input type="file" id="file" placeholder="Прикрепить удостоверение или паспорт">
+                    </div>
+                    
                 </div>
                 <button class="modaltype__btn" type="submit" onclick="thanksOpen()">Отправить заявку</button>
             </div>
@@ -500,16 +602,32 @@
             <div class="modaltype__form1">
                 <input class="input-type" type="text" placeholder="Наименование компании*" required>
                 <input class="input-type" type="text" placeholder="Отрасль*" required>
-                <input class="input-type" type="text" placeholder="Страна*">
-                <div class="input-type" class="phone__input">
+                <div class="input-type input__drop">
+                    <div class="input__drop--current">
+                        <b>Страна</b>
+                        <img class="input__drop1" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="input__drop2" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="input__drop--others">
+                        <div class="input__drop--other">Германия</div>
+                        <div class="input__drop--other">Казахстан</div>
+                        <div class="input__drop--other">Украниа</div>
+                        <div class="input__drop--other">Япония</div>
+                        <div class="input__drop--other">США</div>
+                        <div class="input__drop--other">Китай</div>
+                        <div class="input__drop--other">Мадагаскар</div>
+                    </div>
+                </div>
+                <input class="input-type" placeholder="+7 ___-___-__-__" type="tel" required>
+                <!-- <div class="input-type" class="phone__input">
                     <div class="phone__input--flags">
                         <div class="phone__input--current">
                             <img src="" alt="">
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <input class="input-type" type="text" placeholder="E-mail">
-                <input class="input-type" type="text" placeholder="Дата визита">
+                <input class="input-type" type="date" placeholder="Дата визита">
                 <textarea class="textarea-type"  id="" placeholder="Комментарии"></textarea>
                 <button class="modaltype__btn" type="submit" onclick="thanksOpen()">Отправить заявку</button>
             </div>
@@ -530,9 +648,10 @@
         <p>Мы уже обрабатываем вашу заявку.</p>
     </div>
 </div>
-    <script src="./assets/js/jquery-3.2.1.min.js" defer></script>
+    <script src="./assets/js/jquery-3.2.1.min.js" ></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script src="./assets/js/mask.min.js" defer></script>
- <script src="./assets/js/slick.js" defer></script>
+<script src="./assets/js/slick.js" defer></script>
 <script src="./assets/js/slides.min.js" defer></script>
 <script src="./assets/js/script.js" defer></script>
 

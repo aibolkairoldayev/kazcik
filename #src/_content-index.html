@@ -12,9 +12,9 @@
                 <a href="#" class="live__diplom">
                     &#8226; &nbsp; Прямая линия для дипломатических миссий
                 </a>
-                <a href="" class="live__dop">
+                <div class="live__dop" onClick="liveOpen()">
                     <span>
-                        Дополнительная иформация
+                        Дополнительная информация
                     </span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
                         <path d="M8.5 5.79612L13.3519 10.6481L8.5 15.5" stroke="url(#paint0_linear_2645_28640)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -25,7 +25,7 @@
                             </linearGradient>
                         </defs>
                     </svg>
-                </a>
+                </div>
             </div>
         </div>
     </section>
@@ -281,7 +281,7 @@
     
                     <div class="mission__img">
                         <picture>
-                            <img src="assets/img/mission.png" alt="mission">
+                            <img src="assets/img/mission2.jpg" alt="mission">
                         </picture>
                     </div>
                 </section>
@@ -537,4 +537,47 @@
             </a>
         </div>
     </section>
+
+    <div class="modal-o modaltype">
+        <div class="modal-o__wrapper modal__wrapper"></div>
+        <div class="modal-o__content modaltype__content">
+            <div class="modal-o__item">
+                <div class="modal-o__close" onClick="liveClose()">
+                    <img src="assets/img/icons/close2.svg" alt="icon">
+                </div>
+                <div class="modal-o__img">
+                    <picture>
+                        <img src="assets/img/org2.png" alt="person">
+                    </picture>
+                </div>
+                <div class="modal-o__info">
+                    <b>Дулатбек Икбаев</b>
+                    <p>
+                        Управляющий партнер McKinsey & Company в Центральной Азии
+                    </p>
+                    <ul>
+                        <li>
+                            Руководит стратегическими инициативами, направленными на развитие торговых 
+                            отношений, инвестиционных проектов и устойчивого бизнеса.
+                        </li>
+                    </ul>
+                    <div class="modal-o__info--links">
+                        <a href="" class="modal-o__info--link">
+                            <img src="assets/img/icons/call.svg" alt="call">
+                            <b>+7 701 829 95 33</b>
+                        </a>
+                        <a href="" class="modal-o__info--link">
+                            <img src="assets/img/icons/mail2.svg" alt="call">
+                            <b>info.icc.kz@gmail.com</b>
+                        </a>
+
+                        
+                    </div>
+                    <a href="" class="modal-o__live">
+                        &#8226; &nbsp; Прямая линия для дипломатических миссий
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>

@@ -6,6 +6,9 @@ body {
   margin: 0; 
   font-family: "Source Sans 3", serif;
   background: #F5F5F7;
+  &.hidden {
+    overflow-y: hidden;
+  }
   &::-webkit-scrollbar {
     width: 0;
 }  
@@ -21,6 +24,10 @@ body {
   @media (max-width: 576px) {
     padding-top: 65px;
   }
+}
+
+.preloader {
+  display: none;
 }
 
 @font-face {

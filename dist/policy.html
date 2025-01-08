@@ -226,511 +226,80 @@
         </div>
     </div>
 </div>
-    <main class="main pullPage">
-    <div class="pull forbg">
-        <div class="pull__bg1 bgtype">
-            <picture>
-                <img src="assets/img/bg-circle.png" alt="bg">
-            </picture>
-        </div>
-        <div class="pull__bg2 bgtype">
-            <picture>
-                <img src="assets/img/bg-left.png" alt="bg">
-            </picture>
-        </div>
-        <div class="container">
-            <div class="breads">
-                <a href="/">Главная</a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M7 4.53075L10.2346 7.76537L7 11" stroke="#B1B1B1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>Пул иностранных предприятий</span>
-            </div>
-            <div class="pull__title">
-                <h1>Пул иностранных предприятий</h1>
-                <div class="pull__add" onClick="openModal4()">
-                    <b>Добавить компанию</b>
-                    <img src="assets/img/icons/plus.svg" alt="plus">
-                </div>
-            </div>
+    <main class="main policyPage">
+    <div class="container">
+        <h1 class="policy__title big-title">
+            Политика конфиденциальности
+        </h1>
 
-            <div class="pull__top">
-                <div class="pull__sort">
-                    <div class="pull__sort--current">
-                        <span>Сортировать по</span>
-                        <img class="sorticon1" src="assets/img/icons/sort.svg" alt="sort">
-                        <img class="sorticon2" src="assets/img/icons/sort2.svg" alt="sort">
-                    </div>
-                    <div class="pull__sort--others">
-                        <div class="pull__sort--other">По названию</div>
-                        <div class="pull__sort--other">По дате</div>
-                    </div>
-                </div>
-
-                <div class="pull__search desk576">
-                    <label for="pull__search">
-                        <img src="assets/img/icons/search.svg" alt="search">
-                        <input type="text" placeholder="Поиск">
-                    </label>
-                </div>
-
-                <div class="pull__filter mob576">
-                    <b>Фильтр</b>
-                    <img src="assets/img/icons/filter.svg" alt="filter">
-                </div>
-            </div>
-
-            <div class="pull__table desk992">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>
-                                <span>Наименование компании</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M14.7039 8L9.85194 12.8519L5 8" stroke="#7A7A7A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </th>
-                            <th>
-                                <span>Отрасль</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M14.7039 8L9.85194 12.8519L5 8" stroke="#7A7A7A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </th>
-                            <th>
-                                <span>Страна</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M14.7039 8L9.85194 12.8519L5 8" stroke="#7A7A7A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </th>
-                            <th>
-                                <span>Контакты</span>
-                            </th>
-                            <th>
-                                <span>Дата визита</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M14.7039 8L9.85194 12.8519L5 8" stroke="#7A7A7A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </th>
-                            <th>
-                                <span>Интерес в работе с Казахстаном</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M14.7039 8L9.85194 12.8519L5 8" stroke="#7A7A7A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </th>
-                            <th>
-                                <span>Коммента-рий</span>
-                            </th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>
-                                Apple Inc.
-                            </td>
-                            <td>
-                                Информационные технологии
-                            </td>
-                            <td>США</td>
-                            <td class="table__contact">
-                                <p>info@apple.com |</p>  
-                                <p>+1-800-275-2273</p>
-                            </td>
-                            <td>
-                                01.11.2024
-                            </td>
-                            <td>Описание интереса 1</td>
-                            <td class="comment">
-                                <b>
-                                    Машиностроение и промышленное оборудование, Энергетика и добыча полезных ископаемых 
-                                </b>
-                                <img src="assets/img/icons/comment.svg" alt="icon">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Siemens AG
-                            </td>
-                            <td>
-                                Машиностроение и промышленное оборудование 
-                            </td>
-                            <td>Германия</td>
-                            <td class="table__contact">
-                                <p>info@siemens.com |</p>  
-                                <p>+49-89-636-00</p>
-                            </td>
-                            <td>
-                                15.11.2024
-                            </td>
-                            <td>Описание интереса 2</td>
-                            <td class="comment">
-                                <b>
-                                    Машиностроение и промышленное оборудование, Энергетика и добыча полезных ископаемых 
-                                </b>
-                                <img src="assets/img/icons/comment.svg" alt="icon">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Toyota Motor Corporation
-                            </td>
-                            <td>
-                                Автомобилестроение 
-                            </td>
-                            <td>Япония</td>
-                            <td class="table__contact">
-                                <p>contact@toyota.com |</p>
-                                <p>+81-565-28-2121</p>
-                            </td>
-                            <td>
-                                10.12.2024
-                            </td>
-                            <td>Описание интереса 3</td>
-                            <td class="comment">
-                               
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Gazprom
-                            </td>
-                            <td>
-                                Энергетика и добыча полезных ископаемых 
-                            </td>
-                            <td>Россия</td>
-                            <td class="table__contact">
-                                <p>office@gazprom.ru |</p>
-                                <p>+7-495-719-3001</p>
-                            </td>
-                            <td>
-                                25.01.2025
-                            </td>
-                            <td>Описание интереса 4</td>
-                            <td class="comment">
-                                <b>
-                                    Машиностроение и промышленное оборудование, Энергетика и добыча полезных ископаемых 
-                                </b>
-                                <img src="assets/img/icons/comment.svg" alt="icon">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Huawei Technologies
-                            </td>
-                            <td>
-                                Телекоммуникации 
-                            </td>
-                            <td>Китай</td>
-                            <td class="table__contact">
-                                <p>global@huawei.com |</p>
-                                <p>+86-755-287-80808</p>
-                            </td>
-                            <td>
-                                15.02.2025
-                            </td>
-                            <td>Описание интереса 1</td>
-                            <td class="comment">
-                               
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="pull__items mob992">
-                <div class="pull__item">
-                    <div class="pull__row">
-                        <span>Наименование компании</span>
-                        <b>Apple Inc.</b>
-                    </div>
-                    <div class="pull__row">
-                        <span>Отрасль</span>
-                        <p>Информационные технологии</p>
-                    </div>
-                    <div class="pull__row">
-                        <span>Страна</span>
-                        <p>США</p>
-                    </div>
-                    <div class="pull__row">
-                        <span>Контакты</span>
-                        <p>
-                            info@apple.com |  +1-800-275-2273
-                        </p>
-                    </div>
-                    <div class="pull__row">
-                        <span>Дата визита</span>
-                        <p>01.11.2024</p>
-                    </div>
-                    <div class="pull__row">
-                        <span>Интерес в работе с Казахста-ном</span>
-                        <p>Описание интереса 1</p>
-                    </div>
-                    <div class="pull__row">
-                        <span>Комментарий</span>
-                        <img src="assets/img/icons/comment.svg" alt="icon" class="comment__btn">
-                    </div>
-                    <div class="pull__comment">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    </div>
-                </div>
-
-                <div class="pull__item">
-                    <div class="pull__row">
-                        <span>Наименование компании</span>
-                        <b>Siemens AG</b>
-                    </div>
-                    <div class="pull__row">
-                        <span>Отрасль</span>
-                        <p>Машиностроение и промышленное оборудование </p>
-                    </div>
-                    <div class="pull__row">
-                        <span>Страна</span>
-                        <p>Германия</p>
-                    </div>
-                    <div class="pull__row">
-                        <span>Контакты</span>
-                        <p>
-                            info@apple.com |  +1-800-275-2273
-                        </p>
-                    </div>
-                    <div class="pull__row">
-                        <span>Дата визита</span>
-                        <p>01.11.2024</p>
-                    </div>
-                    <div class="pull__row">
-                        <span>Интерес в работе с Казахста-ном</span>
-                        <p>Описание интереса 1</p>
-                    </div>
-                    <div class="pull__row">
-                        <span>Комментарий</span>
-                        <img src="assets/img/icons/comment.svg" alt="icon" class="comment__btn">
-                    </div>
-                    <div class="pull__comment">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    </div>
-                </div>
-
-                <div class="pull__item">
-                    <div class="pull__row">
-                        <span>Наименование компании</span>
-                        <b>Toyota Motor Corporation</b>
-                    </div>
-                    <div class="pull__row">
-                        <span>Отрасль</span>
-                        <p>Автомобилестроение </p>
-                    </div>
-                    <div class="pull__row">
-                        <span>Страна</span>
-                        <p>Япония</p>
-                    </div>
-                    <div class="pull__row">
-                        <span>Контакты</span>
-                        <p>
-                            info@apple.com |  +1-800-275-2273
-                        </p>
-                    </div>
-                    <div class="pull__row">
-                        <span>Дата визита</span>
-                        <p>01.11.2024</p>
-                    </div>
-                    <div class="pull__row">
-                        <span>Интерес в работе с Казахста-ном</span>
-                        <p>Описание интереса 1</p>
-                    </div>
-                    <div class="pull__row">
-                        <span>Комментарий</span>
-                        <img src="assets/img/icons/comment.svg" alt="icon" class="comment__btn">
-                    </div>
-                    <div class="pull__comment">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="filters">
-        <div class="filters__wrapper"></div>
-        <div class="filters__content">
-            <div class="filter2 filter-type active">
-                <div class="filter__line">
-                    <img src="assets/img/icons/line.svg" alt="line">
-                </div>
-                <div class="filter2__search">
-                    <img src="assets/img/icons/search.svg" alt="search">
-                    <input type="text" placeholder="Поиск ">
-                </div>
-                <div class="filter2__items">
-                    <div class="filter2__item">
-                        <b>Наименование компании</b>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                            <path d="M6 3.79612L10.8519 8.64806L6 13.5" stroke="#242624" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div class="filter2__item">
-                        <b>Отрасль</b>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                            <path d="M6 3.79612L10.8519 8.64806L6 13.5" stroke="#242624" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div class="filter2__item">
-                        <b>Страна</b>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                            <path d="M6 3.79612L10.8519 8.64806L6 13.5" stroke="#242624" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div class="filter2__item">
-                        <b>Интерес в работе с Казахстаном</b>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                            <path d="M6 3.79612L10.8519 8.64806L6 13.5" stroke="#242624" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                </div>
-                <div class="filter3 filter-type">
-                    <div class="filter__line">
-                        <img src="assets/img/icons/line.svg" alt="line">
-                    </div>
-                    <div class="filter3__inner active">
-                        <div class="filter3__title">
-                            Наименование компании
-                        </div>
-                        <form action="">
-                            <div class="filter3__items">
-                                <div class="filter3__item">
-                                    <b>Toyota</b>
-                                    <img src="assets/img/icons/check.svg" alt="check">
-                                </div>
-                                <div class="filter3__item">
-                                    <b>Samsung</b>
-                                    <img src="assets/img/icons/check.svg" alt="check">
-                                </div>
-                                <div class="filter3__item">
-                                    <b>Apple</b>
-                                    <img src="assets/img/icons/check.svg" alt="check">
-                                </div>
-                                
-                            </div>
-                            <div class="filter3__btns">
-                                <button class="filter3__accept">Применить</button>
-                                <button class="filter3__reject">Сбросить</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="filter3__inner">
-                        <div class="filter3__title">
-                            Отрасль
-                        </div>
-                        <form action="">
-                            <div class="filter3__items">
-                                <div class="filter3__item">
-                                    <b>Машиностроение</b>
-                                    <img src="assets/img/icons/check.svg" alt="check">
-                                </div>
-                                <div class="filter3__item">
-                                    <b>Медицина</b>
-                                    <img src="assets/img/icons/check.svg" alt="check">
-                                </div>
-                                <div class="filter3__item">
-                                    <b>Информационные технологии</b>
-                                    <img src="assets/img/icons/check.svg" alt="check">
-                                </div>
-                                <div class="filter3__item">
-                                    <b>Оборудования для резки</b>
-                                    <img src="assets/img/icons/check.svg" alt="check">
-                                </div>
-                                
-                            </div>
-                            <div class="filter3__btns">
-                                <button class="filter3__accept">Применить</button>
-                                <button class="filter3__reject">Сбросить</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="filter3__inner">
-                        <div class="filter3__title">
-                            Интерес в работе с Казахстаном
-                        </div>
-                        <form action="">
-                            <div class="filter3__items">
-                                <div class="filter3__item">
-                                    <b>Комментарий 1</b>
-                                    <img src="assets/img/icons/check.svg" alt="check">
-                                </div>
-                                <div class="filter3__item">
-                                    <b>Комментарий 2</b>
-                                    <img src="assets/img/icons/check.svg" alt="check">
-                                </div>
-                                <div class="filter3__item">
-                                    <b>Комментарий 3</b>
-                                    <img src="assets/img/icons/check.svg" alt="check">
-                                </div>
-                                <div class="filter3__item">
-                                    <b>Комментарий 4</b>
-                                    <img src="assets/img/icons/check.svg" alt="check">
-                                </div>
-                                
-                            </div>
-                            <div class="filter3__btns">
-                                <button class="filter3__accept">Применить</button>
-                                <button class="filter3__reject">Сбросить</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="filter3__inner">
-                        <div class="filter3__title">
-                            Страна
-                        </div>
-                        <form action="">
-                            <div class="filter3__items">
-                                <div class="filter3__item">
-                                    <b>Германия</b>
-                                    <img src="assets/img/icons/check.svg" alt="check">
-                                </div>
-                                <div class="filter3__item">
-                                    <b>Нидерланды</b>
-                                    <img src="assets/img/icons/check.svg" alt="check">
-                                </div>
-                                <div class="filter3__item">
-                                    <b>Венгрия</b>
-                                    <img src="assets/img/icons/check.svg" alt="check">
-                                </div>
-                                <div class="filter3__item">
-                                    <b>Испания</b>
-                                    <img src="assets/img/icons/check.svg" alt="check">
-                                </div>
-                                <div class="filter3__item">
-                                    <b>Франция</b>
-                                    <img src="assets/img/icons/check.svg" alt="check">
-                                </div>
-                                <div class="filter3__item">
-                                    <b>Швейцария</b>
-                                    <img src="assets/img/icons/check.svg" alt="check">
-                                </div>
-                                <div class="filter3__item">
-                                    <b>Канада</b>
-                                    <img src="assets/img/icons/check.svg" alt="check">
-                                </div>
-                                <div class="filter3__item">
-                                    <b>Кыргызтан</b>
-                                    <img src="assets/img/icons/check.svg" alt="check">
-                                </div>
-                            </div>
-                            <div class="filter3__btns">
-                                <button class="filter3__accept">Применить</button>
-                                <button class="filter3__reject">Сбросить</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            
+        <div class="policy__text">
+            <b>1. Обрабатываемые данные</b><br><br>
+            1.1. Мы не осуществляем сбор ваших персональных данных с использованием Сайта.
+            <br><br>
+            1.2. Все данные, собираемые на Сайте, предоставляются и принимаются в обезличенной форме (далее – 
+            «Обезличенные данные»).
+            <br><br>
+            1.3. Обезличенные данные включают следующие сведения, которые не позволяют вас идентифицировать:
+            <br><br>
+            1.3.1. Информацию, которую вы предоставляете о себе самостоятельно с использованием онлайн-форм и 
+            программных модулей Сайта, включая имя или номер телефона и/или адрес электронной почты.
+            <br><br>
+            1.3.2. Данные, которые передаются в обезличенном виде в автоматическом режиме в зависимости от 
+            настроек используемого вами программного обеспечения.
+            <br><br>
+            1.4. Администрация вправе устанавливать требования к составу Обезличенных данных Пользователя, 
+            которые собираются использованием Сайта.
+            <br><br>
+            1.5. Если определенная информация не помечена как обязательная, ее предоставление или раскрытие 
+            осуществляется Пользователем на свое усмотрение и по собственной инициативе.
+            <br><br>
+            1.6. Администрация не осуществляет проверку достоверности предоставляемых данных и наличия у 
+            Пользователя необходимого согласия на их обработку в соответствии с настоящей Политикой, полагая, 
+            что Пользователь действует добросовестно, осмотрительно и прилагает все необходимые усилия к 
+            поддержанию такой информации в актуальном состоянии и получению всех необходимых согласий на ее 
+            использование.
+            <br><br>
+            1.7. Вы осознаете и принимаете возможность использования на Сайте программного обеспечения третьих 
+            лиц, в результате чего такие лица могут получать и передавать указанные в п.1.3 данные в 
+            обезличенном виде.
+            <br><br>
+            <b>2. Цели обработки данных</b><br><br>
+            2.1. Администрация использует данные в следующих целях:
+            <br><br>
+            2.1.1. Обработка поступающих запросов и связи с Пользователем;
+            <br><br>
+            2.1.2. Информационное обслуживание, включая рассылку рекламно-информационных материалов;
+            <br><br>
+            2.1.3. Проведение маркетинговых, статистических и иных исследований;
+            <br><br>
+            2.1.4. Таргетирование рекламных материалов на Сайте.
+            <br><br>
+            <b>3. Требования к защите данных</b><br><br>
+            3.1. Администрация осуществляет хранение данных и обеспечивает их охрану от несанкционированного 
+            доступа и распространения в соответствии с внутренними правилами и регламентами.
+            <br><br>
+            3.2. В отношении полученных данных сохраняется конфиденциальность, за исключением случаев, когда 
+            они сделаны Пользователем общедоступными, а также когда используемые на Сайте технологии и 
+            программное обеспечение третьих лиц либо настройки используемого Пользователем программного 
+            обеспечения предусматривают открытый обмен с данными лицами и/или иными участниками и 
+            пользователями сети Интернет.
+            <br><br>
+            3.3. В целях повышения качества работы Администрация вправе хранить лог-файлы о действиях, 
+            совершенных Пользователем в рамках использования Сайта в течение 1 (Одного) года.
+            <br><br>
+            <b>4. Передача данных</b><br><br>
+            4.1. Администрация вправе передать данные третьим лицам в следующих случаях:
+            <br><br>
+            Пользователь выразил свое согласие на такие действия, включая случаи применения Пользователем 
+            настроек используемого программного обеспечения, не ограничивающих предоставление определенной 
+            информации; <br>
+            Передача необходима в рамках использования Пользователем функциональных возможностей Сайта; <br>
+            Передача требуется в соответствии с целями обработки данных; <br>
+            В связи с передачей Сайта во владение, пользование или собственность такого третьего лица; <br>
+            По запросу суда или иного уполномоченного государственного органа в рамках установленной 
+            законодательством процедуры; <br>
+            Для защиты прав и законных интересов Администрации в связи с допущенными Пользователем 
+            нарушениями.
         </div>
     </div>
 </main>

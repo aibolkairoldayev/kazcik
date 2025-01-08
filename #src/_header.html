@@ -12,6 +12,8 @@
                         <img class="header__drop--down" src="assets/img/icons/drop.svg" alt="drop">
                         <img class="header__drop--up" src="assets/img/icons/drop2.svg" alt="drop">
                     </div>
+
+                    <div class="header__menu--line"></div>
                     
                     <div class="header__menu--drop">
                         <a href="about.html">О палате</a>
@@ -26,6 +28,8 @@
                         <img class="header__drop--up" src="assets/img/icons/drop2.svg" alt="drop">
                     </div>
                     
+                    <div class="header__menu--line"></div>
+
                     <div class="header__menu--drop">
                         <a href="serv.html">Юридические услуги</a>
                         <a href="serv.html">Carnet ATA</a>
@@ -39,6 +43,8 @@
                         <img class="header__drop--up" src="assets/img/icons/drop2.svg" alt="drop">
                     </div>
                     
+                    <div class="header__menu--line"></div>
+
                     <div class="header__menu--drop">
                         <a href="sovet.html">Деловые советы</a>
                         <a href="foreign.html">Зарубежные представители</a>
@@ -51,9 +57,9 @@
             </nav>
 
             <div class="header__input">
-                <img src="assets/img/icons/search.svg" alt="search">
+                <img src="assets/img/icons/search.svg" alt="search" class="header__input--search">
                 <input type="text">
-                <img class="header__input--close" src="assets/img/icons/close.svg" alt="close" onClick="closeSearch()">
+                <img class="header__input--close" src="assets/img/icons/close3.svg" alt="close" onClick="closeSearch()">
                 <div class="header__input--options">
                     <div class="header__input--option">
                         <img src="assets/img/icons/search.svg" alt="search">
@@ -79,6 +85,7 @@
                         <img class="dropy" src="assets/img/icons/drop.svg" alt="drop" >
                         <img class="dropy2" src="assets/img/icons/drop2.svg" alt="drop">
                     </div>
+                    <div class="header__lang--line"></div>
                     <div class="header__lang--hidden lang__hidden"></div>
                     <div class="header__lang--drop lang__drop">
                         <span>Русский</span>
@@ -92,12 +99,15 @@
                 <b>+7 7172 27-96-16</b>
             </a>
 
-            <div class="burger__btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <div class="burger__btn" onclick="toggleBurger()">
+                <svg class="burger__icon1" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
                     <path d="M31.5 15H10.5" stroke="#242624" stroke-opacity="0.72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M31.5 9H4.5" stroke="#242624" stroke-opacity="0.72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M31.5 21H4.5" stroke="#242624" stroke-opacity="0.72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M31.5 27H10.5" stroke="#242624" stroke-opacity="0.72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <svg class="burger__icon2" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <path d="M29 8L8 28M8 8L29 28" stroke="#242624" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </div>
         </div>
@@ -107,6 +117,82 @@
 <div class="burger">
     <div class="burger__wrapper"></div>
     <div class="burger__content">
-        
+        <div class="container">
+            <div class="burger__items">
+                <div class="burger__item">
+                    <a class="burger__link" href="/">Главная</a>
+                </div>
+                <div class="burger__item">
+                    <div class="burger__title">
+                        <b>О палате</b>
+                        <img class="burger__drop1" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="burger__drop2" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="burger__subs">
+                        <a class="burger__sub" href="about.html">О палате</a>
+                        <a class="burger__sub" href="organ.html">Организационная структура</a>
+                        <a class="burger__sub" href="docs.html">Учредительные документы</a>
+                    </div>
+                </div>
+    
+                <div class="burger__item">
+                    <div class="burger__title">
+                        <b>Услуги</b>
+                        <img class="burger__drop1" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="burger__drop2" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="burger__subs">
+                        <a class="burger__sub" href="serv.html">Юридические услуги</a>
+                        <a class="burger__sub" href="serv.html">Carnet ATA</a>
+                        <a class="burger__sub" href="serv.html">Проведение мероприятий</a>
+                    </div>
+                </div>
+    
+                <div class="burger__item">
+                    <div class="burger__title">
+                        <b>Международная деятельность</b>
+                        <img class="burger__drop1" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="burger__drop2" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="burger__subs">
+                        <a class="burger__sub" href="sovet.html">Деловые советы</a>
+                        <a class="burger__sub" href="foreign.html">Зарубежные представители</a>
+                        <a class="burger__sub" href="pull.html">Пул иностранных предприятий</a>
+                    </div>
+                </div>
+    
+                <div class="burger__item">
+                    <a class="burger__link" href="news.html">Новости</a>                    
+                </div>
+                <div class="burger__item">
+                    <a class="burger__link" href="events.html">Мероприятия</a>
+                </div>
+                <div class="burger__item">
+                    <a class="burger__link" href="contacts.html">Контакты</a>
+                </div>   
+                
+                <div class="burger__item">
+                    <div class="burger__title">
+                        <b>Язык</b>
+                        <img class="burger__drop1" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="burger__drop2" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="burger__subs">
+                        <a class="burger__sub burger__lang" href="sovet.html">
+                            <span>Қазақша</span>
+                            <img src="assets/img/icons/kaz.svg" alt="flag">
+                        </a>
+                        <a class="burger__sub burger__lang" href="foreign.html">
+                            <span>English</span>
+                            <img src="assets/img/icons/eng.svg" alt="flag">
+                        </a>
+                        <a class="burger__sub burger__lang" href="pull.html">
+                            <span>中国人</span>
+                            <img src="assets/img/icons/china.svg" alt="flag">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

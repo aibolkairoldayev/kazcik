@@ -362,6 +362,16 @@
     width: calc(50% - 12px);
     height: 290px;
     margin-bottom: 32px;
+    &:hover {
+        .event-type__info {
+            p {
+                color: #FAB130;
+            }
+            b {
+                color: #FAB130;
+            }
+        } 
+    }
     @media(max-width: 992px) {
         width: 100%;
     }
@@ -470,12 +480,19 @@
         padding: 32px;
         z-index: 202;
         top: 10%;
+       
+        @media(max-width: 576px) {
+            padding: 16px;
+        }
     }
     &__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 24px;
+        @media(max-width: 576px) {
+            margin-bottom: 16px;
+        }
         b {
             color: var(--black, #242624);
             font-variant-numeric: lining-nums tabular-nums;
@@ -497,11 +514,17 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        @media(max-width: 768px) {
+            flex-direction: column;
+        }
     }
     &__item {
         width: calc(50% - 8px);
         display: flex;
         flex-direction: column;
+        @media(max-width: 768px) {
+            width: 100%;
+        }
         label {
             display: flex;
             height: 50px;
@@ -534,11 +557,38 @@
         font-weight: 600;
         line-height: 120%; 
         margin-top: 24px;
+        @media(max-width: 576px) {
+            font-size: 14px;
+            margin-top: 12px;
+            padding: 14px 12px;
+        }
         &:hover {
             background: linear-gradient(242deg, #29817A -65.93%, #0D1457 151.47%);
         }
     }
-
+    &__file {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        input {
+            display: none;
+        }
+        svg {
+            width: 20px;
+            margin-right: 8px;
+        }
+        span {
+            color: var(--grey, #7A7A7A);
+            font-variant-numeric: lining-nums tabular-nums;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%; 
+            @media(max-width: 576px) {
+                font-size: 14px;
+            }
+        }
+    }
 }
 
 .modal__wrapper {
@@ -554,10 +604,17 @@
 
 .modal .modal__content, .modal4 .modal__content {
     width: 410px;
+    @media(max-width: 576px) {
+        width: 90%;
+    }
 } 
 
 .modal2 .modal__content, .modal3 .modal__content {
     width: 760px;
+   
+    @media(max-width: 768px) {
+        width: 90%;
+    }
 }
 
 .input-type {
@@ -572,13 +629,22 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140%; 
+    @media(max-width: 576px) {
+        height: 40px;
+        margin-bottom: 5px;
+        font-size: 14px;
+        padding: 10px 12px;
+    }
     &::placeholder {
         color: var(--grey, #7A7A7A);
         font-variant-numeric: lining-nums tabular-nums;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 140%; /* 22.4px */
+        line-height: 140%; 
+        @media(max-width: 576px) {
+            font-size: 14px;
+        }
     }
 }
 
@@ -593,13 +659,20 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140%; 
+    @media(max-width: 576px) {
+        font-size: 14px;
+        height: 45px;
+    }
     &::placeholder {
         color: var(--grey, #7A7A7A);
         font-variant-numeric: lining-nums tabular-nums;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 140%; /* 22.4px */
+        line-height: 140%; 
+        @media(max-width: 576px) {
+            font-size: 14px;
+        }
     }
 }
 
