@@ -215,6 +215,7 @@
     }
     svg {
         margin: 0 8px;
+        min-width: 16px;
         @media(max-width: 576px) {
             margin: 0 5px;
         }

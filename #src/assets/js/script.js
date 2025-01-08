@@ -26,6 +26,8 @@ if($(window).width() > 1200) {
     $('.chrono').css('margin-left', smallMargin + 'px');
     $('.chrono__slider .arrowRight').css('right', smallMargin + 'px');
     $('.chrono__slider .arrowLeft').css('right', smallMargin + 50 + 'px');
+    $('.gallery__slider .arrowRight').css('right', smallMargin + 'px');
+    $('.gallery__slider .arrowLeft').css('right', smallMargin + 50 + 'px');
 } else {
     $('.services__items').css('margin-left', containerMargin + 'px');
     $('.events__bot').css('margin-left', containerMargin + 'px');
@@ -36,13 +38,9 @@ if($(window).width() > 1200) {
     $('.chrono').css('margin-left', containerMargin + 'px');
     $('.chrono__slider .arrowRight').css('right', containerMargin + 'px');
     $('.chrono__slider .arrowLeft').css('right', containerMargin + 50 + 'px');
+    $('.gallery__slider .arrowRight').css('right', containerMargin + 'px');
+    $('.gallery__slider .arrowLeft').css('right', containerMargin + 50 + 'px');
 }
-
-
-
-$('.gallery__slider .arrowRight').css('right', smallMargin + 'px');
-$('.gallery__slider .arrowLeft').css('right', smallMargin + 50 + 'px');
-
 
 //main page tabs
 const titles = document.querySelectorAll('.events__group--title');
