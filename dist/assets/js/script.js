@@ -474,3 +474,8 @@ $(document).ready(function () {
     });
 });  
   
+//serv page info hide/show
+$('.serv__hider').click(()=> {
+    $('.serv__text').toggleClass('hidding');
+    $('.serv__hider').toggleClass('open');
+})
