@@ -5522,9 +5522,26 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 62px);
+  display: block;
   z-index: 48;
-  display: none;
+  height: 0;
+  overflow-y: hidden;
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.filters.open {
+  overflow-y: auto;
+  height: calc(100% - 62px);
+}
+
+.filters.open.long .filters__content {
+  height: 95%;
+}
+
+.filters.open.long .filter3 {
+  display: block;
 }
 
 .filters__wrapper {
@@ -5540,7 +5557,7 @@
 
 .filters__content {
   position: absolute;
-  top: 20px;
+  bottom: 0;
   left: 0;
   width: 100%;
   display: -webkit-box;
@@ -5553,7 +5570,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   z-index: 49;
 }
 
@@ -5696,7 +5715,7 @@
 
 .filter3 {
   display: none;
-  max-height: 95%;
+  max-height: 94%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -5741,6 +5760,7 @@
 }
 
 .filter3__items {
+  overflow-y: scroll;
   height: calc(100% - 150px);
 }
 
@@ -5765,6 +5785,10 @@
 
 .filter3__item.active img {
   display: block;
+}
+
+.filter3__item input {
+  display: none;
 }
 
 .filter3__item b {

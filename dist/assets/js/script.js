@@ -96,7 +96,7 @@ if ($('.modal').length) {
     })
 }
 
-// open and close modal1
+// open and close modal2
 if ($('.modal2').length) {
     function openModal2() {
         $('.modal2').addClass('show');
@@ -270,36 +270,24 @@ function searchClose() {
 
 //search burger items active toggle
 $(document).ready(function () {
-    // Клик по элементам sovet__search--item
     $('.sovet__search--item').on('click', function (e) {
-      // Проверяем, был ли клик по чекбоксу
       if ($(e.target).is('input[type="checkbox"]')) {
-        return; // Сохраняем стандартное поведение чекбокса
+        return; 
       }
-  
-      // Предотвращаем стандартное поведение для остальной части label
       e.preventDefault();
   
-      // Переключаем состояние чекбокса
       const checkbox = $(this).find('input[type="checkbox"]');
       checkbox.prop('checked', !checkbox.prop('checked'));
   
-      // Переключаем класс active у текущего элемента
       $(this).toggleClass('active');
   
-      // Проверяем активные элементы для sovet__accept
       updateAcceptState();
     });
   
     // Клик по элементу sovet__reset
     $('.sovet__reset').on('click', function () {
-      // Убираем класс active у всех sovet__search--item
       $('.sovet__search--item').removeClass('active');
-  
-      // Сбрасываем чекбоксы
       $('.sovet__search--item input[type="checkbox"]').prop('checked', false);
-  
-      // Убираем класс active у sovet__accept
       $('.sovet__accept').removeClass('active');
     });
   
@@ -327,7 +315,7 @@ titles4.forEach((title, index) => {
 });
 
 setTimeout(() => {
-    $('.members__items').eq(1).removeClass('active'); // eq(1) выбирает второй элемент (индексация с 0)
+    $('.members__items').eq(1).removeClass('active'); 
 }, 100);
 
 // open and close search in header
@@ -375,19 +363,17 @@ $(document).ready(function () {
     const $modal = $(".modal-s");
     const $modalItems = $(".modal-s__item");
     
-    // Обработчик клика на спикеры
     $(".speaker").on("click", function () {
-        const index = $(this).index(); // Получаем индекс текущего элемента
+        const index = $(this).index(); 
 
-        $modal.addClass("open"); // Добавляем класс "опэн" модальному окну
-        $modalItems.removeClass("active"); // Убираем класс "актив" у всех модальных элементов
-        $modalItems.eq(index).addClass("active"); // Добавляем класс "актив" нужному модальному элементу
+        $modal.addClass("open"); 
+        $modalItems.removeClass("active"); 
+        $modalItems.eq(index).addClass("active"); 
     });
 
-    // Обработчик клика на modal-s__close и modal-s__wrapper
     $(".modal-s__close, .modal-s__wrapper").on("click", function () {
-        $modal.removeClass("open"); // Убираем класс "опэн" у модального окна
-        $modalItems.removeClass("active"); // Убираем класс "актив" у всех модальных элементов
+        $modal.removeClass("open"); 
+        $modalItems.removeClass("active"); 
     });
 });
 
@@ -422,24 +408,22 @@ $(".modal-o__wrapper").on("click", function () {
 
 // comments show/hide in pull page
 $(document).ready(function () {
-    // Обработка клика по кнопке comment__btn
     $('.comment__btn').on('click', function (e) {
-      e.stopPropagation(); // Останавливаем всплытие, чтобы не закрыть при клике на кнопку
-      const parent = $(this).closest('.pull__item'); // Находим родительский pull__item
-      const comment = parent.find('.pull__comment'); // Находим pull__comment внутри этого pull__item
+      e.stopPropagation(); 
+      const parent = $(this).closest('.pull__item'); 
+      const comment = parent.find('.pull__comment'); 
   
-      $('.pull__comment').not(comment).removeClass('active'); // Убираем active у всех других pull__comment
-      comment.toggleClass('active'); // Переключаем active на текущем pull__comment
+      $('.pull__comment').not(comment).removeClass('active'); 
+      comment.toggleClass('active'); 
     });
   
-    // Убираем класс active при клике вне pull__comment
     $(document).on('click', function () {
       $('.pull__comment').removeClass('active');
     });
   
-    // Предотвращаем закрытие при клике на pull__comment
+
     $('.pull__comment').on('click', function (e) {
-      e.stopPropagation(); // Останавливаем всплытие
+      e.stopPropagation(); 
     });
   });
   
@@ -479,3 +463,66 @@ $('.serv__hider').click(()=> {
     $('.serv__text').toggleClass('hidding');
     $('.serv__hider').toggleClass('open');
 })
+
+//filters in pull page
+function filterOpen() {
+    $('.filters').addClass('open');
+    $('body').css('overflow', 'hidden'); 
+    $('.header').removeClass('hidden');
+}  
+
+function filterClose() {
+    $('.filters').removeClass('open');
+    $('body').css('overflow', 'unset'); 
+}
+$(".filters__wrapper").on("click", function () {
+    filterClose();
+});
+
+function filter2Open() {
+    $('.filters').addClass('long');
+    $('body').css('overflow', 'hidden'); 
+}  
+
+function filter2Close() {
+    $('.filters').removeClass('long');
+    $('body').css('overflow', 'unset'); 
+}
+
+$(document).ready(function () {
+    $(".filter2__item").on("click", function () {
+        let index = $(this).index(); // Получаем индекс текущего элемента
+        $(".filter3__inner").removeClass("active"); // Убираем класс active у всех элементов
+        $(".filter3__inner").eq(index).addClass("active"); // Добавляем класс active соответствующему элементу
+    });
+});
+
+
+//filters items active toggle
+$(document).ready(function () {
+    $(".filter3__item").on("click", function () {
+        const checkbox = $(this).find("input[type='checkbox']"); // Находим чекбокс внутри
+        const isChecked = checkbox.prop("checked"); // Проверяем текущее состояние чекбокса
+
+        checkbox.prop("checked", !isChecked); // Переключаем состояние чекбокса
+        $(this).toggleClass("active", !isChecked); // Переключаем класс active
+    });
+});
+$(document).ready(function () {
+    $(".filter3__reject").on("click", function (e) {
+        e.preventDefault();
+
+        const parentInner = $(this).closest(".filter3__inner"); 
+        parentInner.find(".filter3__item").removeClass("active");  
+        parentInner.find("input[type='checkbox']").prop("checked", false); 
+    });
+});
+$(document).ready(function () {
+    $(".filter3__accept").on("click", function (e) {
+        e.preventDefault();
+
+        filter2Close();
+    });
+});
+
+
