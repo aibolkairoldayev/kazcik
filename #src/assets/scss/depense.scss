@@ -2528,13 +2528,15 @@ background-clip: text;
             height: 300px;
             border-radius: 32px;
             object-fit: cover;
-            margin-right: 24px;
             @media(max-width: 768px) {
                 height: 240px;
             }
             @media(max-width: 480px) {
                 height: 190px;
             }
+        }
+        .slick-slide {
+            margin-right: 25px;
         }
     }
 }
@@ -5136,6 +5138,7 @@ background-clip: text;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         width: 390px;
         padding: 24px;
+        float: right;
         @media(max-width: 992px)  {
             width: 310px;
         }

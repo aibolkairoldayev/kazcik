@@ -2637,7 +2637,10 @@
   border-radius: 32px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-right: 24px;
+}
+
+.gallery__slider .slick-slide {
+  margin-right: 25px;
 }
 
 .sovet__bg1 {
@@ -5146,6 +5149,7 @@
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   width: 390px;
   padding: 24px;
+  float: right;
 }
 
 .map__item {
