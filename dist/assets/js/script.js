@@ -170,29 +170,33 @@ if ($('.modal-v').length) {
 }
 
 //fixed header func
-let lastScrollTop = 0; // Переменная для хранения последнего значения скролла
-
-$(window).scroll(function () {
-    let currentScrollTop = $(window).scrollTop();
-
-    // Обработка класса sticky
-    if (currentScrollTop >= 150) {
-        $('.header').addClass('sticky');
-    } else {
-        $('.header').removeClass('sticky');
+$(window).on('scroll', function() {
+    if ($(window).scrollTop() > 100) {
+        let currentScrollTop = $(window).scrollTop();
+        
+        // Обработка класса sticky
+        if (currentScrollTop >= 150) {
+            $('.header').addClass('sticky');
+        } else {
+            $('.header').removeClass('sticky');
+        }
+    
+        // Обработка класса hidden
+        if (currentScrollTop > lastScrollTop) {
+            // Скролл вниз
+            $('.header').addClass('hidden');
+        } else {
+            // Скролл вверх
+            $('.header').removeClass('hidden');
+        }
+    
+        lastScrollTop = currentScrollTop; 
+        
     }
-
-    // Обработка класса hidden
-    if (currentScrollTop > lastScrollTop) {
-        // Скролл вниз
-        $('.header').addClass('hidden');
-    } else {
-        // Скролл вверх
-        $('.header').removeClass('hidden');
-    }
-
-    lastScrollTop = currentScrollTop; 
 });
+let lastScrollTop = 0; 
+
+
 
 //calendar
 $(document).ready(function() {
@@ -347,10 +351,10 @@ $(document).ready(function () {
 // menu dropdown active 
 $(document).ready(function() {
     $('.with-drop').on('click', function() {
-      $('.with-drop').not(this).removeClass('active'); // Убирает класс у всех остальных
-      $(this).toggleClass('active'); // Переключает класс только у текущего элемента
+      $('.with-drop').not(this).removeClass('active'); 
+      $(this).toggleClass('active'); 
     });
-  });
+});
 
 // sort dropdown in pull page
 $('.pull__sort--current').click(()=> {

@@ -7,7 +7,7 @@
 }
 
 .live {
-    background: var(--white, #FFF);
+    background: var(--grad-2, linear-gradient(241deg, #29817a 32.64%, #0d1457 151.86%));
     backdrop-filter: blur(2px);
     padding: 12px 0;
     margin-top: 3px;
@@ -73,7 +73,7 @@
         }
     }
     &__diplom {
-        color: #FA3030;
+        color: #fff;
         text-align: center;
         font-variant-numeric: lining-nums tabular-nums;
         font-family: 'MuseoSansCyrillic', sans-serif;
@@ -94,7 +94,9 @@
             
             order: 2;
         }
-       
+        svg {
+            filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+        }
         span {
             font-variant-numeric: lining-nums tabular-nums;
             font-family: "Source Sans 3", serif;
@@ -102,9 +104,7 @@
             font-style: normal;
             font-weight: 600;
             line-height: 120%; /* 21.6px */
-            background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 151.86%));
-            -webkit-background-clip: text; 
-            -webkit-text-fill-color: transparent;
+            color: #fff;
             @media(max-width: 576px) {
                 font-size: 14px;
             }

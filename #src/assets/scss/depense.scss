@@ -2777,6 +2777,7 @@ background-clip: text;
         }
     }
     &__counts {
+        margin-top: 16px;
         @media(max-width: 992px) {
             display: flex;
             justify-content: space-between;
@@ -5435,6 +5436,7 @@ background-clip: text;
         }
         img {
             width: 100%;
+            border-radius: 24px;
         }
     }
     &__info {
