@@ -3017,6 +3017,10 @@
 .sovet__flag img {
   width: 90px;
   margin-bottom: 24px;
+  border: 2px solid #E1E1E1;
+  border-radius: 13px;
+  -webkit-box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.5);
 }
 
 .sovet__flag b {
@@ -3773,14 +3777,18 @@
 }
 
 .foreign__flag {
-  width: 90px;
+  margin-bottom: 8px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  border: 2px solid #E1E1E1;
+  border-radius: 13px;
+  -webkit-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
 }
 
-.foreign__flag img {
-  border-radius: 8px;
+.foreign__flags {
+  width: 90px;
 }
 
 .foreign__text {
@@ -6126,7 +6134,7 @@
             flex-direction: column;
   }
 
-  .foreign__flag {
+  .foreign__flags {
     position: absolute;
     right: 20px;
     right: 20px;
@@ -8356,6 +8364,11 @@
 
   .foreign__img {
     width: 130px;
+  }
+
+  .foreign__flag {
+    max-height: 50px;
+    margin-bottom: 4px;
   }
 
   .serv__numbers--item {

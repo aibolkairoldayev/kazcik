@@ -383,6 +383,8 @@ body::-webkit-scrollbar {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 
 .header__menu--current:hover span {
@@ -421,6 +423,7 @@ body::-webkit-scrollbar {
   width: 150%;
   height: 60px;
   bottom: -50px;
+  z-index: 0;
 }
 
 .header__menu--drop {
@@ -460,7 +463,7 @@ body::-webkit-scrollbar {
   height: 4px;
   width: 100%;
   position: absolute;
-  bottom: -40px;
+  bottom: -41px;
   left: 0;
   display: none;
 }

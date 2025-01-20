@@ -2889,6 +2889,9 @@ background-clip: text;
         img {
             width: 90px;
             margin-bottom: 24px;
+            border: 2px solid #E1E1E1;
+            border-radius: 13px;
+            box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.5);
         }
         b {
             color: #000;
@@ -3769,16 +3772,22 @@ background-clip: text;
         }
     }
     &__flag {
-        width: 90px;
+        margin-bottom: 8px;
         height: fit-content;
+        border: 2px solid #E1E1E1;
+        border-radius: 13px;
+        box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+        @media(max-width: 480px) {
+            max-height: 50px;
+            margin-bottom: 4px;
+        }
+    }
+    &__flags {
+        width: 90px;
         @media(max-width: 1200px) {
             position: absolute;
             right: 20px;
             right: 20px;
-        }
-        img {
-            border-radius: 8px;
-
         }
     }
     &__text {

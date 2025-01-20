@@ -250,8 +250,8 @@
 
 .banner__slider .slick-dots li {
   margin: 0 8px;
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background-color: #fff;
   cursor: pointer;
@@ -270,7 +270,7 @@
 }
 
 .banner__slider .slick-dots li.slick-active {
-  width: 20px;
+  width: 50px;
   border-radius: 20px;
   cursor: default;
   background: #fff;
@@ -481,8 +481,8 @@
 
 .services__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 420px;
-          flex: 0 0 420px;
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px;
   margin-right: 20px;
 }
 
@@ -585,7 +585,9 @@
 
 .mission {
   margin: 60px 0;
-  height: 450px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .mission__left {
@@ -593,7 +595,7 @@
   border-radius: 32px;
   background: -o-linear-gradient(205deg, #29817A -3.8%, #0D1457 103.21%);
   background: linear-gradient(245deg, #29817A -3.8%, #0D1457 103.21%);
-  padding: 64px;
+  padding: 20px 64px 64px;
   height: 100%;
   position: relative;
   display: -webkit-box;
@@ -603,9 +605,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .mission__left svg {
@@ -627,7 +629,6 @@
 
 .mission__img {
   width: 350px;
-  height: 100%;
 }
 
 .mission__img img {
@@ -640,6 +641,7 @@
 
 .mission__bot {
   margin-left: 80px;
+  margin-top: 30px;
   padding-bottom: 50px;
 }
 
@@ -843,7 +845,7 @@
 }
 
 .events__items::-webkit-scrollbar {
-  height: 4px;
+  height: 8px;
   max-width: 200px;
 }
 
@@ -855,6 +857,7 @@
 .events__items::-webkit-scrollbar-thumb {
   border-radius: 63px;
   background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 151.86%));
+  cursor: pointer;
 }
 
 .events__item {
@@ -1058,12 +1061,11 @@
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     margin: 30px 0;
-    height: auto;
   }
 
   .mission__left {
     width: 100%;
-    padding: 30px;
+    padding: 10px 30px 30px;
   }
 
   .mission__left svg {

@@ -256,10 +256,16 @@ titles2.forEach((title, index) => {
 
 // sovet page items active toggle
 $(document).ready(function () {
-    $('.sovet__count').on('click', function () {
-      const index = $(this).index('.sovet__count');
-      $(this).toggleClass('active');
-      $('.sovet__item').eq(index).toggleClass('active');
+    $(".sovet__count").on("click", function () {
+        const index = $(this).index(".sovet__count");
+
+
+        // Remove 'active' class from all elements
+        $(".sovet__count").removeClass("active");
+        $(".sovet__item").removeClass("active");
+
+        $(this).toggleClass("active");
+        $(".sovet__item").eq(index).toggleClass("active");
     });
 });
 
@@ -330,10 +336,65 @@ if ($('.header__search').length) {
         $('.header__search').addClass('hidden');
     }  
     function closeSearch() {
-        $('.header__menu').removeClass('hidden');
-        $('.header__input').removeClass('show');
-        $('.header__search').removeClass('hidden');
-    }   
+        $(".header__menu").removeClass("hidden");
+        $(".header__input").removeClass("show");
+        $(".header__search").removeClass("hidden");
+        $("#searchInput").val("");
+        $("#searchResults").empty();
+    }
+
+    let searchTimer;
+
+    $("#searchInput").on("keyup", function () {
+        clearTimeout(searchTimer);
+
+        const query = $(this).val();
+
+        if (query.length >= 2) {
+            searchTimer = setTimeout(function () {
+                $.ajax({
+                    url: "/search",
+                    method: "GET",
+                    data: { query: query },
+                    success: function (response) {
+                        console.log(response);
+                        let html = "";
+                        let locale = response.locale ?? "ru";
+
+                        if (response.results.length > 0) {
+                            response.results.forEach(function (item) {
+                                html += `
+                                <div class="header__input--option">
+                                    <img src="/assets/img/icons/search.svg" alt="search">
+                                    <a
+                                    style="display:flex; align-items:center; text-decoration:none; flex-grow:1; color:inherit;"
+                                    href="/${locale}/${item.type}/${item.slug}">
+                                        <span>${item.title}</span>
+                                    </a>
+                                </div>
+                            `;
+                            });
+                        } else {
+                            html = `
+                            <div class="header__input--option">
+                                <span>Ничего не найдено</span>
+                            </div>
+                        `;
+                        }
+
+                        $("#searchResults").html(html);
+                    },
+                    error: function (xhr) {
+                        console.log("Error:", xhr);
+                    },
+                });
+            }, 500);
+        } else {
+            $("#searchResults").empty();
+            $("#searchResults").html('<div class="loader_container"><div class="loader_search"></div> </div>');
+            
+        }
+    });
 }
 
 //header search options open/close
@@ -349,10 +410,18 @@ $(document).ready(function () {
   });
 
 // menu dropdown active 
-$(document).ready(function() {
-    $('.with-drop').on('click', function() {
-      $('.with-drop').not(this).removeClass('active'); 
-      $(this).toggleClass('active'); 
+$(document).ready(function () {
+    $('.with-drop').on('click', function () {
+        $('.with-drop').not(this).removeClass('active');
+        $(this).toggleClass('active');
+    });
+
+    $('.with-drop').on('mouseleave', function () {
+        $(this).removeClass('active');
+    });
+
+    $(window).on('scroll', function () {
+        $('.with-drop').removeClass('active');
     });
 });
 
@@ -528,5 +597,3 @@ $(document).ready(function () {
         filter2Close();
     });
 });
-
-

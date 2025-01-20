@@ -234,8 +234,8 @@
             display: flex;
             li {
                 margin: 0 8px;
-                width: 8px;
-                height: 8px;
+                width: 12px;
+                height: 12px;
                 border-radius: 50%;
                 background-color: #fff;
                 cursor: pointer;
@@ -249,12 +249,10 @@
                     top: 0;
                     left: 0;
                     width: 0%;
-                    height: 100%;
-                    
-                    
+                    height: 100%;                                    
                 }
                 &.slick-active {
-                    width: 20px;
+                    width: 50px;
                     border-radius: 20px;
                     cursor: default;
                     background: #fff;
@@ -444,7 +442,7 @@
         }
     }
     &__item {
-        flex: 0 0 420px;
+        flex: 0 0 300px;
         margin-right: 20px;
        
         @media(max-width: 768px) {
@@ -565,11 +563,11 @@
 
 .mission {
     margin: 60px 0;
-    height: 450px;
+    align-items: stretch;
+    
     @media(max-width: 992px){
         flex-direction: column-reverse;
         margin: 30px 0;
-        height: auto;
     }
     @media(max-width: 576px) {
         padding-top: 30px;
@@ -578,15 +576,15 @@
         width: calc(100% - 380px);
         border-radius: 32px;
         background: linear-gradient(245deg, #29817A -3.8%, #0D1457 103.21%);
-        padding: 64px;
+        padding: 20px 64px 64px;
         height: 100%;
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: end;
         @media(max-width: 992px) {
             width: 100%;
-            padding: 30px;
+            padding: 10px 30px 30px;
         }
         @media(max-width: 576px) {
             padding: 20px;
@@ -625,7 +623,6 @@
     }
     &__img {
         width: 350px;
-        height: 100%;
         @media(max-width: 992px) {
             width: 100%;
             margin-bottom: 12px;
@@ -639,6 +636,7 @@
     }
     &__bot {
         margin-left: 80px;
+        margin-top: 30px;
         padding-bottom: 50px;
         @media(max-width: 1200px) {
             padding-bottom: 0;
@@ -900,7 +898,7 @@
             display: flex;
         }
         &::-webkit-scrollbar {
-            height: 4px;
+            height: 8px;
             max-width: 200px;
         }
         &::-webkit-scrollbar-track {
@@ -910,6 +908,7 @@
         &::-webkit-scrollbar-thumb {
             border-radius: 63px;
             background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 151.86%));
+            cursor: pointer;
         }
     }
     &__item {
