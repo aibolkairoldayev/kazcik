@@ -425,6 +425,29 @@ $(document).ready(function () {
     });
 });
 
+// pull items dropdown active 
+$(document).ready(function () {
+    $('.pull__drop span').on('click', function () {
+        $(this).closest('.pull__drop').toggleClass('active');
+      });
+
+    $('.pull__drop').on('mouseleave', function () {
+        $(this).removeClass('active');
+    });
+
+    $(window).on('scroll', function () {
+        $('.pull__drop').removeClass('active');
+    });
+
+    $('.pull__hidden--item').on('click', function (e) {
+        const $input = $(this).find('input[type="checkbox"]');
+        $(this).toggleClass('active');
+        $input.prop('checked', !$input.prop('checked'));
+        e.preventDefault();
+      });
+      
+});
+
 // sort dropdown in pull page
 $('.pull__sort--current').click(()=> {
     $('.pull__sort--current').toggleClass('active');

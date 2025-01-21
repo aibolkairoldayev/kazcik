@@ -3802,7 +3802,7 @@ background-clip: text;
             display: grid;
             grid-template-columns: 1fr 1fr;
             direction: rtl;
-            width: 180px;
+            width: 160px;
             gap: 10px;
         }
         @media(max-width: 480px) {
@@ -4103,6 +4103,77 @@ background-clip: text;
                     line-height: 140%;
                 }
             }
+        }
+    }
+    &__drop {
+        position: relative;
+        cursor: pointer;
+        
+        &.active {
+            cursor: default;
+            svg {
+                transition: .2s linear;
+                transform: rotate(180deg);
+            }
+            .pull__hidden {
+                display: block;
+            }
+        }
+    }
+    &__hidden {
+        position: absolute;
+        top: 50px;
+        background-color: #fff;
+        padding: 10px;
+        left: 0;
+        width: 100%;
+        border: 1px solid #ada9a9;
+        border-radius: 12px;
+        display: none;
+        &--check {
+            display: none;
+            width: 10px;
+        }
+        &--items {
+            display: flex;
+            flex-direction: column;
+        }
+        &--item {
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4px; 
+            border: 1px solid transparent;
+            border-radius: 8px;
+            &.active {
+                border: 1px solid var(--grad-2, #29817a);
+                background: -o-linear-gradient(209deg, rgba(41, 129, 122, .2) 32.64%, rgba(13, 20, 87, .2) 151.86%);
+                background: linear-gradient(241deg, rgba(41, 129, 122, .2) 32.64%, rgba(13, 20, 87, .2) 151.86%);
+                .pull__hidden--check {
+                    display: block;
+                }
+            }
+            input {
+                display: none;
+            }
+            b {
+                color: var(--grey, #7a7a7a);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+                text-align: start;
+                cursor: pointer;
+            }
+        }
+        &--btn {
+            padding: 4px;
+            width: 100%;
+            border-radius: 12px;
+            background: var(--grad-2, linear-gradient(241deg, #29817a 32.64%, #0d1457 151.86%));
+            color: #fff;
+            margin-top: 5px;
         }
     }
     &__table {

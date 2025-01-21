@@ -4126,6 +4126,104 @@
   line-height: 140%;
 }
 
+.pull__drop {
+  position: relative;
+  cursor: pointer;
+}
+
+.pull__drop.active {
+  cursor: default;
+}
+
+.pull__drop.active svg {
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.pull__drop.active .pull__hidden {
+  display: block;
+}
+
+.pull__hidden {
+  position: absolute;
+  top: 50px;
+  background-color: #fff;
+  padding: 10px;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ada9a9;
+  border-radius: 12px;
+  display: none;
+}
+
+.pull__hidden--check {
+  display: none;
+  width: 10px;
+}
+
+.pull__hidden--items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pull__hidden--item {
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+.pull__hidden--item.active {
+  border: 1px solid var(--grad-2, #29817a);
+  background: -o-linear-gradient(209deg, rgba(41, 129, 122, 0.2) 32.64%, rgba(13, 20, 87, 0.2) 151.86%);
+  background: linear-gradient(241deg, rgba(41, 129, 122, 0.2) 32.64%, rgba(13, 20, 87, 0.2) 151.86%);
+}
+
+.pull__hidden--item.active .pull__hidden--check {
+  display: block;
+}
+
+.pull__hidden--item input {
+  display: none;
+}
+
+.pull__hidden--item b {
+  color: var(--grey, #7a7a7a);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: start;
+  cursor: pointer;
+}
+
+.pull__hidden--btn {
+  padding: 4px;
+  width: 100%;
+  border-radius: 12px;
+  background: var(--grad-2, linear-gradient(241deg, #29817a 32.64%, #0d1457 151.86%));
+  color: #fff;
+  margin-top: 5px;
+}
+
 .pull__table {
   padding: 24px 32px;
   border-radius: 32px;
@@ -6153,7 +6251,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     direction: rtl;
-    width: 180px;
+    width: 160px;
     gap: 10px;
   }
 

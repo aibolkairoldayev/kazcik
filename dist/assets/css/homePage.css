@@ -466,7 +466,6 @@
 .services__items::-webkit-scrollbar {
   height: 4px;
   max-width: 200px;
-  display: none;
 }
 
 .services__items::-webkit-scrollbar-track {
