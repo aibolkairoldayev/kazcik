@@ -741,6 +741,12 @@
             text-transform: capitalize;
             margin-bottom: 8px;
             display: block;
+            &:hover {
+                background: var(--grad-2, linear-gradient(241deg, #29817a 32.64%, #0d1457 110.61%));
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
     }
 }

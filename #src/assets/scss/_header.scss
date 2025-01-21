@@ -212,7 +212,7 @@
             background: var(--white, #FFF);
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             padding: 24px;
-            bottom: -175px;
+            top: 65px;
             display: none;
             left: -24px;
             
@@ -275,7 +275,7 @@
             bottom: -48px;
         }
         &--drop {
-            bottom: -172px;
+            top: 66px;
         }
         &--line {
             position: absolute;
@@ -292,12 +292,6 @@
                 display: block;
             }
             .header__lang--current {
-                span {
-                    background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 110.61%));
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
                 .dropy {
                     display: none;
                 }
