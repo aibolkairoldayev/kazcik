@@ -7980,6 +7980,10 @@
     padding-top: 70px;
   }
 
+  .gallery__title {
+    margin-left: 15px;
+  }
+
   .gallery__slider .slick-arrow {
     top: unset;
     bottom: -60px;
@@ -8077,6 +8081,7 @@
 
   .chrono__title {
     font-size: 20px;
+    margin-left: 15px;
   }
 
   .members__title {
@@ -8192,6 +8197,10 @@
   .serv__text.hidding {
     max-height: 200px;
     overflow-y: hidden;
+  }
+
+  .serv__display h2 {
+    margin-left: 15px;
   }
 
   .serv__elem--number {

@@ -458,8 +458,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 100%;
-  overflow-x: scroll;
   padding-bottom: 30px;
 }
 
@@ -479,9 +477,7 @@
 }
 
 .services__item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 300px;
-          flex: 0 0 300px;
+  width: calc(25% - 13px);
   margin-right: 20px;
 }
 
@@ -982,6 +978,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.partners__item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media (max-width: 1200px) {

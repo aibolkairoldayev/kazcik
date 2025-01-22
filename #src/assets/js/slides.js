@@ -29,6 +29,8 @@ $('.partners__items').slick({
     infinite: true,
     autoplay: true,
     arrows: false,
+    autoplaySpeed: 2000,
+    swipeToSlide: true,
     responsive: [
         {
             breakpoint: 992,

@@ -3,8 +3,12 @@ $(document).ready(()=>{
     $('.preloader').fadeOut('slow', function() {
         $(this).remove();
     });
-    
+
 });
+
+// window.onload = function() {
+//     sessionStorage.clear();
+// }
 setTimeout(function() {
     $('.preloader').fadeOut('slow', function() {
         $(this).remove();
@@ -17,7 +21,6 @@ var containerWidth = $('.container').width();
 var containerMargin = (wholeWidth - containerWidth) / 2;
 var smallMargin =  containerMargin + 70;
 if($(window).width() > 1200) {
-    $('.services__items').css('margin-left', smallMargin + 'px');
     $('.events__bot').css('margin-left', smallMargin + 'px');
     $('.partners').css('margin-left', smallMargin + 'px');
     $('.block2__bot').css('margin-left', smallMargin + 'px');
@@ -28,8 +31,13 @@ if($(window).width() > 1200) {
     $('.chrono__slider .arrowLeft').css('right', smallMargin + 50 + 'px');
     $('.gallery__slider .arrowRight').css('right', smallMargin + 'px');
     $('.gallery__slider .arrowLeft').css('right', smallMargin + 50 + 'px');
+} else if (wholeWidth <= 576) {
+    $('.events__bot').css('margin-left', '0');
+    $('.partners').css('margin-left', '0');
+    $('.gallery').css('margin-left', '0');
+    $('.serv__docs').css('margin-left', '0');
+    $('.chrono').css('margin-left', '0');
 } else {
-    $('.services__items').css('margin-left', containerMargin + 'px');
     $('.events__bot').css('margin-left', containerMargin + 'px');
     $('.partners').css('margin-left', containerMargin + 'px');
     $('.block2__bot').css('margin-left', containerMargin + 'px');
@@ -85,12 +93,12 @@ titles3.forEach((title, index) => {
 if ($('.modal').length) {
     function openModal() {
         $('.modal').addClass('show');
-        $('body').css('overflow', 'hidden'); 
-    }  
+        $('body').css('overflow', 'hidden');
+    }
     function closeModal() {
         $('.modal').removeClass('show');
-        $('body').css('overflow', 'unset'); 
-    }   
+        $('body').css('overflow', 'unset');
+    }
     $('.modal__wrapper1').click(()=> {
         closeModal()
     })
@@ -100,12 +108,12 @@ if ($('.modal').length) {
 if ($('.modal2').length) {
     function openModal2() {
         $('.modal2').addClass('show');
-        $('body').css('overflow', 'hidden'); 
-    }  
+        $('body').css('overflow', 'hidden');
+    }
     function closeModal2() {
         $('.modal2').removeClass('show');
-        $('body').css('overflow', 'unset'); 
-    }   
+        $('body').css('overflow', 'unset');
+    }
     $('.modal__wrapper2').click(()=> {
         closeModal2()
     })
@@ -115,12 +123,12 @@ if ($('.modal2').length) {
 if ($('.modal3').length) {
     function openModal3() {
         $('.modal3').addClass('show');
-        $('body').css('overflow', 'hidden'); 
-    }  
+        $('body').css('overflow', 'hidden');
+    }
     function closeModal3() {
         $('.modal3').removeClass('show');
-        $('body').css('overflow', 'unset'); 
-    }   
+        $('body').css('overflow', 'unset');
+    }
     $('.modal__wrapper3').click(()=> {
         closeModal3()
     })
@@ -130,12 +138,12 @@ if ($('.modal3').length) {
 if ($('.modal4').length) {
     function openModal4() {
         $('.modal4').addClass('show');
-        $('body').css('overflow', 'hidden'); 
-    }  
+        $('body').css('overflow', 'hidden');
+    }
     function closeModal4() {
         $('.modal4').removeClass('show');
-        $('body').css('overflow', 'unset'); 
-    }   
+        $('body').css('overflow', 'unset');
+    }
     $('.modal__wrapper4').click(()=> {
         closeModal4()
     })
@@ -144,10 +152,10 @@ if ($('.modal4').length) {
 //burger open/closes
 if($('.burger').length) {
     function toggleBurger() {
-        $('.burger').toggleClass('open'); 
-        $('.burger__btn').toggleClass('open'); 
+        $('.burger').toggleClass('open');
+        $('.burger__btn').toggleClass('open');
         $('body').toggleClass('hidden')
-    }  
+    }
 
     $('.burger__wrapper').click(()=> {
         toggleBurger()
@@ -158,12 +166,12 @@ if($('.burger').length) {
 if ($('.modal-v').length) {
     function openVideo() {
         $('.modal-v').addClass('show');
-        $('body').css('overflow', 'hidden'); 
-    }  
+        $('body').css('overflow', 'hidden');
+    }
     function closeVideo() {
         $('.modal-v').removeClass('show');
-        $('body').css('overflow', 'unset'); 
-    }   
+        $('body').css('overflow', 'unset');
+    }
     $('.modal-v__wrapper').click(()=> {
         closeVideo()
     })
@@ -173,14 +181,14 @@ if ($('.modal-v').length) {
 $(window).on('scroll', function() {
     if ($(window).scrollTop() > 100) {
         let currentScrollTop = $(window).scrollTop();
-        
+
         // Обработка класса sticky
         if (currentScrollTop >= 150) {
             $('.header').addClass('sticky');
         } else {
             $('.header').removeClass('sticky');
         }
-    
+
         // Обработка класса hidden
         if (currentScrollTop > lastScrollTop) {
             // Скролл вниз
@@ -189,19 +197,32 @@ $(window).on('scroll', function() {
             // Скролл вверх
             $('.header').removeClass('hidden');
         }
-    
-        lastScrollTop = currentScrollTop; 
-        
+
+        lastScrollTop = currentScrollTop;
+
     }
 });
-let lastScrollTop = 0; 
+let lastScrollTop = 0;
 
+const urlParams = new URLSearchParams(window.location.search);
+const start_date_params = urlParams.get('start_date');
+const end_date_params = urlParams.get('end_date');
 
-
+var startDate = start_date_params ? start_date_params : ''
+var endDate = end_date_params ?end_date_params :''
 //calendar
 $(document).ready(function() {
     const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-    let currentDate = new Date();
+    let currentDate = startDate ? new Date(startDate) : new Date();
+
+    const eventDateShowDate = $(".calendar__days.calendar_show").data('eventdateshow');
+    if(eventDateShowDate){
+        const formattedDate = eventDateShowDate.split(' ')[0];
+
+        currentDate = new Date(formattedDate);
+    }
+
+
 
     function renderCalendar(date) {
       const year = date.getFullYear();
@@ -213,19 +234,60 @@ $(document).ready(function() {
       const firstDay = new Date(year, month, 1).getDay();
       const lastDate = new Date(year, month + 1, 0).getDate();
 
-      const daysContainer = $(".calendar__days");
+      const daysContainer = $(".calendar__days.calendar_main");
+      const daysShowContainer = $(".calendar__days.calendar_show");
+      const eventDateShow = $(".calendar__days.calendar_show").data('eventdateshow');
+      const eventDates = $(".calendar__days.calendar_main").data('eventdate');
+    //   console.log(eventDates);
       daysContainer.empty();
+      daysShowContainer.empty();
 
       // Пустые ячейки до первого дня
       for (let i = 0; i < (firstDay === 0 ? 6 : firstDay - 1); i++) {
         daysContainer.append('<div class="calendar__day calendar__day--empty"></div>');
+        daysShowContainer.append('<div class="calendar__day calendar__day--empty"></div>');
       }
+
+
 
       // Дни месяца
       for (let day = 1; day <= lastDate; day++) {
         const dateString = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-        daysContainer.append(`<div class="calendar__day" data-date="${dateString}">${day}</div>`);
+
+
+
+        let extraClass = '';
+        let extraShowClass = '';
+        let date = new Date(dateString);
+        let dateStart = new Date(startDate);
+        let dateEnd = new Date(endDate);
+        if(dateString === startDate){
+            extraClass = 'start_date'
+        }else if(dateString === endDate){
+            extraClass = 'end_date'
+        }else if( date > dateStart && date < dateEnd){
+            extraClass = 'range_date'
+        }
+
+        if(eventDates){
+            if (eventDates.includes(dateString)) {
+                extraClass += " dot"
+            }
+        }
+
+        if(eventDateShow){
+            if(eventDateShowDate.split(' ')[0] == dateString){
+                extraShowClass = " event_curr"
+            }
+        }
+
+        daysContainer.append(`<div class="calendar__day calendar__day--filled ${extraClass}" data-date="${dateString}" onclick="clickDay(this)"><div class="circle">${day}</div></div>`);
+        daysShowContainer.append(`<div class="calendar__day calendar__day--filled ${extraShowClass}" data-date="${dateString}">${day}</div>`);
+
       }
+
+    //   if()
+
     }
 
     $(".calendar__nav--prev").click(function() {
@@ -239,11 +301,76 @@ $(document).ready(function() {
     });
 
     renderCalendar(currentDate);
+
+
   });
+
+
+  function clickDay(e){
+    clicked_date = $(e).data('date');
+    start_date =  $( ".calendar_main .calendar__day.start_date" );
+    end_date =  $( ".calendar_main .calendar__day.end_date" );
+    if(startDate && endDate){
+        $(start_date[0]).removeClass('start_date')
+        $(end_date[0]).removeClass('end_date')
+        $( ".calendar__day.range_date" ).removeClass('range_date')
+        startDate=''
+        endDate=''
+
+        // sessionStorage.setItem('start_date',clicked_date)
+    }
+    if(!startDate){
+        $(e).toggleClass('start_date');
+         startDate=clicked_date;
+
+        // sessionStorage.setItem('start_date',clicked_date)
+        return;
+    }
+    if(startDate && !endDate){
+
+        if(new Date(clicked_date) > new Date(startDate)){
+            // console.log(start_date)
+            if(start_date.length > 0){
+
+                start_date.nextUntil($(e)).addClass('range_date');
+            }else{
+                let empty = $(".events2__content.active .calendar__day.calendar__day--empty");
+
+                $(empty[empty.length - 1]).nextUntil($(e)).addClass('range_date')
+            }
+
+            $(e).toggleClass('end_date');
+            endDate = clicked_date;
+            const urlParams = new URLSearchParams(window.location.search);
+
+            urlParams.set('start_date', startDate);
+            urlParams.set('end_date', clicked_date);
+            urlParams.delete('period')
+
+            window.location.search = urlParams;
+        }
+
+        // sessionStorage.setItem('end_date',clicked_date)
+        return;
+    }
+  }
+
+
+
 
 //events page tab
 const titles2 = document.querySelectorAll('.events2__tab');
 const items2 = document.querySelectorAll('.events2__content');
+
+const period = urlParams.get('period');
+
+if(period){
+    titles2.forEach(t => t.classList.remove('active'));
+    items2.forEach(item => item.classList.remove('active'));
+    $('.events2__tab.events2__tab--past').addClass('active');
+    items2[1].classList.add('active');
+}
+
 
 titles2.forEach((title, index) => {
     title.addEventListener('click', () => {
@@ -257,15 +384,28 @@ titles2.forEach((title, index) => {
 // sovet page items active toggle
 $(document).ready(function () {
     $(".sovet__count").on("click", function () {
-        const index = $(this).index(".sovet__count");
+        const countryId = $(this).data("id");
 
+        if($(this).hasClass('active')){
+            $(this).removeClass("active");
+            $(".sovet__item").each(function () {
+                // var countries = $(this).data('countries');
+                // if (countries.includes(countryId))
+                    $(this).addClass("active");
+            });
+            return
+        }
 
         // Remove 'active' class from all elements
         $(".sovet__count").removeClass("active");
         $(".sovet__item").removeClass("active");
 
         $(this).toggleClass("active");
-        $(".sovet__item").eq(index).toggleClass("active");
+        $(".sovet__item").each(function () {
+            var countries = $(this).data('countries');
+            if (countries.includes(countryId))
+                $(this).toggleClass("active");
+        });
     });
 });
 
@@ -282,25 +422,67 @@ function searchClose() {
 $(document).ready(function () {
     $('.sovet__search--item').on('click', function (e) {
       if ($(e.target).is('input[type="checkbox"]')) {
-        return; 
+        return;
       }
       e.preventDefault();
-  
+
+     $('.sovet__search--item').each((index,item)=>{
+        let checkboxLoop = $(item).find('input[type="checkbox"]')
+
+        checkboxLoop.prop('checked', false);
+
+        $(item).removeClass('active')
+       
+     })
+     
       const checkbox = $(this).find('input[type="checkbox"]');
+     
       checkbox.prop('checked', !checkbox.prop('checked'));
-  
-      $(this).toggleClass('active');
-  
+
+     $(this).toggleClass('active');
+
       updateAcceptState();
     });
-  
+
     // Клик по элементу sovet__reset
     $('.sovet__reset').on('click', function () {
       $('.sovet__search--item').removeClass('active');
       $('.sovet__search--item input[type="checkbox"]').prop('checked', false);
       $('.sovet__accept').removeClass('active');
+      
     });
-  
+
+    $('.sovet__accept').on('click', function (e) {
+        
+        const active = $('.sovet__search--item.active');
+        const id = ($(active[0]).data('filtercountry'));
+
+        $(".sovet__count").removeClass("active");
+        $(".sovet__item").removeClass("active");
+
+        
+        $(".sovet__item").each(function () {
+            var countries = $(this).data('countries');
+            if (countries.includes(id))
+                $(this).toggleClass("active");
+        });
+       
+        searchClose() 
+    });
+
+    $(".sovet__search__action").on("input", function () {
+        let searchText = $(this).val().toLowerCase(); // Get input value and convert to lowercase
+        $(".sovet__search--item").each(function () {
+            let blockText = $(this).text().toLowerCase(); // Get text content of each block
+            if (blockText.includes(searchText)) {
+                $(this).removeClass("d-none"); // Show if text matches
+            } else {
+                $(this).addClass("d-none"); // Hide if text doesn't match
+            }
+        });
+    });
+    
+
     // Функция для обновления состояния sovet__accept
     function updateAcceptState() {
       if ($('.sovet__search--item.active').length > 0) {
@@ -310,7 +492,7 @@ $(document).ready(function () {
       }
     }
   });
-  
+
 //sovetpage members tabs
 const titles4 = document.querySelectorAll('.members__tab');
 const items4 = document.querySelectorAll('.members__items');
@@ -325,7 +507,7 @@ titles4.forEach((title, index) => {
 });
 
 setTimeout(() => {
-    $('.members__items').eq(1).removeClass('active'); 
+    $('.members__items').eq(1).removeClass('active');
 }, 100);
 
 // open and close search in header
@@ -334,7 +516,7 @@ if ($('.header__search').length) {
         $('.header__menu').addClass('hidden');
         $('.header__input').addClass('show');
         $('.header__search').addClass('hidden');
-    }  
+    }
     function closeSearch() {
         $(".header__menu").removeClass("hidden");
         $(".header__input").removeClass("show");
@@ -392,7 +574,7 @@ if ($('.header__search').length) {
         } else {
             $("#searchResults").empty();
             $("#searchResults").html('<div class="loader_container"><div class="loader_search"></div> </div>');
-            
+
         }
     });
 }
@@ -409,7 +591,7 @@ $(document).ready(function () {
     });
   });
 
-// menu dropdown active 
+// menu dropdown active
 $(document).ready(function () {
     $('.with-drop').on('click', function () {
         $('.with-drop').not(this).removeClass('active');
@@ -458,30 +640,30 @@ $('.pull__sort--current').click(()=> {
 $(document).ready(function () {
     const $modal = $(".modal-s");
     const $modalItems = $(".modal-s__item");
-    
-    $(".speaker").on("click", function () {
-        const index = $(this).index(); 
 
-        $modal.addClass("open"); 
-        $modalItems.removeClass("active"); 
-        $modalItems.eq(index).addClass("active"); 
+    $(".speaker").on("click", function () {
+        const index = $(this).index();
+
+        $modal.addClass("open");
+        $modalItems.removeClass("active");
+        $modalItems.eq(index).addClass("active");
     });
 
     $(".modal-s__close, .modal-s__wrapper").on("click", function () {
-        $modal.removeClass("open"); 
-        $modalItems.removeClass("active"); 
+        $modal.removeClass("open");
+        $modalItems.removeClass("active");
     });
 });
 
 //thanks modal open/close
 function thanksOpen() {
     $('.thanks').addClass('open');
-    $('body').css('overflow', 'hidden'); 
-}  
+    $('body').css('overflow', 'hidden');
+}
 
 function thanksClose() {
     $('.thanks').removeClass('open');
-    $('body').css('overflow', 'unset'); 
+    $('body').css('overflow', 'unset');
 }
 $(".thanks__wrapper").on("click", function () {
     thanksClose();
@@ -491,12 +673,12 @@ $(".thanks__wrapper").on("click", function () {
 //live popup open/close
 function liveOpen() {
     $('.modal-o').addClass('open');
-    $('body').css('overflow', 'hidden'); 
-}  
+    $('body').css('overflow', 'hidden');
+}
 
 function liveClose() {
     $('.modal-o').removeClass('open');
-    $('body').css('overflow', 'unset'); 
+    $('body').css('overflow', 'unset');
 }
 $(".modal-o__wrapper").on("click", function () {
     liveClose();
@@ -505,24 +687,24 @@ $(".modal-o__wrapper").on("click", function () {
 // comments show/hide in pull page
 $(document).ready(function () {
     $('.comment__btn').on('click', function (e) {
-      e.stopPropagation(); 
-      const parent = $(this).closest('.pull__item'); 
-      const comment = parent.find('.pull__comment'); 
-  
-      $('.pull__comment').not(comment).removeClass('active'); 
-      comment.toggleClass('active'); 
+      e.stopPropagation();
+      const parent = $(this).closest('.pull__item');
+      const comment = parent.find('.pull__comment');
+
+      $('.pull__comment').not(comment).removeClass('active');
+      comment.toggleClass('active');
     });
-  
+
     $(document).on('click', function () {
       $('.pull__comment').removeClass('active');
     });
-  
+
 
     $('.pull__comment').on('click', function (e) {
-      e.stopPropagation(); 
+      e.stopPropagation();
     });
   });
-  
+
 //menu dropdown in burger
 $(document).ready(function () {
     $('.burger__title').on('click', function () {
@@ -542,9 +724,9 @@ $(document).ready(function () {
     });
 
     $(".input__drop--other").on("click", function () {
-        const selectedText = $(this).text(); 
-        $(".input__drop--current b").text(selectedText); 
-        $(this).closest(".input__drop").removeClass("active"); 
+        const selectedText = $(this).text();
+        $(".input__drop--current b").text(selectedText);
+        $(this).closest(".input__drop").removeClass("active");
     });
 
     $(document).on("click", function (e) {
@@ -552,8 +734,8 @@ $(document).ready(function () {
             $(".input__drop").removeClass("active");
         }
     });
-});  
-  
+});
+
 //serv page info hide/show
 $('.serv__hider').click(()=> {
     $('.serv__text').toggleClass('hidding');
@@ -563,13 +745,13 @@ $('.serv__hider').click(()=> {
 //filters in pull page
 function filterOpen() {
     $('.filters').addClass('open');
-    $('body').css('overflow', 'hidden'); 
+    $('body').css('overflow', 'hidden');
     $('.header').removeClass('hidden');
-}  
+}
 
 function filterClose() {
     $('.filters').removeClass('open');
-    $('body').css('overflow', 'unset'); 
+    $('body').css('overflow', 'unset');
 }
 $(".filters__wrapper").on("click", function () {
     filterClose();
@@ -577,12 +759,12 @@ $(".filters__wrapper").on("click", function () {
 
 function filter2Open() {
     $('.filters').addClass('long');
-    $('body').css('overflow', 'hidden'); 
-}  
+    $('body').css('overflow', 'hidden');
+}
 
 function filter2Close() {
     $('.filters').removeClass('long');
-    $('body').css('overflow', 'unset'); 
+    $('body').css('overflow', 'unset');
 }
 
 $(document).ready(function () {
@@ -608,9 +790,9 @@ $(document).ready(function () {
     $(".filter3__reject").on("click", function (e) {
         e.preventDefault();
 
-        const parentInner = $(this).closest(".filter3__inner"); 
-        parentInner.find(".filter3__item").removeClass("active");  
-        parentInner.find("input[type='checkbox']").prop("checked", false); 
+        const parentInner = $(this).closest(".filter3__inner");
+        parentInner.find(".filter3__item").removeClass("active");
+        parentInner.find("input[type='checkbox']").prop("checked", false);
     });
 });
 $(document).ready(function () {

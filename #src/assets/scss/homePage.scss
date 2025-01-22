@@ -424,8 +424,7 @@
     &__items {
         display: flex;
         justify-content: space-between;
-        max-width: 100%;
-        overflow-x: scroll;
+      
         padding-bottom: 30px;
         &::-webkit-scrollbar {
             height: 4px;
@@ -442,7 +441,7 @@
         }
     }
     &__item {
-        flex: 0 0 300px;
+        width: calc(25% - 13px);
         margin-right: 20px;
        
         @media(max-width: 768px) {
@@ -1036,5 +1035,10 @@
         display: flex !important;
         align-items: center;
         justify-content: center;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     }
 }

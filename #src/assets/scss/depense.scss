@@ -2492,6 +2492,9 @@ background-clip: text;
         @media(max-width: 768px) {
             font-size: 28px;
         }
+        @media(max-width: 576px) {
+            margin-left: 15px;
+        }
     }
     &__slider {
         .slick-arrow {
@@ -3451,6 +3454,7 @@ background-clip: text;
         }
         @media(max-width: 576px) {
             font-size: 20px;
+            margin-left: 15px;
         }
     }
     &__item {
@@ -4908,6 +4912,9 @@ background-clip: text;
             }
             @media(max-width: 768px) {
                 font-size: 22px;
+            }
+            @media(max-width: 576px) {
+                margin-left: 15px;
             }
         }
     }
