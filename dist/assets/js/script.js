@@ -154,11 +154,12 @@ if($('.burger').length) {
     function toggleBurger() {
         $('.burger').toggleClass('open');
         $('.burger__btn').toggleClass('open');
-        $('body').toggleClass('hidden')
+        $('body').toggleClass('hidden');
+        $('header').toggleClass('not-transparent');
     }
 
     $('.burger__wrapper').click(()=> {
-        toggleBurger()
+        toggleBurger();
     })
 }
 

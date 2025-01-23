@@ -424,12 +424,15 @@
     &__items {
         display: flex;
         justify-content: space-between;
-      
+        overflow-x: scroll;
         padding-bottom: 30px;
         &::-webkit-scrollbar {
             height: 4px;
             max-width: 200px;
-            // display: none;
+            display: none;
+            @media(max-width: 992px) {
+                display: block;
+            }
         }
         &::-webkit-scrollbar-track {
             border-radius: 63px;
@@ -444,7 +447,7 @@
         width: calc(25% - 13px);
         margin-right: 20px;
        
-        @media(max-width: 768px) {
+        @media(max-width: 992px) {
             flex: 0 0 240px;
             height: 240px;
         }

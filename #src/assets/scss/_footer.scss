@@ -224,19 +224,19 @@
         }
     }
     &__lang {
+        &:hover {
+            .dropy {
+                transform: rotate(180deg);
+            }
+        }
         &--hidden {
-            display: none;
+            height: 20px;
+            bottom: 14px;
         }
         &--drop {
             top: -130px;
         }
-        &--current {
-            &:hover {
-                .dropy {
-                    transform: rotate(180deg);
-                }
-            }
-        }
+
     }
     &__law {
         color: var(--light-grey, #B1B1B1);

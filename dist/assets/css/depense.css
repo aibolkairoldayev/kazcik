@@ -217,18 +217,19 @@
   /* 19.2px */
 }
 
+.footer__lang:hover .dropy {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .footer__lang--hidden {
-  display: none;
+  height: 20px;
+  bottom: 14px;
 }
 
 .footer__lang--drop {
   top: -130px;
-}
-
-.footer__lang--current:hover .dropy {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .footer__law {
@@ -3192,6 +3193,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+  cursor: pointer;
 }
 
 .sovetpage__miss {

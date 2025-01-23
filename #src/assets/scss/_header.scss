@@ -11,6 +11,9 @@
     &.hidden {
         transform: translateY(-100%);
     }
+    &.not-transparent {
+        background-color: #fff;
+    }
     .container {
         padding: 16px 0;
         display: flex;
