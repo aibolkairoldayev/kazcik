@@ -39,7 +39,7 @@
             <div class="modaltype__form2">
                 <div class="modaltype__item">
                     <input class="input-type" type="text" placeholder="Название организации*" required>
-                    <input class="input-type" type="number" placeholder="БИН/ИИН организации*" required>
+                    <input class="input-type" type="number" placeholder="БИН/ИИН организации*5" required max="99999" oninput="if(this.value.length > 12) this.value = this.value.slice(0, 12);">
                     <input class="input-type" type="text" placeholder="Сфера деятельности*" required>
                     <input class="input-type" type="number" placeholder="Основной ОКЭД*" required>
 

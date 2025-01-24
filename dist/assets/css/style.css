@@ -1008,7 +1008,8 @@ body::-webkit-scrollbar {
   font-style: normal;
   font-weight: 700;
   line-height: 140%;
-  /* 28px */
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .main-service:hover {
