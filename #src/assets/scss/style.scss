@@ -150,9 +150,9 @@
 }
 
 .gradient-text {
-    background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 151.86%));
-    -webkit-background-clip: text; /* Применение фона к тексту */
-    -webkit-text-fill-color: transparent; /* Прозрачный цвет текста */
+    background: #29817A;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
 }
 
 .center-btw {
@@ -281,7 +281,7 @@
     }
     &:hover {
         border-radius: 24px;
-        background: linear-gradient(226deg, #29817A -6.59%, #0D1457 103.42%);
+        background: #29817A;
         .main-service {
             &__icon {
                 background: #fff;
@@ -726,7 +726,7 @@
             font-style: normal;
             font-weight: 600;
             line-height: 120%;
-            background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 110.61%));
+            background: #29817A;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;

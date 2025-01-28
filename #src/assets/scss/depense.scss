@@ -359,6 +359,7 @@
     &__numbers {
         display: flex;
         justify-content: space-between;
+        width: 100%;
         @media(max-width: 768px) {
             flex-direction: column;
         }
@@ -394,14 +395,14 @@
             -ms-flex: 0 0 250px;
             flex: 0 0 250px;
             margin-right: 25px;
-            height: 220px;
+            height: 260px;
             @media(max-width: 576px) {
                 height: 180px;
             }
             b {
                 font-variant-numeric: lining-nums tabular-nums;
                 font-family: 'MuseoSansCyrillic', sans-serif;
-                font-size: 64px;
+                font-size: 60px;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 140%; 
@@ -419,7 +420,7 @@
                 color: var(--black, #242624);
                 font-variant-numeric: lining-nums tabular-nums;
                 font-family: 'MuseoSansCyrillic', sans-serif;
-                font-size: 18px;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 600;
                 line-height: 140%; 
@@ -436,7 +437,7 @@
         justify-content: space-between;
         padding-bottom: 25px;
         &::-webkit-scrollbar {
-            height: 4px;
+            height: 8px;
             max-width: 200px;
         }
         &::-webkit-scrollbar-track {
@@ -584,7 +585,7 @@
         margin-right: 16px;
         flex: 0 0 330px;
         &:hover {
-            background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 151.86%));
+            background: #29817A;
             p {
                 color: var(--white, #FFF);
             }
@@ -847,7 +848,7 @@
             &.active {
                 cursor: default;
                 span {
-                    background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 151.86%));
+                    background: #29817A;
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
@@ -1223,7 +1224,7 @@
         background: #FFF;
         &:hover {
             .news2__info b {
-                background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 110.61%));
+                background: #29817A ;
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -1684,7 +1685,7 @@
             &:hover {
                 .new__others--info {
                     b {
-                        background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 110.61%));
+                        background: #29817A;
                         background-clip: text;
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
@@ -2235,7 +2236,7 @@
         font-style: normal;
         font-weight: 700;
         line-height: 140%; 
-        background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 110.61%));
+        background: #29817A;
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -2915,10 +2916,11 @@ background-clip: text;
         font-style: normal;
         font-weight: 600;
         line-height: 140%; 
+        white-space: nowrap;
         @media(max-width: 480px) {
             position: absolute;
             left: 0;
-            bottom: 35px;
+            bottom: 45px;
             font-size: 16px;
         }
     }
@@ -5035,7 +5037,7 @@ background-clip: text;
             max-width: 330px;
             &:hover {
                 p {
-                    background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 110.61%));
+                    background: #29817A;
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;

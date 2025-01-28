@@ -647,6 +647,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .block2__numbers h3 {
@@ -676,13 +677,13 @@
   -ms-flex: 0 0 250px;
   flex: 0 0 250px;
   margin-right: 25px;
-  height: 220px;
+  height: 260px;
 }
 
 .block2__numbers--item b {
   font-variant-numeric: lining-nums tabular-nums;
   font-family: "MuseoSansCyrillic", sans-serif;
-  font-size: 64px;
+  font-size: 60px;
   font-style: normal;
   font-weight: 700;
   line-height: 140%;
@@ -692,7 +693,7 @@
   color: var(--black, #242624);
   font-variant-numeric: lining-nums tabular-nums;
   font-family: "MuseoSansCyrillic", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 140%;
@@ -711,7 +712,7 @@
 }
 
 .block2__items::-webkit-scrollbar {
-  height: 4px;
+  height: 8px;
   max-width: 200px;
 }
 
@@ -863,7 +864,7 @@
 }
 
 .docs__item:hover {
-  background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 151.86%));
+  background: #29817A;
 }
 
 .docs__item:hover p {
@@ -1087,7 +1088,7 @@
 }
 
 .organ__tabs--item.active span {
-  background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 151.86%));
+  background: #29817A;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1439,7 +1440,7 @@
 }
 
 .news2__item:hover .news2__info b {
-  background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 110.61%));
+  background: #29817A;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1818,7 +1819,7 @@
 }
 
 .new__others--item:hover .new__others--info b {
-  background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 110.61%));
+  background: #29817A;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2360,7 +2361,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 140%;
-  background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 110.61%));
+  background: #29817A;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -3043,6 +3044,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 140%;
+  white-space: nowrap;
 }
 
 .sovet__text--item {
@@ -5075,7 +5077,7 @@
 }
 
 .serv__docs--item:hover p {
-  background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 110.61%));
+  background: #29817A;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -8450,7 +8452,7 @@
   .sovet__status {
     position: absolute;
     left: 0;
-    bottom: 35px;
+    bottom: 45px;
     font-size: 16px;
   }
 

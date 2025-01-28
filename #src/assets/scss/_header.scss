@@ -96,6 +96,15 @@
             display: flex;
             justify-content: space-between;
             cursor: pointer;
+            align-items: center;
+            &:hover {
+                span {
+                    color: #29817A;
+                }
+            }
+            img {
+                height: fit-content;
+            }
             span {
                 display: block;
                 width: calc(100% - 30px);

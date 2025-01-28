@@ -193,7 +193,7 @@
                 }
                 p {
                     color: var(--gold, #FAB130);
-                    background: linear-gradient(245deg, rgba(41, 129, 122, 0.56) -3.8%, rgba(13, 20, 87, 0.56) 103.21%);
+                    background: rgba(41, 129, 122, 0.56);
                 }
             }
             .banner__inf {
@@ -277,7 +277,7 @@
         justify-content: end;
         p {
             border-radius: 20px;
-            background: linear-gradient(241deg, rgba(41, 129, 122, 0.56) 32.64%, rgba(13, 20, 87, 0.56) 151.86%);
+            background: rgba(41, 129, 122, 0.56);
             padding: 8px 16px;
             color: var(--white, #FFF);
             font-variant-numeric: lining-nums tabular-nums;
@@ -294,7 +294,7 @@
             }
         }
         b {
-            max-width: 620px;
+            max-width: 720px;
             color: #FFF;
             font-variant-numeric: lining-nums tabular-nums;
             font-family: 'MuseoSansCyrillic', sans-serif;
@@ -501,7 +501,7 @@
         }
         &:hover {
             .news__item--info p {
-                background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 110.61%));
+                background: #29817A;
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -701,7 +701,7 @@
         }
     }
     &__title {
-        max-width: 240px;
+        max-width: 290px;
         @media(max-width: 768px) {
             width: 100%;
             max-width: unset;
@@ -922,13 +922,13 @@
         &:hover {
             .events__text {
                 b {
-                    background: var(--grad-2, linear-gradient(241deg, #29817a 32.64%, #0d1457 110.61%));
+                    background: #29817a;
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
                 p {
-                    background: var(--grad-2, linear-gradient(241deg, #29817a 32.64%, #0d1457 110.61%));
+                    background: #29817a;
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
