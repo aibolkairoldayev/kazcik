@@ -2880,7 +2880,7 @@ background-clip: text;
         display: flex;
         flex-direction: column;
         @media(max-width: 480px) {
-            height: 130px;
+            height: 150px;
             justify-content: space-between;
         }
         .flags {
@@ -2897,6 +2897,9 @@ background-clip: text;
             border: 2px solid #E1E1E1;
             border-radius: 13px;
             box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.5);
+            @media(max-width: 480px) {
+                height: 55px;  
+            } 
         }
         b {
             color: #000;
@@ -2920,7 +2923,7 @@ background-clip: text;
         @media(max-width: 480px) {
             position: absolute;
             left: 0;
-            bottom: 45px;
+            bottom: 55px;
             font-size: 16px;
         }
     }
@@ -3515,6 +3518,7 @@ background-clip: text;
 
         .slick-track {
             padding-bottom: 7px;
+            margin-left: 0;
         }
         .slick-arrow {
             position: absolute;
@@ -3653,6 +3657,9 @@ background-clip: text;
         }
         .arrowRight {
             right: 0;
+        }
+        .slick-track {
+            margin-left: 0;
         }
     }
     &__item {

@@ -227,156 +227,156 @@ $(window).on('scroll', function() {
 });
 let lastScrollTop = 0;
 
-const urlParams = new URLSearchParams(window.location.search);
-const start_date_params = urlParams.get('start_date');
-const end_date_params = urlParams.get('end_date');
+// const urlParams = new URLSearchParams(window.location.search);
+// const start_date_params = urlParams.get('start_date');
+// const end_date_params = urlParams.get('end_date');
 
-var startDate = start_date_params ? start_date_params : ''
-var endDate = end_date_params ?end_date_params :''
-//calendar
-$(document).ready(function() {
-    const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-    let currentDate = startDate ? new Date(startDate) : new Date();
+// var startDate = start_date_params ? start_date_params : ''
+// var endDate = end_date_params ?end_date_params :''
+// //calendar
+// $(document).ready(function() {
+//     const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+//     let currentDate = startDate ? new Date(startDate) : new Date();
 
-    const eventDateShowDate = $(".calendar__days.calendar_show").data('eventdateshow');
-    if(eventDateShowDate){
-        const formattedDate = eventDateShowDate.split(' ')[0];
+//     const eventDateShowDate = $(".calendar__days.calendar_show").data('eventdateshow');
+//     if(eventDateShowDate){
+//         const formattedDate = eventDateShowDate.split(' ')[0];
 
-        currentDate = new Date(formattedDate);
-    }
-
-
-
-    function renderCalendar(date) {
-      const year = date.getFullYear();
-      const month = date.getMonth();
-
-      $(".calendar__month").text(months[month]);
-      $(".calendar__year").text(year);
-
-      const firstDay = new Date(year, month, 1).getDay();
-      const lastDate = new Date(year, month + 1, 0).getDate();
-
-      const daysContainer = $(".calendar__days.calendar_main");
-      const daysShowContainer = $(".calendar__days.calendar_show");
-      const eventDateShow = $(".calendar__days.calendar_show").data('eventdateshow');
-      const eventDates = $(".calendar__days.calendar_main").data('eventdate');
-    //   console.log(eventDates);
-      daysContainer.empty();
-      daysShowContainer.empty();
-
-      // Пустые ячейки до первого дня
-      for (let i = 0; i < (firstDay === 0 ? 6 : firstDay - 1); i++) {
-        daysContainer.append('<div class="calendar__day calendar__day--empty"></div>');
-        daysShowContainer.append('<div class="calendar__day calendar__day--empty"></div>');
-      }
+//         currentDate = new Date(formattedDate);
+//     }
 
 
 
-      // Дни месяца
-      for (let day = 1; day <= lastDate; day++) {
-        const dateString = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+//     function renderCalendar(date) {
+//       const year = date.getFullYear();
+//       const month = date.getMonth();
+
+//       $(".calendar__month").text(months[month]);
+//       $(".calendar__year").text(year);
+
+//       const firstDay = new Date(year, month, 1).getDay();
+//       const lastDate = new Date(year, month + 1, 0).getDate();
+
+//       const daysContainer = $(".calendar__days.calendar_main");
+//       const daysShowContainer = $(".calendar__days.calendar_show");
+//       const eventDateShow = $(".calendar__days.calendar_show").data('eventdateshow');
+//       const eventDates = $(".calendar__days.calendar_main").data('eventdate');
+//     //   console.log(eventDates);
+//       daysContainer.empty();
+//       daysShowContainer.empty();
+
+//       // Пустые ячейки до первого дня
+//       for (let i = 0; i < (firstDay === 0 ? 6 : firstDay - 1); i++) {
+//         daysContainer.append('<div class="calendar__day calendar__day--empty"></div>');
+//         daysShowContainer.append('<div class="calendar__day calendar__day--empty"></div>');
+//       }
 
 
 
-        let extraClass = '';
-        let extraShowClass = '';
-        let date = new Date(dateString);
-        let dateStart = new Date(startDate);
-        let dateEnd = new Date(endDate);
-        if(dateString === startDate){
-            extraClass = 'start_date'
-        }else if(dateString === endDate){
-            extraClass = 'end_date'
-        }else if( date > dateStart && date < dateEnd){
-            extraClass = 'range_date'
-        }
-
-        if(eventDates){
-            if (eventDates.includes(dateString)) {
-                extraClass += " dot"
-            }
-        }
-
-        if(eventDateShow){
-            if(eventDateShowDate.split(' ')[0] == dateString){
-                extraShowClass = " event_curr"
-            }
-        }
-
-        daysContainer.append(`<div class="calendar__day calendar__day--filled ${extraClass}" data-date="${dateString}" onclick="clickDay(this)"><div class="circle">${day}</div></div>`);
-        daysShowContainer.append(`<div class="calendar__day calendar__day--filled ${extraShowClass}" data-date="${dateString}">${day}</div>`);
-
-      }
-
-    //   if()
-
-    }
-
-    $(".calendar__nav--prev").click(function() {
-      currentDate.setMonth(currentDate.getMonth() - 1);
-      renderCalendar(currentDate);
-    });
-
-    $(".calendar__nav--next").click(function() {
-      currentDate.setMonth(currentDate.getMonth() + 1);
-      renderCalendar(currentDate);
-    });
-
-    renderCalendar(currentDate);
+//       // Дни месяца
+//       for (let day = 1; day <= lastDate; day++) {
+//         const dateString = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
 
 
-  });
+
+//         let extraClass = '';
+//         let extraShowClass = '';
+//         let date = new Date(dateString);
+//         let dateStart = new Date(startDate);
+//         let dateEnd = new Date(endDate);
+//         if(dateString === startDate){
+//             extraClass = 'start_date'
+//         }else if(dateString === endDate){
+//             extraClass = 'end_date'
+//         }else if( date > dateStart && date < dateEnd){
+//             extraClass = 'range_date'
+//         }
+
+//         if(eventDates){
+//             if (eventDates.includes(dateString)) {
+//                 extraClass += " dot"
+//             }
+//         }
+
+//         if(eventDateShow){
+//             if(eventDateShowDate.split(' ')[0] == dateString){
+//                 extraShowClass = " event_curr"
+//             }
+//         }
+
+//         daysContainer.append(`<div class="calendar__day calendar__day--filled ${extraClass}" data-date="${dateString}" onclick="clickDay(this)"><div class="circle">${day}</div></div>`);
+//         daysShowContainer.append(`<div class="calendar__day calendar__day--filled ${extraShowClass}" data-date="${dateString}">${day}</div>`);
+
+//       }
+
+//     //   if()
+
+//     }
+
+//     $(".calendar__nav--prev").click(function() {
+//       currentDate.setMonth(currentDate.getMonth() - 1);
+//       renderCalendar(currentDate);
+//     });
+
+//     $(".calendar__nav--next").click(function() {
+//       currentDate.setMonth(currentDate.getMonth() + 1);
+//       renderCalendar(currentDate);
+//     });
+
+//     renderCalendar(currentDate);
 
 
-  function clickDay(e){
-    clicked_date = $(e).data('date');
-    start_date =  $( ".calendar_main .calendar__day.start_date" );
-    end_date =  $( ".calendar_main .calendar__day.end_date" );
-    if(startDate && endDate){
-        $(start_date[0]).removeClass('start_date')
-        $(end_date[0]).removeClass('end_date')
-        $( ".calendar__day.range_date" ).removeClass('range_date')
-        startDate=''
-        endDate=''
+//   });
 
-        // sessionStorage.setItem('start_date',clicked_date)
-    }
-    if(!startDate){
-        $(e).toggleClass('start_date');
-         startDate=clicked_date;
 
-        // sessionStorage.setItem('start_date',clicked_date)
-        return;
-    }
-    if(startDate && !endDate){
+//   function clickDay(e){
+//     clicked_date = $(e).data('date');
+//     start_date =  $( ".calendar_main .calendar__day.start_date" );
+//     end_date =  $( ".calendar_main .calendar__day.end_date" );
+//     if(startDate && endDate){
+//         $(start_date[0]).removeClass('start_date')
+//         $(end_date[0]).removeClass('end_date')
+//         $( ".calendar__day.range_date" ).removeClass('range_date')
+//         startDate=''
+//         endDate=''
 
-        if(new Date(clicked_date) > new Date(startDate)){
-            // console.log(start_date)
-            if(start_date.length > 0){
+//         // sessionStorage.setItem('start_date',clicked_date)
+//     }
+//     if(!startDate){
+//         $(e).toggleClass('start_date');
+//          startDate=clicked_date;
 
-                start_date.nextUntil($(e)).addClass('range_date');
-            }else{
-                let empty = $(".events2__content.active .calendar__day.calendar__day--empty");
+//         // sessionStorage.setItem('start_date',clicked_date)
+//         return;
+//     }
+//     if(startDate && !endDate){
 
-                $(empty[empty.length - 1]).nextUntil($(e)).addClass('range_date')
-            }
+//         if(new Date(clicked_date) > new Date(startDate)){
+//             // console.log(start_date)
+//             if(start_date.length > 0){
 
-            $(e).toggleClass('end_date');
-            endDate = clicked_date;
-            const urlParams = new URLSearchParams(window.location.search);
+//                 start_date.nextUntil($(e)).addClass('range_date');
+//             }else{
+//                 let empty = $(".events2__content.active .calendar__day.calendar__day--empty");
 
-            urlParams.set('start_date', startDate);
-            urlParams.set('end_date', clicked_date);
-            urlParams.delete('period')
+//                 $(empty[empty.length - 1]).nextUntil($(e)).addClass('range_date')
+//             }
 
-            window.location.search = urlParams;
-        }
+//             $(e).toggleClass('end_date');
+//             endDate = clicked_date;
+//             const urlParams = new URLSearchParams(window.location.search);
 
-        // sessionStorage.setItem('end_date',clicked_date)
-        return;
-    }
-  }
+//             urlParams.set('start_date', startDate);
+//             urlParams.set('end_date', clicked_date);
+//             urlParams.delete('period')
+
+//             window.location.search = urlParams;
+//         }
+
+//         // sessionStorage.setItem('end_date',clicked_date)
+//         return;
+//     }
+//   }
 
 
 
@@ -385,14 +385,14 @@ $(document).ready(function() {
 const titles2 = document.querySelectorAll('.events2__tab');
 const items2 = document.querySelectorAll('.events2__content');
 
-const period = urlParams.get('period');
+// const period = urlParams.get('period');
 
-if(period){
-    titles2.forEach(t => t.classList.remove('active'));
-    items2.forEach(item => item.classList.remove('active'));
-    $('.events2__tab.events2__tab--past').addClass('active');
-    items2[1].classList.add('active');
-}
+// if(period){
+//     titles2.forEach(t => t.classList.remove('active'));
+//     items2.forEach(item => item.classList.remove('active'));
+//     $('.events2__tab.events2__tab--past').addClass('active');
+//     items2[1].classList.add('active');
+// }
 
 
 titles2.forEach((title, index) => {
@@ -612,6 +612,11 @@ $(document).ready(function () {
         $options.removeClass('active');
       }
     });
+
+    $(window).on('scroll', function () {
+        $('.header__input--options').removeClass('active');
+    });
+
   });
 
 // menu dropdown active
@@ -823,5 +828,36 @@ $(document).ready(function () {
         e.preventDefault();
 
         filter2Close();
+    });
+});
+
+//file name in modals width file type
+$(document).ready(function () {
+    const fileInput = document.getElementByClass('file1');
+    const fileNameDiv = document.querySelector('.file-name1');
+
+    fileInput.addEventListener('change', () => {
+        if (fileInput.files.length > 0) {
+            const fileName = fileInput.files[0].name;
+            console.log(fileName);
+            fileNameDiv.textContent = fileName;
+        } else {
+            fileNameDiv.textContent = '';
+        }
+    });
+});
+
+$(document).ready(function () {
+    const fileInput = document.getElementByClass('file2');
+    const fileNameDiv = document.querySelector('.file-name2');
+
+    fileInput.addEventListener('change', () => {
+        if (fileInput.files.length > 0) {
+            const fileName = fileInput.files[0].name;
+            console.log(fileName);
+            fileNameDiv.textContent = fileName;
+        } else {
+            fileNameDiv.textContent = '';
+        }
     });
 });

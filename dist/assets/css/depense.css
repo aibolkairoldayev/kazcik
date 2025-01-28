@@ -3524,6 +3524,7 @@
 
 .chrono__slider .slick-track {
   padding-bottom: 7px;
+  margin-left: 0;
 }
 
 .chrono__slider .slick-arrow {
@@ -3657,6 +3658,10 @@
 
 .members__items .arrowRight {
   right: 0;
+}
+
+.members__items .slick-track {
+  margin-left: 0;
 }
 
 .members__item {
@@ -8439,7 +8444,7 @@
   }
 
   .sovet__flag {
-    height: 130px;
+    height: 150px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -8449,10 +8454,14 @@
     padding-bottom: 40px;
   }
 
+  .sovet__flag img {
+    height: 55px;
+  }
+
   .sovet__status {
     position: absolute;
     left: 0;
-    bottom: 45px;
+    bottom: 55px;
     font-size: 16px;
   }
 
