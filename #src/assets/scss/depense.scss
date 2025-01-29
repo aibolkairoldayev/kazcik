@@ -396,9 +396,6 @@
             flex: 0 0 250px;
             margin-right: 25px;
             height: 260px;
-            @media(max-width: 576px) {
-                height: 180px;
-            }
             b {
                 font-variant-numeric: lining-nums tabular-nums;
                 font-family: 'MuseoSansCyrillic', sans-serif;
@@ -3464,8 +3461,7 @@ background-clip: text;
         }
     }
     &__item {
-        position: relative;
-        border-bottom: 1px solid #B1B1B1;
+        position: relative;        
         display: flex !important;
         align-items: stretch;
         flex-direction: column;
@@ -3478,7 +3474,7 @@ background-clip: text;
         }
         svg {
             position: absolute;
-            bottom: -6px;
+            bottom: -13px;
             left: 40px;
         }
         p {
@@ -3519,6 +3515,9 @@ background-clip: text;
         .slick-track {
             padding-bottom: 7px;
             margin-left: 0;
+            border-bottom: 1px solid #B1B1B1;
+            margin-bottom: 10px;
+            width: 100% !important;
         }
         .slick-arrow {
             position: absolute;
@@ -3820,7 +3819,7 @@ background-clip: text;
             gap: 10px;
         }
         @media(max-width: 480px) {
-            gap: 4px;
+            gap: 10px;
         }
     }
     &__text {
@@ -4497,7 +4496,7 @@ background-clip: text;
         width: 320px;
         height: fit-content;
         position: sticky;
-        top: 50px;
+        top: 120px;
         @media(max-width: 992px) {
             position: static;
             width: 100%;

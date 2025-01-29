@@ -848,7 +848,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    const fileInput = document.getElementByClass('file2');
+    const fileInput = document.querySelector('file2');
     const fileNameDiv = document.querySelector('.file-name2');
 
     fileInput.addEventListener('change', () => {

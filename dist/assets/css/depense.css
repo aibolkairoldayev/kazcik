@@ -3473,7 +3473,6 @@
 
 .chrono__item {
   position: relative;
-  border-bottom: 1px solid #B1B1B1;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -3489,7 +3488,7 @@
 
 .chrono__item svg {
   position: absolute;
-  bottom: -6px;
+  bottom: -13px;
   left: 40px;
 }
 
@@ -3525,6 +3524,9 @@
 .chrono__slider .slick-track {
   padding-bottom: 7px;
   margin-left: 0;
+  border-bottom: 1px solid #B1B1B1;
+  margin-bottom: 10px;
+  width: 100% !important;
 }
 
 .chrono__slider .slick-arrow {
@@ -4548,7 +4550,7 @@
   height: -moz-fit-content;
   height: fit-content;
   position: sticky;
-  top: 50px;
+  top: 120px;
 }
 
 .serv__left {
@@ -7777,10 +7779,6 @@
     font-size: 20px;
   }
 
-  .block2__numbers--item {
-    height: 180px;
-  }
-
   .block2__numbers--item b {
     font-size: 48px;
   }
@@ -8508,7 +8506,7 @@
   }
 
   .foreign__flags {
-    gap: 4px;
+    gap: 10px;
   }
 
   .serv__numbers--item {
