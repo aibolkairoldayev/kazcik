@@ -2645,6 +2645,10 @@
   margin-right: 25px;
 }
 
+.sovet__mob576 {
+  display: none;
+}
+
 .sovet__bg1 {
   right: 0;
   top: 20%;
@@ -3172,8 +3176,7 @@
 }
 
 .sovetpage__flags img {
-  width: 84px;
-  height: 100%;
+  height: 50px;
   margin-right: 10px;
   border: 2px solid #e1e1e1;
   border-radius: 13px;
@@ -3384,6 +3387,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 140%;
+  padding-right: 20px;
 }
 
 .sovetpage__sekr--info a {
@@ -3457,6 +3461,16 @@
 
 .chrono {
   margin: 60px 0;
+  position: relative;
+}
+
+.chrono__line {
+  width: 100%;
+  height: 1px;
+  background-color: #B1B1B1;
+  position: absolute;
+  left: 0;
+  bottom: 17px;
 }
 
 .chrono__title {
@@ -3483,12 +3497,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 130px;
+  height: 160px;
+  padding-bottom: 30px;
 }
 
 .chrono__item svg {
   position: absolute;
-  bottom: -13px;
+  bottom: 5px;
   left: 40px;
 }
 
@@ -3521,12 +3536,13 @@
   text-underline-position: from-font;
 }
 
-.chrono__slider .slick-track {
-  padding-bottom: 7px;
-  margin-left: 0;
-  border-bottom: 1px solid #B1B1B1;
+.chrono__slider {
   margin-bottom: 10px;
-  width: 100% !important;
+  padding-bottom: 7px;
+}
+
+.chrono__slider .slick-track {
+  margin-left: 0;
 }
 
 .chrono__slider .slick-arrow {
@@ -3804,6 +3820,7 @@
   border-radius: 13px;
   -webkit-box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+  width: 90px;
 }
 
 .foreign__flags {
@@ -6253,6 +6270,8 @@
 
   .foreign__flag {
     margin-bottom: 0;
+    width: auto;
+    height: 50px;
   }
 
   .foreign__flags {
@@ -7996,6 +8015,15 @@
     bottom: -60px;
   }
 
+  .sovet__mob576 {
+    display: block;
+    margin: 25px 0 15px;
+  }
+
+  .sovet__desk576 {
+    display: none;
+  }
+
   .sovet__bg1 img {
     max-width: 200px;
   }
@@ -8006,6 +8034,10 @@
 
   .sovet__content {
     margin-bottom: 45px;
+  }
+
+  .sovet__flag img {
+    margin-bottom: 0;
   }
 
   .sovetpage__bg1 img {
@@ -8080,6 +8112,7 @@
 
   .sovetpage__sekr--info b {
     font-size: 16px;
+    padding-right: 0;
   }
 
   .sovetpage__sekr--info a {
@@ -8423,6 +8456,10 @@
     height: 190px;
   }
 
+  .sovet__mob576 {
+    margin: 15px 0;
+  }
+
   .sovet__search {
     width: 100%;
     padding: 16px;
@@ -8442,7 +8479,6 @@
   }
 
   .sovet__flag {
-    height: 150px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -8450,17 +8486,6 @@
 
   .sovet__flag .flags {
     padding-bottom: 40px;
-  }
-
-  .sovet__flag img {
-    height: 55px;
-  }
-
-  .sovet__status {
-    position: absolute;
-    left: 0;
-    bottom: 55px;
-    font-size: 16px;
   }
 
   .sovetpage__bg1 img {
@@ -8487,6 +8512,14 @@
 
   .chrono__item {
     height: 90px;
+  }
+
+  .chrono__slider .arrowLeft {
+    right: 60px;
+  }
+
+  .chrono__slider .arrowRight {
+    right: 15px;
   }
 
   .members__item--left {
