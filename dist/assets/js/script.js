@@ -659,10 +659,26 @@ $(document).ready(function () {
 });
 
 // sort dropdown in pull page
-$('.pull__sort--current').click(()=> {
+$('.pull__sort--current').click((event) => {
+    event.stopPropagation();
     $('.pull__sort--current').toggleClass('active');
     $('.pull__sort--others').toggleClass('active');
-})
+});
+
+
+$(document).click(() => {
+    $('.pull__sort--current').removeClass('active');
+    $('.pull__sort--others').removeClass('active');
+});
+
+$('.pull__sort--other').click((event) => {
+    event.stopPropagation();
+    $('.pull__sort--current').removeClass('active');
+    $('.pull__sort--others').removeClass('active');
+});
+$('.pull__sort--others').click((event) => {
+    event.stopPropagation();
+});
 
 //speakers modal close/open
 $(document).ready(function () {

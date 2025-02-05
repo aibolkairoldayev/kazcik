@@ -267,7 +267,7 @@
 .block2 {
     &__bg1 {
         position: absolute;
-        top: 0;
+        top: 120px;
         left: 0;
         z-index: -1;
         img {
@@ -534,8 +534,8 @@
     position: relative;
     &__bg1 {
         position: absolute;
-        bottom: -200px;
-        right: 0;
+        top: 100px;
+        left: 0;
         z-index: -1;
         img {
             max-width: 400px;
@@ -546,7 +546,7 @@
     }
     &__bg2 {
         position: absolute;
-        bottom: -100px;
+        bottom: 70px;
         right: 0;
         z-index: -1;
         img {
@@ -650,7 +650,7 @@
     }
     &__bg2 {
         position: absolute;
-        top: 40px;
+        bottom: -200px;
         right: 0;
         z-index: -1;
         @media(max-width: 768px) {
@@ -697,7 +697,7 @@
     position: relative;
     &__bg1 {
         position: absolute;
-        top: 0;
+        top: 50px;
         left: 0;
         z-index: -1;
         img {
@@ -710,7 +710,7 @@
 
     &__bg2 {
         position: absolute;
-        top: 170px;
+        top: 60px;
         right: 0;
         z-index: -1;
         @media(max-width: 576px) {
@@ -1039,12 +1039,24 @@
     &__bg {
         position: absolute;
         z-index: -1;
-        bottom: 0;
+        bottom: -150px;
         right: 0;
         img {
             max-width: 500px;
             @media(max-width: 768px) {
                 max-width: 270px;
+            }
+        }
+    }
+    &__bg2 {
+        position: absolute;
+        z-index: -1;
+        bottom: 100px;
+        right: 0;
+        img {
+            max-width: 200px;
+            @media(max-width: 768px) {
+                max-width: 120px;
             }
         }
     }
@@ -1304,7 +1316,7 @@
     position: relative;
     &__bg {
         position: absolute;
-        bottom: 0;
+        bottom: -400px;
         right: 0;
         z-index: -1;
         @media(max-width: 576px) {
@@ -1314,6 +1326,19 @@
             left: 0;
             transform: rotate(180deg);
         }
+        img {
+            max-width: 500px;
+            @media(max-width: 576px) {
+                max-width: 350px;
+            }
+        }
+    }
+    &__bg2 {
+        position: absolute;
+        bottom: 100px;
+        right: 0;
+        z-index: -1;
+      
         img {
             max-width: 500px;
             @media(max-width: 576px) {
@@ -1825,13 +1850,25 @@
     }
     &__bg2 {
         position: absolute;
-        bottom: -30px;
+        bottom: -350px;
         right: 0;
         z-index: -1;
         img {
             max-width: 400px;
             @media(max-width: 768px) {
                 max-width: 230px;
+            }
+        }
+    }
+    &__bg3 {
+        position: absolute;
+        bottom: -100px;
+        right: 0;
+        z-index: -1;
+        img {
+            max-width: 400px;
+            @media(max-width: 768px) {
+                max-width: 190px;
             }
         }
     }
@@ -2048,7 +2085,7 @@
 
     &__bg3 {
         left: 0;
-        top: 40%;
+        top: 52%;
         img {
             max-width: 300px;
             @media(max-width: 576px) {
@@ -2059,11 +2096,11 @@
 
     &__bg2 {
         right: 0;
-        bottom: 0;
+        bottom: -350px;
         img {
             max-width: 500px;
             @media(max-width: 576px) {
-                max-width: 290px;
+                max-width: 240px;
             }
         }
     }
@@ -2974,7 +3011,7 @@ background-clip: text;
 
 .sovetpage {
     &__bg1 {
-        top: 10%;
+        top: 17%;
         right: 0;
         img {
             max-width: 500px;
@@ -2994,7 +3031,7 @@ background-clip: text;
     }
 
     &__bg2 {
-        top: 10%;
+        top: 27%;
         left: 0;
         img {
             max-width: 300px;
@@ -3011,7 +3048,7 @@ background-clip: text;
     }
 
     &__bg3 {
-        bottom: 0;
+        bottom: -100px;
         right: 0;
         img {
             max-width: 400px;
@@ -3026,6 +3063,16 @@ background-clip: text;
             }
             @media(max-width: 480px) {
                 max-width: 180px;
+            }
+        }
+    }
+    &__bg4 {
+        bottom: -20px;
+        right: 0;
+        img {
+            max-width: 400px;
+            @media(max-width: 576px) {
+                max-width: 230px;
             }
         }
     }
@@ -3951,22 +3998,10 @@ background-clip: text;
         }
     }
     &__bg2 {
-        bottom: -400px;
+        bottom: -670px;
         left: 0;
         img {
-            max-width: 300px;
-            @media(max-width: 1200px) {
-                max-width: 250px;
-            }
-            @media(max-width: 992px) {
-                max-width: 200px;
-            }
-            @media(max-width: 768px) {
-                max-width: 180px;
-            }
-            @media(max-width: 576px) {
-                max-width: 140px;
-            }
+            max-width: 240px;
             @media(max-width: 576px) {
                 max-width: 100px;
             }
@@ -4221,11 +4256,49 @@ background-clip: text;
             margin-top: 5px;
         }
     }
+    &__pages {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 120px;
+        @media(max-width: 576px) {
+            margin-bottom: 60px;
+        }
+    }
+    &__pg {
+        width: 30px;
+        height: 30px;
+        border-radius: 6px;
+        background: #FFF;
+        color: #000;
+        font-variant-numeric: lining-nums tabular-nums;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; 
+        cursor: pointer;
+        margin: 0 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &.active {
+            background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 110.61%), #FFF);
+            color: #FFF;
+            cursor: default;
+        }
+    }
+    &__arrow {
+        display: flex;
+        align-items: center;
+        margin: 0 4px;
+        cursor: pointer;
+    }
     &__table {
         padding: 24px 32px;
         border-radius: 32px;
         background: var(--white, #FFF);
-        margin-bottom: 120px;
+        margin-bottom: 40px;
         @media(max-width: 1400px) {
             padding: 12px 16px;
         }
@@ -4477,7 +4550,7 @@ background-clip: text;
 .serv {
     &__bg1 {
         right: 0;
-        top: 200px;
+        bottom: 100px;
         img {
             max-width: 400px;
             @media(max-width: 576px) {
@@ -4488,18 +4561,18 @@ background-clip: text;
 
     &__bg2 {
         left: 0;
-        top: 15%;
+        bottom: -120px;
         img {
-            max-width: 300px;
+            max-width: 200px;
             @media(max-width: 576px) {
-                max-width: 180px;
+                max-width: 100px;
             }
         }
     }
 
     &__bg3 {
         right: 0;
-        bottom: 0;
+        bottom: 250px;
         img {
             max-width: 400px;
             @media(max-width: 576px) {
