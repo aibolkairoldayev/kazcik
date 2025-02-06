@@ -4151,6 +4151,13 @@ background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
         }
+        &--hidden {
+            position: absolute;
+            bottom: -10px;
+            z-index: 0;
+            height: 10px;
+            width: 100%;
+        }
     }
     &__search {
         height: 48px;
@@ -4282,6 +4289,18 @@ background-clip: text;
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        &:hover {
+            background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 110.61%), #FFF);
+            color: #FFF;
+        }
+        a {
+            color: #000;
+            font-variant-numeric: lining-nums tabular-nums;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; 
+        }
         &.active {
             background: var(--grad-2, linear-gradient(241deg, #29817A 32.64%, #0D1457 110.61%), #FFF);
             color: #FFF;

@@ -665,8 +665,7 @@ $('.pull__sort--current').click((event) => {
     $('.pull__sort--others').toggleClass('active');
 });
 
-
-$(document).click(() => {
+$('.pull__sort').mouseleave(() => {
     $('.pull__sort--current').removeClass('active');
     $('.pull__sort--others').removeClass('active');
 });
@@ -676,6 +675,7 @@ $('.pull__sort--other').click((event) => {
     $('.pull__sort--current').removeClass('active');
     $('.pull__sort--others').removeClass('active');
 });
+
 $('.pull__sort--others').click((event) => {
     event.stopPropagation();
 });

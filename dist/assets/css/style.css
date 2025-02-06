@@ -597,9 +597,9 @@ body::-webkit-scrollbar {
   width: 100%;
   height: 100%;
   z-index: 49;
-  -webkit-transition: 0.4s linear;
-  -o-transition: 0.4s linear;
-  transition: 0.4s linear;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 .burger.open {
