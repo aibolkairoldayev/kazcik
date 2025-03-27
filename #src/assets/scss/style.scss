@@ -594,6 +594,17 @@
     }
 }
 
+.modal7__bg {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 50%;
+    img {
+        width: 75%;
+        opacity: 0.7;
+    }
+}
+
 .modal__wrapper {
     position: absolute;
     top: 0;
