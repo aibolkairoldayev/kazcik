@@ -594,14 +594,31 @@
     }
 }
 
-.modal7__bg {
-    position: absolute;
-    top: 10%;
-    left: 0;
-    width: 50%;
-    img {
-        width: 75%;
-        opacity: 0.7;
+.modal7 {
+    &__bg {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 50%;
+        img {
+            width: 75%;
+            opacity: 0.7;
+        }
+    }
+    #modal-inner {
+        max-height: 70vh;
+        overflow-y: scroll;
+    }
+}
+
+.modal6 {
+    .modal__content {
+        width: 600px;
+        @media(max-width: 768px) {
+            width: 90%;
+            left: 5%;
+            transform: none;
+        }
     }
 }
 

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/svg+xml" href="./assets/img/icons/favicon.svg">
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+  <link rel="stylesheet" href="./assets/css/depense.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="./assets/css/homePage.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="./assets/css/backend.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" media="print"
+    onload="this.media='all'" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" type="text/css" media="screen" />
+  <!-- Fallback that only gets inserted when JavaScript is disabled, in which case we can't load CSS asynchronously. -->
+  <noscript>
+    <link rel="stylesheet" href="./assets/css/depense.min.css">
+    <link rel="stylesheet" href="./assets/css/homePage.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </noscript>
+  <title>qazcic</title>
+</head>
+
+<body class="body">
+
+    <header class="header">
+    <div class="container">
+        <a href="/" class="header__logo">
+            <img class="header__logo--desk" src="assets/img/icons/logo.svg" alt="logo">
+            <img class="header__logo--mob" src="assets/img/icons/logo3.svg" alt="mob-logo">
+        </a>
+        <div class="header__text">
+            <nav class="header__menu">
+                <div class="header__menu--link with-drop" href="">
+                    <div class="header__menu--current">
+                        <span>О палате</span>
+                        <img class="header__drop--down" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="header__drop--up" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="header__menu--hidden"></div>
+                    <div class="header__menu--line"></div>
+                    
+                    <div class="header__menu--drop">
+                        <a href="about.html">О палате</a>
+                        <a href="organ.html">Организационная структура</a>
+                        <a href="docs.html">Учредительные документы</a>
+                    </div>
+                </div>
+                <div class="header__menu--link with-drop" href="">
+                    <div class="header__menu--current">
+                        <span>Услуги</span>
+                        <img class="header__drop--down" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="header__drop--up" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+
+                    <div class="header__menu--hidden"></div>
+                    <div class="header__menu--line"></div>
+
+                    <div class="header__menu--drop">
+                        <a href="serv.html">Юридические услуги</a>
+                        <a href="serv.html">Carnet ATA</a>
+                        <a href="serv.html">Проведение мероприятий</a>
+                    </div>
+                </div>
+                <div class="header__menu--link with-drop" href="">
+                    <div class="header__menu--current">
+                        <span>Международная деятельность</span>
+                        <img class="header__drop--down" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="header__drop--up" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    
+                    <div class="header__menu--hidden"></div>
+                    <div class="header__menu--line"></div>
+
+                    <div class="header__menu--drop">
+                        <a href="sovet.html">Деловые советы</a>
+                        <a href="foreign.html">Зарубежные представители</a>
+                        <a href="pull.html">Пул иностранных предприятий</a>
+                    </div>
+                </div>
+                <a class="header__menu--link" href="news.html">Новости</a>
+                <a class="header__menu--link" href="events.html">Мероприятия</a>
+                <a class="header__menu--link" href="contacts.html">Контакты</a>
+            </nav>
+
+            <div class="header__input">
+                <img src="assets/img/icons/search.svg" alt="search" class="header__input--search">
+                <input type="text">
+                <img class="header__input--close" src="assets/img/icons/close3.svg" alt="close" onClick="closeSearch()">
+                <div class="header__input--options">
+                    <div class="header__input--option">
+                        <img src="assets/img/icons/search.svg" alt="search">
+                        <span>Международные выставки</span>
+                    </div>
+                    <div class="header__input--option">
+                        <img src="assets/img/icons/search.svg" alt="search">
+                        <span>Международные выставки</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__mid">
+                <div class="header__search">
+                    <img src="assets/img/icons/search.svg" alt="search" onclick="openSeacrh()">
+                </div>
+
+                <div class="header__lang lang">
+                    <div class="header__lang--current lang__current">
+                        <img class="world" src="assets/img/icons/world.svg" alt="lang">
+                        <img class="world2" src="assets/img/icons/world2.svg" alt="lang">
+                        <span>Русский</span>
+                        <img class="dropy" src="assets/img/icons/drop.svg" alt="drop" >
+                        <img class="dropy2" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="header__lang--line"></div>
+                    <div class="header__lang--hidden lang__hidden"></div>
+                    <div class="header__lang--drop lang__drop">
+                        <span>Русский</span>
+                        <a href="#">Қазақ</a>
+                        <a href="#">English</a>
+                    </div>
+                </div>                
+            </div>
+            <a class="header__phone phonetype" href="tel:+77172279616">
+                <img src="assets/img/icons/call.svg" alt="call">
+                <b>+7 7172 27-96-16</b>
+            </a>
+
+            <div class="burger__btn" onclick="toggleBurger()">
+                <svg class="burger__icon1" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <path d="M31.5 15H10.5" stroke="#242624" stroke-opacity="0.72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M31.5 9H4.5" stroke="#242624" stroke-opacity="0.72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M31.5 21H4.5" stroke="#242624" stroke-opacity="0.72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M31.5 27H10.5" stroke="#242624" stroke-opacity="0.72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <svg class="burger__icon2" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <path d="M29 8L8 28M8 8L29 28" stroke="#242624" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="burger">
+    <div class="burger__wrapper"></div>
+    <div class="burger__content">
+        <div class="container">
+            <div class="burger__items">
+                <div class="burger__item">
+                    <a class="burger__link" href="/">Главная</a>
+                </div>
+                <div class="burger__item">
+                    <div class="burger__title">
+                        <b>О палате</b>
+                        <img class="burger__drop1" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="burger__drop2" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="burger__subs">
+                        <a class="burger__sub" href="about.html">О палате</a>
+                        <a class="burger__sub" href="organ.html">Организационная структура</a>
+                        <a class="burger__sub" href="docs.html">Учредительные документы</a>
+                    </div>
+                </div>
+    
+                <div class="burger__item">
+                    <div class="burger__title">
+                        <b>Услуги</b>
+                        <img class="burger__drop1" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="burger__drop2" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="burger__subs">
+                        <a class="burger__sub" href="serv.html">Юридические услуги</a>
+                        <a class="burger__sub" href="serv.html">Carnet ATA</a>
+                        <a class="burger__sub" href="serv.html">Проведение мероприятий</a>
+                    </div>
+                </div>
+    
+                <div class="burger__item">
+                    <div class="burger__title">
+                        <b>Международная деятельность</b>
+                        <img class="burger__drop1" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="burger__drop2" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="burger__subs">
+                        <a class="burger__sub" href="sovet.html">Деловые советы</a>
+                        <a class="burger__sub" href="foreign.html">Зарубежные представители</a>
+                        <a class="burger__sub" href="pull.html">Пул иностранных предприятий</a>
+                    </div>
+                </div>
+    
+                <div class="burger__item">
+                    <a class="burger__link" href="news.html">Новости</a>                    
+                </div>
+                <div class="burger__item">
+                    <a class="burger__link" href="events.html">Мероприятия</a>
+                </div>
+                <div class="burger__item">
+                    <a class="burger__link" href="contacts.html">Контакты</a>
+                </div>   
+                
+                <div class="burger__item">
+                    <div class="burger__title">
+                        <b>Язык</b>
+                        <img class="burger__drop1" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="burger__drop2" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="burger__subs">
+                        <a class="burger__sub burger__lang" href="sovet.html">
+                            <span>Қазақша</span>
+                            <img src="assets/img/icons/kaz.svg" alt="flag">
+                        </a>
+                        <a class="burger__sub burger__lang" href="foreign.html">
+                            <span>English</span>
+                            <img src="assets/img/icons/eng.svg" alt="flag">
+                        </a>
+                        <a class="burger__sub burger__lang" href="pull.html">
+                            <span>中国人</span>
+                            <img src="assets/img/icons/china.svg" alt="flag">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <main class="main">
+    <div class="part1">
+        <div class="container">
+            <h1 class="part1__title big-title">Партнеры</h1>
+            <div class="small-width">
+                <div class="part1__items">
+                    <div class="part1__item">
+                        <div class="part1__img">
+                            <img src="assets/img/partner1.png" alt="1">
+                        </div>
+                        <div class="part1__text">
+                            <a href="">Деловая Россия</a>
+                            <p>
+                                Общероссийская общественная организация, представляющая интересы частных несырьевых компаний. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="part1__item">
+                        <div class="part1__img">
+                            <img src="assets/img/partner2.png" alt="1">
+                        </div>
+                        <div class="part1__text">
+                            <a href="">Агентство США по международному развитию</a>
+                            <p>
+                                Высший федеральный орган государственного управления Соединённых Штатов Америки в области оказания помощи за рубежом. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="part1__item">
+                        <div class="part1__img">
+                            <img src="assets/img/partner3.png" alt="1">
+                        </div>
+                        <div class="part1__text">
+                            <a href="">Международная торговая палата</a>
+                            <p>
+                                Международная организация, созданная для решения актуальных проблем развития бизнеса. Объединяем тысячи предприятий, компаний и деловых ассоциаций.                            </p>
+                        </div>
+                    </div>
+                    <div class="part1__item">
+                        <div class="part1__img">
+                            <img src="assets/img/partner4.png" alt="1">
+                        </div>
+                        <div class="part1__text">
+                            <a href="">РОТОБО</a>
+                            <p>
+                                Японская ассоциация по торговле с независимыми государствами                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    <footer class="footer">
+    <div class="container">
+        <div class="small-width">
+            <div class="footer__top">
+                <div class="footer__left">
+                    <div class="footer__logo">
+                        <a href="/">
+                            <img src="assets/img/icons/logo2.svg" alt="logo">
+                        </a>
+                        <a href="">
+                            <img src="assets/img/icons/ata-logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <a href="" class="footer__gov">Export.gov.kz</a>
+                </div>
+
+                <nav class="footer__menu">
+                    <a href="/">Главная</a>
+                    <a href="about.html">О палате</a>
+                    <a href="news.html">Новости</a>
+                    <a href="events.html">Мероприятия</a>
+                    <a href="sovet.html">Деловые советы</a>
+                    <a href="pull.html">Пул иностранных предприятий</a>
+                    <a href="foreign.html">Зарубежные представители</a>
+                    <a href="contacts.html">Контакты</a>
+                </nav>
+
+                <div class="footer__serv">
+                    <a href="services.html" class="footer__serv--title">Услуги</a>
+                    <a href="events.html">Проведение мероприятий</a>
+                    <a href="serv.html">Информационно-консалтинговые услуги</a>
+                    <a href="serv.html">Юридические услуги</a>
+                    <a href="serv.html">Таможенное сопровождение</a>
+                    <a href="serv.html">Carnet ATA</a>
+                    <a href="serv.html">Услуги для иностранных компаний</a>
+                    <a href="serv.html">Форс-мажор</a>
+                </div>
+
+                <div class="footer__right">
+                    <div class="footer__item footer__address">
+                        <img src="assets/img/icons/map.svg" alt="icon">
+                        <p>
+                            010000,<br> г. Астана, р-н Нура, <br> пр. Кабанбай-батыра, 17, н.п. 17
+                        </p>
+                    </div>
+
+                    <div class="footer__item footer__call">
+                        <img src="assets/img/icons/call2.svg" alt="icon">
+                        <div class="footer__call--text">
+                            <span>Приемная</span>
+                            <a href="tel:+77172279616">+7 7172 27-96-16</a>
+                        </div>
+                    </div>
+
+                    <div class="footer__item footer__mail">
+                        <img src="assets/img/icons/mail.svg" alt="icon">
+                        <a href="mailto:info.icc.kz@gmail.com">info.icc.kz@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bot">
+                <div class="footer__lang lang">
+                    <div class="footer__lang--current lang__current">
+                        <img class="world" src="assets/img/icons/world.svg" alt="lang">
+                        <img class="world2" src="assets/img/icons/world2.svg" alt="lang">
+                        <span>Русский</span>
+                        <img class="dropy" src="assets/img/icons/drop.svg" alt="drop" >
+                        <img class="dropy2" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="footer__lang--hidden lang__hidden"></div>
+                    <div class="footer__lang--drop lang__drop">
+                        <span>Русский</span>
+                        <a href="">Қазақ</a>
+                        <a href="">English</a>
+                    </div>
+                </div>  
+                <div class="footer__law">© 2024  kazcic.kz. Все права защищены.</div>
+                <div class="footer__bot--right">
+                    <a href="policy.html">Политика конфиденциальности</a>
+                    <div class="footer__made">
+                        <p>Разработано</p>
+                        <a href="https://i-marketing.kz/">
+                            <img src="assets/img/icons/imark.svg" alt="icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+<div class="preloader">
+    <img src="assets/img/icons/logo.svg" alt="logo">
+</div>
+
+    <div class="modal modaltype">
+    <div class="modal__wrapper1 modal__wrapper"></div>
+    <div class="modal__content modaltype__content">
+        <div class="modaltype__top">
+            <b>Оставить заявку </b>
+            <img src="assets/img/icons/close.svg" alt="close" onClick="closeModal()">
+        </div>
+
+        <form action="" id="modal-main">
+            <div class="modaltype__form1">
+                <input class="input-type" type="text" placeholder="Фамилия*" required>
+                <input class="input-type" type="text" placeholder="Имя*" required>
+                <input class="input-type" type="text" placeholder="Отчество">
+                <input class="input-type" type="email" placeholder="E-mail*" required>
+                <input class="input-type" placeholder="+7 ___-___-__-__" type="tel" required>
+                <!-- <div class="input-type" class="phone__input">
+                    <div class="phone__input--flags">
+                        <div class="phone__input--current">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div> -->
+                <textarea class="textarea-type"  id="" placeholder="Комментарии"></textarea>
+                <button class="modaltype__btn" type="submit" onclick="thanksOpen()">Отправить заявку</button>
+            </div>
+        </form>
+        
+    </div>
+</div>
+
+<div class="modal2 modaltype">
+    <div class="modal__wrapper2 modal__wrapper"></div>
+    <div class="modal__content modaltype__content">
+        <div class="modaltype__top">
+            <b>Заявка на участие</b>
+            <img src="assets/img/icons/close.svg" alt="close" onClick="closeModal2()">
+        </div>
+        <form action="" id="modal-party">
+            <div class="modaltype__form2">
+                <div class="modaltype__item">
+                    <input class="input-type" type="text" placeholder="Название организации*" required>
+                    <input class="input-type" type="number" placeholder="БИН/ИИН организации*5" required max="99999" oninput="if(this.value.length > 12) this.value = this.value.slice(0, 12);">
+                    <input class="input-type" type="text" placeholder="Сфера деятельности*" required>
+                    <input class="input-type" type="number" placeholder="Основной ОКЭД*" required>
+
+                </div>
+                <div class="modaltype__item">
+                    <input class="input-type" type="text" placeholder="ФИО*" required>
+                    <input class="input-type" type="text" placeholder="Ваша должность*" required>
+                    <input class="input-type" placeholder="+7 ___-___-__-__" type="tel" required>
+                    <!-- <div class="input-type" class="phone__input"></div> -->
+                    <div class="modaltype__file">
+                        <label for="file" >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6654 9.14133L10.3617 15.4581C9.58942 16.2319 8.54202 16.6667 7.4499 16.6667C6.35777 16.6667 5.31038 16.2319 4.53813 15.4581C3.76588 14.6842 3.33203 13.6347 3.33203 12.5403C3.33203 11.4459 3.76588 10.3963 4.53813 9.62247L10.8418 3.30573C11.3567 2.78983 12.0549 2.5 12.783 2.5C13.5111 2.5 14.2094 2.78983 14.7242 3.30573C15.239 3.82163 15.5282 4.52134 15.5282 5.25093C15.5282 5.98052 15.239 6.68023 14.7242 7.19613L8.41363 13.5129C8.15621 13.7708 7.80708 13.9157 7.44304 13.9157C7.079 13.9157 6.72987 13.7708 6.47245 13.5129C6.21503 13.2549 6.07042 12.9051 6.07042 12.5403C6.07042 12.1755 6.21503 11.8256 6.47245 11.5677L12.296 5.73895" stroke="#7A7A7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <span>Прикрепить удостоверение или паспорт</span>
+                            
+                        </label>
+                        <input type="file" id="file" placeholder="Прикрепить удостоверение или паспорт">
+                    </div>
+                    <!-- <div class="file-name file-name1"></div> -->
+                </div>
+                <button class="modaltype__btn" type="submit" onclick="thanksOpen()">Отправить заявку</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal3 modaltype">
+    <div class="modal__wrapper3 modal__wrapper"></div>
+    <div class="modal__content modaltype__content">
+        <div class="modaltype__top">
+            <b>Вступить в Деловой Совет</b>
+            <img src="assets/img/icons/close.svg" alt="close" onClick="closeModal3()">
+        </div>
+        <form action="" id="modal-inner">
+            <div class="modaltype__form2">
+                <div class="modaltype__item">
+                    <input class="input-type" type="text" placeholder="Название организации*" required>
+                    <input class="input-type" type="number" placeholder="БИН/ИИН организации*" required>
+                    <input class="input-type" type="text" placeholder="Сфера деятельности*" required>
+                    <input class="input-type" type="number" placeholder="Основной ОКЭД*" required>
+                    <a href="">
+                        <img src="assets/img/icons/down.svg" alt="down">
+                        <span>Скачать шаблон .doc</span>
+                    </a>
+                </div>
+                <div class="modaltype__item">
+                    <input class="input-type" type="text" placeholder="ФИО*" required>
+                    <input class="input-type" type="text" placeholder="Ваша должность*" required>
+                    <input class="input-type" placeholder="+7 ___-___-__-__" type="tel" required>
+                    <!-- <div class="input-type" class="phone__input"></div> -->
+                    <div class="modaltype__file">
+                        <label for="file1" >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6654 9.14133L10.3617 15.4581C9.58942 16.2319 8.54202 16.6667 7.4499 16.6667C6.35777 16.6667 5.31038 16.2319 4.53813 15.4581C3.76588 14.6842 3.33203 13.6347 3.33203 12.5403C3.33203 11.4459 3.76588 10.3963 4.53813 9.62247L10.8418 3.30573C11.3567 2.78983 12.0549 2.5 12.783 2.5C13.5111 2.5 14.2094 2.78983 14.7242 3.30573C15.239 3.82163 15.5282 4.52134 15.5282 5.25093C15.5282 5.98052 15.239 6.68023 14.7242 7.19613L8.41363 13.5129C8.15621 13.7708 7.80708 13.9157 7.44304 13.9157C7.079 13.9157 6.72987 13.7708 6.47245 13.5129C6.21503 13.2549 6.07042 12.9051 6.07042 12.5403C6.07042 12.1755 6.21503 11.8256 6.47245 11.5677L12.296 5.73895" stroke="#7A7A7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                            <span>Прикрепить удостоверение или паспорт</span>
+                            
+                        </label>
+                        <input type="file" id="file1" placeholder="Прикрепить удостоверение или паспорт">
+                    </div>
+                    <div class="file-name file-name1"></div>
+                </div>
+                <button class="modaltype__btn" type="submit" onclick="thanksOpen()">Отправить заявку</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal4 modaltype">
+    <div class="modal__wrapper4 modal__wrapper"></div>
+    <div class="modal__content modaltype__content">
+        <div class="modaltype__top">
+            <b>Оставить заявку </b>
+            <img src="assets/img/icons/close.svg" alt="close" onClick="closeModal4()">
+        </div>
+
+        <form action="" id="modal-serv">
+            <div class="modaltype__form1">
+                <input class="input-type" type="text" placeholder="Наименование компании*" required>
+                <input class="input-type" type="text" placeholder="Отрасль*" required>
+                <div class="input-type input__drop">
+                    <div class="input__drop--current">
+                        <b>Страна</b>
+                        <img class="input__drop1" src="assets/img/icons/drop.svg" alt="drop">
+                        <img class="input__drop2" src="assets/img/icons/drop2.svg" alt="drop">
+                    </div>
+                    <div class="input__drop--others">
+                        <div class="input__drop--other">Германия</div>
+                        <div class="input__drop--other">Казахстан</div>
+                        <div class="input__drop--other">Украниа</div>
+                        <div class="input__drop--other">Япония</div>
+                        <div class="input__drop--other">США</div>
+                        <div class="input__drop--other">Китай</div>
+                        <div class="input__drop--other">Мадагаскар</div>
+                    </div>
+                </div>
+                <input class="input-type" placeholder="+7 ___-___-__-__" type="tel" required>
+                <!-- <div class="input-type" class="phone__input">
+                    <div class="phone__input--flags">
+                        <div class="phone__input--current">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div> -->
+                <input class="input-type" type="text" placeholder="E-mail">
+                <input class="input-type" type="date" placeholder="Дата визита">
+                <textarea class="textarea-type"  id="" placeholder="Комментарии"></textarea>
+                <button class="modaltype__btn" type="submit" onclick="thanksOpen()">Отправить заявку</button>
+            </div>
+        </form>
+        
+    </div>
+</div>
+
+<div class="thanks modaltype">
+    <div class="thanks__wrapper modaltype__wrapper"></div>
+    <div class="thanks__content modaltype__content">
+        <div class="thanks__close" onclick="thanksClose()">
+            <img src="assets/img/icons/close2.svg" alt="close">
+        </div>
+        <b>
+            Ваша заявка была успешно отправлена
+        </b>
+        <p>Мы уже обрабатываем вашу заявку.</p>
+    </div>
+</div>
+    <script src="./assets/js/jquery-3.2.1.min.js" ></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="./assets/js/mask.min.js" defer></script>
+<script src="./assets/js/slick.js" defer></script>
+<script src="./assets/js/slides.min.js" defer></script>
+<script src="./assets/js/script.js" defer></script>
+
+
+</body>
+
+</html>

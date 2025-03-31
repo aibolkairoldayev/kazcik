@@ -1372,6 +1372,15 @@ body::-webkit-scrollbar {
   opacity: 0.7;
 }
 
+.modal7 #modal-inner {
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+
+.modal6 .modal__content {
+  width: 600px;
+}
+
 .modal__wrapper {
   position: absolute;
   top: 0;
@@ -1825,6 +1834,14 @@ body::-webkit-scrollbar {
 
   .modaltype__item {
     width: 100%;
+  }
+
+  .modal6 .modal__content {
+    width: 90%;
+    left: 5%;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
 
   .modal2 .modal__content,
