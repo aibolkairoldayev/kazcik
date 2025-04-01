@@ -31,12 +31,16 @@ if($(window).width() > 1200) {
     $('.chrono__slider .arrowLeft').css('right', smallMargin + 50 + 'px');
     $('.gallery__slider .arrowRight').css('right', smallMargin + 'px');
     $('.gallery__slider .arrowLeft').css('right', smallMargin + 50 + 'px');
+    $('.partners__more').css('margin-right', smallMargin + 'px');
+
 } else if (wholeWidth <= 576) {
     $('.events__bot').css('margin-left', '0');
     $('.partners').css('margin-left', '0');
     $('.gallery').css('margin-left', '0');
     $('.serv__docs').css('margin-left', '0');
     $('.chrono').css('margin-left', '0');
+    $('.chrono__slider').css('margin-left', '15px');
+    $('.partners__more').css('margin-right', smallMargin + '0');
 } else {
     $('.events__bot').css('margin-left', containerMargin + 'px');
     $('.partners').css('margin-left', containerMargin + 'px');
@@ -149,16 +153,61 @@ if ($('.modal4').length) {
     })
 }
 
+// open and close modal5
+if ($('.modal6').length) {
+    function openModal6(id) {
+        $('#representative_id').val(id);
+        $('.modal6').addClass('show');
+        $('body').css('overflow', 'hidden');
+    }
+    function closeModal6() {
+        $('.modal6').removeClass('show');
+        $('body').css('overflow', 'unset');
+    }
+    $('.modal__wrapper6').click(()=> {
+        closeModal6()
+    })
+}
+
+// open and close modal7
+if ($('.modal7').length) {
+    function openModal7() {
+        $('.modal7').addClass('show');
+        $('body').css('overflow', 'hidden');
+    }
+    function closeModal7() {
+        $('.modal7').removeClass('show');
+        $('body').css('overflow', 'unset');
+    }
+    $('.modal__wrapper7').click(()=> {
+        closeModal7()
+    })
+}
+
+if ($('.modal8').length) {
+    function openModal8() {
+        $('.modal8').addClass('show');
+        $('body').css('overflow', 'hidden');
+    }
+    function closeModal8() {
+        $('.modal8').removeClass('show');
+        $('body').css('overflow', 'unset');
+    }
+    $('.modal__wrapper8').click(()=> {
+        closeModal8()
+    })
+}
+
 //burger open/closes
 if($('.burger').length) {
     function disableScroll() {
         document.addEventListener('touchmove', preventDefault, { passive: false });
     }
-    
+
     function enableScroll() {
         document.removeEventListener('touchmove', preventDefault);
     }
-    
+
     function preventDefault(e) {
         e.preventDefault();
     }
@@ -455,11 +504,11 @@ $(document).ready(function () {
         checkboxLoop.prop('checked', false);
 
         $(item).removeClass('active')
-       
+
      })
-     
+
       const checkbox = $(this).find('input[type="checkbox"]');
-     
+
       checkbox.prop('checked', !checkbox.prop('checked'));
 
      $(this).toggleClass('active');
@@ -472,25 +521,25 @@ $(document).ready(function () {
       $('.sovet__search--item').removeClass('active');
       $('.sovet__search--item input[type="checkbox"]').prop('checked', false);
       $('.sovet__accept').removeClass('active');
-      
+
     });
 
     $('.sovet__accept').on('click', function (e) {
-        
+
         const active = $('.sovet__search--item.active');
         const id = ($(active[0]).data('filtercountry'));
 
         $(".sovet__count").removeClass("active");
         $(".sovet__item").removeClass("active");
 
-        
+
         $(".sovet__item").each(function () {
             var countries = $(this).data('countries');
             if (countries.includes(id))
                 $(this).toggleClass("active");
         });
-       
-        searchClose() 
+
+        searchClose()
     });
 
     $(".sovet__search__action").on("input", function () {
@@ -504,7 +553,7 @@ $(document).ready(function () {
             }
         });
     });
-    
+
 
     // Функция для обновления состояния sovet__accept
     function updateAcceptState() {
@@ -558,7 +607,7 @@ if ($('.header__search').length) {
         if (query.length >= 2) {
             searchTimer = setTimeout(function () {
                 $.ajax({
-                    url: "/search",
+                    url: "/ajax/search",
                     method: "GET",
                     data: { query: query },
                     success: function (response) {
@@ -573,7 +622,7 @@ if ($('.header__search').length) {
                                     <img src="/assets/img/icons/search.svg" alt="search">
                                     <a
                                     style="display:flex; align-items:center; text-decoration:none; flex-grow:1; color:inherit;"
-                                    href="/${locale}/${item.type}/${item.slug}">
+                                    href="/${locale}/${item.url}">
                                         <span>${item.title}</span>
                                     </a>
                                 </div>
@@ -635,7 +684,7 @@ $(document).ready(function () {
     });
 });
 
-// pull items dropdown active 
+// pull items dropdown active
 $(document).ready(function () {
     $('.pull__drop span').on('click', function () {
         $(this).closest('.pull__drop').toggleClass('active');
@@ -655,7 +704,7 @@ $(document).ready(function () {
         $input.prop('checked', !$input.prop('checked'));
         e.preventDefault();
       });
-      
+
 });
 
 // sort dropdown in pull page
@@ -838,14 +887,12 @@ $(document).ready(function () {
         parentInner.find(".filter3__item").removeClass("active");
         parentInner.find("input[type='checkbox']").prop("checked", false);
     });
-});
-$(document).ready(function () {
-    $(".filter3__accept").on("click", function (e) {
-        e.preventDefault();
 
-        filter2Close();
-    });
+    $('.filter__line').on('click',function(e){
+        filter2Close()
+    })
 });
+
 
 //file name in modals width file type
 $(document).ready(function () {

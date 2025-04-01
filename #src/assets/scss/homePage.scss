@@ -1027,13 +1027,16 @@
         position: absolute;
         top: -100px;
         right: -200px;
-        
+        z-index: -1;
         img {
             max-width: 500px;
         }
     }
-    &__title {
+    &__top {
         margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     &__item {
         border-radius: 24px;
