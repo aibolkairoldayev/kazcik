@@ -1053,4 +1053,14 @@
             object-fit: contain;
         }
     }
+    &__more {
+        .gradient-text {
+            font-variant-numeric: lining-nums tabular-nums;
+            font-family: "Source Sans 3", serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+        }
+    }
 }

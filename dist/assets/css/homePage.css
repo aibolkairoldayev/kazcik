@@ -1002,6 +1002,15 @@
      object-fit: contain;
 }
 
+.partners__more .gradient-text {
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: "Source Sans 3", serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
 @media (max-width: 1200px) {
   .banner__item--info b {
     font-size: 18px;
