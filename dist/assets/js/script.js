@@ -924,3 +924,30 @@ $(document).ready(function () {
         }
     });
 });
+
+//serv page form dropdown services choose
+$(document).ready(function () {
+    const $dropdown = $('.servdrop');
+    const $selected = $('.servdrop__current');
+    const $items = $dropdown.find('.servdrop__item');
+    const $hiddenInput = $('.servdrop__hidden');
+  
+    $selected.on('click', function () {
+      $dropdown.toggleClass('open');
+    });
+  
+    $items.on('click', function () {
+      const value = $(this).data('value');
+      const text = $(this).text();
+  
+      $selected.text(text);
+      $hiddenInput.val(value);
+      $dropdown.removeClass('open');
+    });
+  
+    $(document).on('click', function (e) {
+      if (!$(e.target).closest('.servdrop').length) {
+        $dropdown.removeClass('open');
+      }
+    });
+  });

@@ -1107,9 +1107,35 @@
 
         <form action="" id="modal-main">
             <div class="modaltype__form1">
+                <div class="servdrop">
+                    <div class="servdrop__current">
+                        Бизнес мероприятия и продвижение
+                    </div>
+                    <div class="servdrop__items">
+                        <div class="servdrop__item" data-value="1">
+                            Бизнес-консалтинг и поиск партнеров
+                        </div>
+                        <div class="servdrop__item" data-value="2">
+                            Свидетельствование обстоятельств непреодолимой силы
+                        </div>
+                        <div class="servdrop__item" data-value="3">
+                            Таможенная поддержка и сопровождение
+                        </div>
+                        <div class="servdrop__item" data-value="4">
+                            Международные документы Carnet ATA
+                        </div>
+                        <div class="servdrop__item" data-value="5">
+                            Решения для иностранных компаний
+                        </div>
+                        <div class="servdrop__item" data-value="6">
+                            Обучение по международной торговле и инвестициям
+                        </div>
+                    </div>
+                    <input type="hidden" name="city" class="servdrop__hidden" value="">
+                </div>
                 <input class="input-type" type="text" placeholder="Фамилия*" required>
-                <input class="input-type" type="text" placeholder="Имя*" required>
-                <input class="input-type" type="text" placeholder="Отчество">
+                <!-- <input class="input-type" type="text" placeholder="Имя*" required>
+                <input class="input-type" type="text" placeholder="Отчество"> -->
                 <input class="input-type" type="email" placeholder="E-mail*" required>
                 <input class="input-type" placeholder="+7 ___-___-__-__" type="tel" required>
                 <!-- <div class="input-type" class="phone__input">
@@ -1119,7 +1145,7 @@
                         </div>
                     </div>
                 </div> -->
-                <textarea class="textarea-type"  id="" placeholder="Комментарии"></textarea>
+                <textarea class="textarea-type"  id="" placeholder="Комментарии" maxlength="200"></textarea>
                 <button class="modaltype__btn" type="submit" onclick="thanksOpen()">Отправить заявку</button>
             </div>
         </form>
