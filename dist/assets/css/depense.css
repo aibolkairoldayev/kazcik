@@ -1593,7 +1593,7 @@
 
 .new__content {
   margin: 45px 0 32px;
-  padding: 0;
+  padding: 0 40px 0 80px;
 }
 
 .new__content b {
@@ -6419,6 +6419,12 @@
           transform: rotate(180deg) translateY(50%);
 }
 
+.servdrop.open .servdrop__current::after {
+  -webkit-transform: rotate(180deg) translateY(50%);
+      -ms-transform: rotate(180deg) translateY(50%);
+          transform: rotate(180deg) translateY(50%);
+}
+
 .servdrop__current {
   cursor: pointer;
   border-radius: 16px;
@@ -6444,6 +6450,20 @@
   -webkit-transition: 0.2s linear;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
+}
+
+.servdrop__current::after {
+  position: absolute;
+  content: url(../img/icons/drop.svg);
+  top: 50%;
+  right: 5px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+  height: 16px;
 }
 
 .servdrop__items {
@@ -6536,6 +6556,10 @@
 
   .news2__items {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .new__content {
+    padding: 0;
   }
 
   .future__time {

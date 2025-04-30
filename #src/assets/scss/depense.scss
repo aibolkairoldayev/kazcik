@@ -1407,7 +1407,10 @@
     }
     &__content {
         margin: 45px 0 32px;
-        padding: 0;
+        padding: 0 40px 0 80px;
+        @media(max-width: 1200px) {
+            padding: 0;
+        }
         @media(max-width: 576px) {
             margin: 25px 0 20px;
         }
@@ -6383,6 +6386,12 @@ background-clip: text;
         .servdrop__current--drop {
             transform: rotate(180deg) translateY(50%);
         }
+        .servdrop__current {
+            &::after {
+                transform: rotate(180deg) translateY(50%);
+            }
+        }
+        
     }
     &__current {
         cursor: pointer;
@@ -6404,6 +6413,15 @@ background-clip: text;
             right: 5px;
             transform: translateY(-50%);
             transition: .2s linear;
+        }
+        &::after {
+            position: absolute;
+            content: url(../img/icons/drop.svg);
+            top: 50%;
+            right: 5px;
+            transform: translateY(-50%);
+            transition: .2s linear;
+            height: 16px;
         }
     }
     &__items {
